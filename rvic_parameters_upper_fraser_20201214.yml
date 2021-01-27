@@ -1,7 +1,7 @@
 --- # Description of parameter files for RVIC routing model
 parameters_upper_fraser_20201214:
   domain: upper_fraser
-  description: Gridded roputing for upper Fraser
+  description: Gridded routing for upper Fraser
   resolution: 0.0625
   domain_file: /storage/data/projects/hydrology/vic_gen2/projects/moti_floods/parameters/rvic.domain_upperfraser.nc
   input_file: /storage/data/projects/hydrology/vic_gen2/projects/moti_floods/parameters/rvic.parameters_upperfraser.nc

@@ -5,7 +5,7 @@ parameters_fraser_20170220:
   resolution: 0.0625
   domain_file: /storage/data/projects/hydrology/vic_gen2/input/routing/fraser/parameters/rvic.domain_fraser_v2.nc
   input_file: /storage/data/projects/hydrology/vic_gen2/input/routing/fraser/parameters/rvic.parameters_fraser_v2.nc
-  uh_file: /storage/data/projects/hydrology/vic_gen2/input/routing/uh/uhydrograph_day.csv
+  uh_file: /storage/data/projects/hydrology/vic_gen2/input/routing/uh/uhbox.csv
   case_dir: /storage/data/projects/hydrology/vic_gen2/input/routing/fraser/parameters/cases/fraser_20170220
   parameter_files:
     - ADAMS_pcic_parameters.rvic.prm.FRASER.20170220.nc

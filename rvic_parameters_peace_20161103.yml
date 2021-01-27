@@ -2,10 +2,10 @@
 parameters_peace_20161103:
   domain: peace
   description: Individual parameter files per calibration site/basin; used for calibration
-  resolution: 0.06625
+  resolution: 0.0625
   domain_file: /storage/data/projects/hydrology/vic_gen2/input/routing/peace/parameters/domain.rvic.peace.20161018.nc
   input_file: /storage/data/projects/hydrology/vic_gen2/input/routing/peace/parameters/bc.rvic.peace.20171019.nc
-  uh_file: /storage/data/projects/hydrology/vic_gen2/input/routing/uh/uhydrograph_day.csv
+  uh_file: /storage/data/projects/hydrology/vic_gen2/input/routing/uh/uhbox.csv
   case_dir: /storage/data/projects/hydrology/vic_gen2/input/routing/peace/parameters/cases/peace_20161103
   parameter_files:
     - peace_ARNT7_routing.rvic.prm.pnw0625.20161103.nc
