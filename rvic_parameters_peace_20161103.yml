@@ -1,0 +1,43 @@
+--- # Description of parameter files for RVIC routing model
+parameters_peace_20161103:
+  domain: peace
+  description: Individual parameter files per calibration site/basin; used for calibration
+  resolution: 0.06625
+  domain_file: /storage/data/projects/hydrology/vic_gen2/input/routing/peace/parameters/domain.rvic.peace.20161018.nc
+  input_file: /storage/data/projects/hydrology/vic_gen2/input/routing/peace/parameters/bc.rvic.peace.20171019.nc
+  uh_file: /storage/data/projects/hydrology/vic_gen2/input/routing/uh/uhydrograph_day.csv
+  case_dir: /storage/data/projects/hydrology/vic_gen2/input/routing/peace/parameters/cases/peace_20161103
+  parameter_files:
+    - peace_ARNT7_routing.rvic.prm.pnw0625.20161103.nc
+    - peace_BRBAC_routing.rvic.prm.pnw0625.20161103.nc
+    - peace_BRNFS_routing.rvic.prm.pnw0625.20161103.nc
+    - peace_FRAAR_routing.rvic.prm.pnw0625.20161103.nc
+    - peace_GRACC_routing.rvic.prm.pnw0625.20161103.nc
+    - peace_HERNN_routing.rvic.prm.pnw0625.20161103.nc
+    - peace_HRAGR_routing.rvic.prm.pnw0625.20161103.nc
+    - peace_HRNFC_routing.rvic.prm.pnw0625.20161103.nc
+    - peace_IRASR_routing.rvic.prm.pnw0625.20161103.nc
+    - peace_KIRNF_routing.rvic.prm.pnw0625.20161103.nc
+    - peace_KWRNW_routing.rvic.prm.pnw0625.20161103.nc
+    - peace_LSRNG_routing.rvic.prm.pnw0625.20161103.nc
+    - peace_MRAGC_routing.rvic.prm.pnw0625.20161103.nc
+    - peace_MRAWR_routing.rvic.prm.pnw0625.20161103.nc
+    - peace_MRNFS_routing.rvic.prm.pnw0625.20161103.nc
+    - peace_MRNTM_routing.rvic.prm.pnw0625.20161103.nc
+    - peace_NRNFS_routing.rvic.prm.pnw0625.20161103.nc
+    - peace_NRNTM_routing.rvic.prm.pnw0625.20161103.nc
+    - peace_ORAAC_routing.rvic.prm.pnw0625.20161103.nc
+    - peace_ORAOR_routing.rvic.prm.pnw0625.20161103.nc
+    - peace_ORNEL_routing.rvic.prm.pnw0625.20161103.nc
+    - peace_PCRBH_routing.rvic.prm.pnw0625.20161103.nc
+    - peace_PERNT_routing.rvic.prm.pnw0625.20161103.nc
+    - peace_PRABD_routing.rvic.prm.pnw0625.20161103.nc
+    - peace_PRAEP_routing.rvic.prm.pnw0625.20161103.nc
+    - peace_PRAMR_routing.rvic.prm.pnw0625.20161103.nc
+    - peace_PRAOO_routing.rvic.prm.pnw0625.20161103.nc
+    - peace_PRAPR_routing.rvic.prm.pnw0625.20161103.nc
+    - peace_RRNRG_routing.rvic.prm.pnw0625.20161103.nc
+    - peace_SMRAW_routing.rvic.prm.pnw0625.20161103.nc
+    - peace_SRNTM_routing.rvic.prm.pnw0625.20161103.nc
+    - peace_WRNGP_routing.rvic.prm.pnw0625.20161103.nc
+    - peace_WRNTM_routing.rvic.prm.pnw0625.20161103.nc
