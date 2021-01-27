@@ -1,0 +1,119 @@
+--- # HI Theme project descriptions
+CMIP5_base:
+  title: Modelling hydrologic impacts in British Columbia
+  description: |
+    Modelling impact of climate change on surface hydrology in the Peace,
+    Fraser and Columbia basins. Project used to establish soil, snowband, and
+    vegetation parameterization for all of Northwestern North America
+  domain: peace, fraser and columbia, partial deployment to nwna
+  experiments: CMIP5
+  models:
+    - VICGL-HydroConductor-RGM
+    - RVIC
+  depends: none
+  funding_source: PCIC grant
+  collaborators: none
+
+Fraser_water_temperature:
+  title: Modelling water temperature in the Fraser River
+  description: |
+    Modelling water temperature throughout the Fraser River drainage network in
+    both present and future climates with boundary conditions provided by VICGL
+  domain: fraser
+  experiments: CMIP5
+  models:
+    - VICGL-HydroConductor-RGM
+    - RVIC
+    - RBM
+  depends: CMIP5_base
+  funding_source: PCIC grant
+  collaborators: none
+
+Fraser_Design_Flood:
+  title: Estimate climate change impacts on design flow and design sea level
+  description: |
+    Projections and recommendation of future design flood boundary conditions
+    (flow and sea level) for the lower Fraser River using results from project
+    CMIP5_base
+  domain: fraser
+  experiments: CMIP5
+  models: na
+  depends: CMIP5_base
+  funcding_source: Ministry of Forests, Lands, Resource Operations and Rural Development (FLNRORD)
+  collaborators: northwest hydraulics consultants (nhc)
+
+BCSRIF:
+  title: Assessing salmon sensitivity to changes in freshwater environment
+  description: |
+    Modelling hydrologic impacts on hydrologic and thernmal regime and effect
+    on salmon habitat throughout coastal BC watersheds
+  domain: bccoast
+  experiments: CMIP5
+  models:
+    - VICGL-HydroConductor-RGM
+    - RVIC
+    - RBM
+    - Raven-RGM
+  depends: CMIP5_base
+  funcding_source: |
+    British Columbia Salmon Restoration and Innovation Fund, Fisheries and Oceans
+    Canada and BC Government
+  collaborators: DFO
+
+NECHAKO_CRD:
+  title: Climate change impacts on water temperature in the Nechako Reservoir
+  description: |
+    Modelling impacts of climate change on reservoir storage, reservoir water
+    tempearture profile and water temperature of spillway flows
+  domain: nechc
+  experiments: CMIP5
+  models:
+    - VICGL
+    - RBM
+    - CE-QUAL-W2
+  depends: none
+  funcding_source: NSERC CRD
+  collaborators: RTA, UQAM and UBC
+
+CVRD:
+  title: Climate change impacts on low flows in the Comox Reservoir
+  description: |
+    Modelling the effects of climate change on various low flow metrics to
+    assess impact on Comox Lake inflow. Project used as impetus to test VICGL
+    at 1/32-degree resolution
+  domain: vanisle
+  experiments: CMIP5
+  models:
+    - VICGL-HydroConductor-RGM
+    - RVIC
+  depends: none
+  funding_source: Cowichan Valley Regional District
+  collaborators: none
+  
+CanESM2_LE_base:
+  title: Modelling hydrologic impacts in British Columbia using large ensembles
+  description: |
+    Modelling impact of climate change on surface hydrology in the Peace,
+    Fraser and Columbia basins
+  domain: peace, fraser and columbia
+  experiments: CanESM2-LE
+  models:
+    - VICGL-HydroConductor-RGM
+    - RVIC
+  depends: CMIP5_base
+  funding_source: PCIC grant
+  collaborators: none
+
+MOTI_FFA:
+  title: Climate change impacts on peak streamlflow in the upper Fraser
+  description: |
+    Assessing changes in peak streamflow quantiles at all grid points using
+    routed output from project CanESM2_LE_base
+  domain: upper_fraser
+  experiments: CanES2-LE
+  models:
+    - RVIC
+  depends: CanESM2_LE_base
+  funding_source: BC Ministry of Transportation and Infrastructure
+  collaborators: PCIC CSG
+

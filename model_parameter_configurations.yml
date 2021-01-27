@@ -1,0 +1,478 @@
+--- # Description of parameter files for various PCIC models
+VICGL:
+  vegetation_parameters:
+    vpf_columbia_200:
+      domain: columbia
+      band_relief: 200
+      no_classes: 22
+      file_name: /storage/data/projects/hydrology/vic_gen2/input/vegetation/vpf_0625/columbia/vpf_columnbia_200.txt
+      null_glaciers: false
+      resolution: 0.0625
+      spf_id: soils.gen2.20170606
+      snb_id: snb_columbia_200
+    vpf_fraser_200:
+      domain: fraser
+      band_relief: 200
+      no_classes: 22
+      file_name: /storage/data/projects/hydrology/vic_gen2/input/vegetation/vpf_0625/fraser/vpf_fraser_200.txt
+      null_glaciers: false
+      resolution: 0.0625
+      spf_id: soils.gen2.20170606
+      snb_id: snb_fraser_200
+    vpf_peace_200:
+      domain: peace
+      band_relief: 200
+      no_classes: 22
+      file_name: /storage/data/projects/hydrology/vic_gen2/input/vegetation/vpf_0625/peace/vpf_peace_200.txt
+      null_glaciers: false
+      resolution: 0.0625
+      spf_id: soils.gen2.20170606
+      snb_id: snb_fraser_200
+    vpf_skeena_200:
+      domain: skeena
+      band_relief: 200
+      no_classes: 22
+      file_name: /storage/data/projects/hydrology/vic_gen2/input/vegetation/vpf_0625/skeena/vpf_skeena_200.txt
+      null_glaciers: false
+      resolution: 0.0625
+      spf_id: soils.gen2.20170606
+      snb_id: 
+    vpf_stikine_200:
+      domain: stikine
+      band_relief: 200
+      no_classes: 22
+      file_name: /storage/data/projects/hydrology/vic_gen2/input/vegetation/vpf_0625/stikine/vpf_stikine_200.txt
+      null_glaciers: false
+      resolution: 0.0625
+      spf_id: soils.gen2.20170606
+      snb_id:
+    vpf_vanisle_200:
+      domain: vanisle
+      band_relief: 200
+      no_classes: 22
+      file_name: /storage/data/projects/hydrology/vic_gen2/input/vegetation/vpf_03125/vpf_vanisle_200.txt
+      null_glaciers: false
+      resolution: 0.03125
+      spf_id: soils.gen2.20180109_VanIsle_03125
+      snb_id: snb_vanisle_200
+
+  vegetation_library:
+    vlb_nalc_2005_final:
+      domain: Northwestern North America
+      file_name: vlbc_nalc_2005_final.txt
+      no_classes: 22
+      remarks: Original NWNA library
+    vlb_nalc_2005_final_rcmin_125L:
+      domain: Northwestern North America
+      file_name: vlbc_nalc_2005_final_rcmin_125L.txt
+      no_classes: 22
+      remarks: Replaced original values rmin with rcanopy min and LAI*1.25
+    vlb_nalc_2005_final_050rmin_125L: 
+      domain: Northwestern North America
+      file_name: vlbc_nalc_2005_final_050rmin_125L.txt
+      no_classes: 22
+      remarks: Replaced original values with rmin*0.5 and LAI*1.25
+    vlb_nalc_2005_final_rcmin_125L_30wind_h:
+      domain: Northwestern North America
+      file_name: vlbc_nalc_2005_final_rcmin_125L_30wind_h.txt
+      no_classes: 22
+      remarks: Replaced original values of rmin with rcanopy min; LAI*1.25; and changed wind height to 30m
+
+  soil_parameters:
+    soils_gen2_20170606:
+      domain: Northwestern North America
+      file_name: /storage/data/projects/hydrology/vic_gen2/input/soils/soils.gen2.20170606.csv
+      alt_file_name_1: /storage/data/projects/hydrology/vic_gen2/input/soils/soils_gen2_20170606.nc
+      resolution: 0.0625
+      remarks: Master soil file with default parameters
+    soils_gen2_20180109_VanIsle_03125:
+      domain: Vancouver Island
+      file_name: /storage/data/projects/hydrology/vic_gen2/input/soils/VI_03125/soils.gen2.20180109_VanIsle_03125.csv
+      alt_file_name_1: /storage/data/projects/hydrology/vic_gen2/input/soils/soils_gen2_20170606.nc
+      resolution: 0.03125
+      remarks: Disaggregated from soils.gen2.20170606
+  
+  snowband_parameters:
+    snb_columbia_200:
+      domain: Columbia
+      file_name: /storage/data/projects/hydrology/vic_gen2/input/snowbands/snb_0625/columbia/snb_columbia_200.txt
+      band_relief: 200
+      resolutiopn: 0.0625
+      null_glaciers: false
+      spf_id: soils.gen2.20170606
+    snb_columbia_200_glac:
+      domain: Columbia
+      file_name: /storage/data/projects/hydrology/vic_gen2/input/snowbands/snb_0625/columbia/snb_columbia_200_glac.txt
+      band_relief: 200
+      resolution: 0.0625
+      null_glaciers: true
+      spf_id: soils.gen2.20170606
+    snb_fraser_200:
+      domain: Fraser
+      file_name: /storage/data/projects/hydrology/vic_gen2/input/snowbands/snb_0625/fraser/snb_fraser_200.txt
+      band_relief: 200
+      resolution: 0.0625
+      null_glaciers: false
+      spf_id: soils.gen2.20170606
+    snb_peace_200:
+      domain: Peace
+      file_name: /storage/data/projects/hydrology/vic_gen2/input/snowbands/snb_0625/peace/snb_peace_200.txt
+      band_relief: 200
+      resolution: 0.0625
+      null_glaciers: false
+      spf_id: soils.gen2.20170606
+    snb_skeena_200:
+      domain: Skeena
+      file_name: /storage/data/projects/hydrology/vic_gen2/input/snowbands/snb_0625/skeena/snb_skeena_200.txt
+      band_relief: 200
+      resolution: 0.0625
+      null_glaciers: false
+      spf_id: soils.gen2.20170606
+    snb_stikine_200:
+      domain: Stikine
+      file_name: /storage/data/projects/hydrology/vic_gen2/input/snowbands/snb_0625/stikine/snb_stikine_200.txt
+      band_relief: 200
+      resolution: 0.0625
+      null_glaciers: false
+      spf_id: soils.gen2.20170606
+    snb_vanisle_200:
+      domain: Vancouver Island
+      file_name: /storage/data/projects/hydrology/vic_gen2/input/snowbands/snb_03125/snb_vanisle_200.txt
+      band_relief: 200
+      resolution: 0.03125
+      null_glaciers: false
+      spf_id: soils.gen2.20180109_VanIsle_03125
+
+RVIC:
+  domain:
+    domain_pnw_20170920:
+      domain: pnw
+      file_name: /storage/data/projects/hydrology/vic_gen2/input/routing/columbia/parameters/domain.pnw.pcic.20170927.nc
+      resolution: 0.0625
+    domain_fraser_20170124:
+      domain: fraser
+      file_name: /storage/data/projects/hydrology/vic_gen2/input/routing/fraser/parameters/rvic.domain_fraser_v2.nc
+      resolution: 0.0625
+    domain_nechc_20190906:
+      domain: nechc
+      file_name: /storage/data/projects/hydrology/vic_gen2/input/routing/fraser/parameters/rvic.domain_nechc_v2.nc
+      resolution: 0.0625
+    domain_peace_20161018:
+      domain: peace
+      file_name: /storage/data/projects/hydrology/vic_gen2/input/routing/peace/parameters/domain.rvic.peace.20161018.nc
+      resolution: 0.0625
+    domain_vanisle_20180125:
+      domain: vanisle
+      file_name: /storage/data/projects/hydrology/vic_gen2/input/routing/vanisle_03125/parameters/rvic.domain_vanisle.nc
+      resolution: 0.03125
+
+  input:
+    input_pnw_20170927:
+      domain: pnw
+      file_name: /storage/data/projects/hydrology/vic_gen2/input/routing/columbia/parameters/pcic.pnw.rvic.input_20170927.nc
+      resolution: 0.0625 
+    input_fraser_20170220:
+      domain: fraser
+      file_name: /storage/data/projects/hydrology/vic_gen2/input/routing/fraser/parameters/rvic.parameters_fraser_v2.nc
+      resolution: 0.0625
+    input_fraser_20190716:
+      domain: fraser
+      file_name: /storage/data/projects/hydrology/vic_gen2/input/routing/fraser/parameters/rvic.parameters_fraser_v3.nc
+      resolution: 0.0625
+    input_nechc_20190906:
+      domain: nechc
+      file_name: /storage/data/projects/hydrology/vic_gen2/input/routing/fraser/parameters/rvic.parameters_nechc_v3.nc
+      resolution: 0.0625
+    input_peace_20171019:
+      domain: peace
+      file_name: /storage/data/projects/hydrology/vic_gen2/input/routing/peace/parameters/bc.rvic.peace.20171019.nc
+      resolution: 0.0625
+    input_vanisle_20180125:
+      domain: vanisle
+      file_name: /storage/data/projects/hydrology/vic_gen2/input/routing/vanisle_03125/parameters/rvic.parameters_vanisle.nc
+      resolution: 0.03125
+
+  parameters:
+    parameters_columbia_20170927:
+      domain: columbia
+      case_dir: /storage/data/projects/hydrology/vic_gen2/input/routing/columbia/parameters/cases/columbia_20170927
+      file_names:
+        - ALB_pcic_parameters.rvic.prm.COLUMBIA.20170927.nc
+        - ANA_pcic_parameters.rvic.prm.COLUMBIA.20170927.nc
+        - ASHNO_pcic_parameters.rvic.prm.COLUMBIA.20170927.nc
+        - BDY_pcic_parameters.rvic.prm.COLUMBIA.20170927.nc
+        - BEAVE_pcic_parameters.rvic.prm.COLUMBIA.20170927.nc
+        - BFE_pcic_parameters.rvic.prm.COLUMBIA.20170927.nc
+        - BIGI_pcic_parameters.rvic.prm.COLUMBIA.20170927.nc
+        - BITDA_pcic_parameters.rvic.prm.COLUMBIA.20170927.nc
+        - BON_pcic_parameters.rvic.prm.COLUMBIA.20170927.nc
+        - BRI_pcic_parameters.rvic.prm.COLUMBIA.20170927.nc
+        - BRN_pcic_parameters.rvic.prm.COLUMBIA.20170927.nc
+        - BruneauR_pcic_parameters.rvic.prm.COLUMBIA.20170927.nc
+        - BULWA_pcic_parameters.rvic.prm.COLUMBIA.20170927.nc
+        - CHL_pcic_parameters.rvic.prm.COLUMBIA.20170927.nc
+        - COWKO_pcic_parameters.rvic.prm.COLUMBIA.20170927.nc
+        - CRNIC_pcic_parameters.rvic.prm.COLUMBIA.20170927.nc
+        - CROO_pcic_parameters.rvic.prm.COLUMBIA.20170927.nc
+        - DCD_pcic_parameters.rvic.prm.COLUMBIA.20170927.nc
+        - DEX_pcic_parameters.rvic.prm.COLUMBIA.20170927.nc
+        - DONAL_pcic_parameters.rvic.prm.COLUMBIA.20170927.nc
+        - DWR_pcic_parameters.rvic.prm.COLUMBIA.20170927.nc
+        - ELKFE_pcic_parameters.rvic.prm.COLUMBIA.20170927.nc
+        - FLAWE_pcic_parameters.rvic.prm.COLUMBIA.20170927.nc
+        - GCL_pcic_parameters.rvic.prm.COLUMBIA.20170927.nc
+        - GRANB_pcic_parameters.rvic.prm.COLUMBIA.20170927.nc
+        - HANGM_pcic_parameters.rvic.prm.COLUMBIA.20170927.nc
+        - IHR_pcic_parameters.rvic.prm.COLUMBIA.20170927.nc
+        - ILLEC_pcic_parameters.rvic.prm.COLUMBIA.20170927.nc
+        - JDA_pcic_parameters.rvic.prm.COLUMBIA.20170927.nc
+        - JFFO_pcic_parameters.rvic.prm.COLUMBIA.20170927.nc
+        - JOECA_pcic_parameters.rvic.prm.COLUMBIA.20170927.nc
+        - JOHND_pcic_parameters.rvic.prm.COLUMBIA.20170927.nc
+        - KETFE_pcic_parameters.rvic.prm.COLUMBIA.20170927.nc
+        - KICHO_pcic_parameters.rvic.prm.COLUMBIA.20170927.nc
+        - KIMI_pcic_parameters.rvic.prm.COLUMBIA.20170927.nc
+        - KIOW_pcic_parameters.rvic.prm.COLUMBIA.20170927.nc
+        - KOOTE_pcic_parameters.rvic.prm.COLUMBIA.20170927.nc
+        - LARMA_pcic_parameters.rvic.prm.COLUMBIA.20170927.nc
+        - LIB_pcic_parameters.rvic.prm.COLUMBIA.20170927.nc
+        - LIM_pcic_parameters.rvic.prm.COLUMBIA.20170927.nc
+        - LLK_pcic_parameters.rvic.prm.COLUMBIA.20170927.nc
+        - LORI_pcic_parameters.rvic.prm.COLUMBIA.20170927.nc
+        - Malheur_pcic_parameters.rvic.prm.COLUMBIA.20170927.nc
+        - MAY_pcic_parameters.rvic.prm.COLUMBIA.20170927.nc
+        - MCD_pcic_parameters.rvic.prm.COLUMBIA.20170927.nc
+        - MER_pcic_parameters.rvic.prm.COLUMBIA.20170927.nc
+        - METPA_pcic_parameters.rvic.prm.COLUMBIA.20170927.nc
+        - MISSI_pcic_parameters.rvic.prm.COLUMBIA.20170927.nc
+        - MUC_pcic_parameters.rvic.prm.COLUMBIA.20170927.nc
+        - OKA_pcic_parameters.rvic.prm.COLUMBIA.20170927.nc
+        - OKAPE_pcic_parameters.rvic.prm.COLUMBIA.20170927.nc
+        - ORO_pcic_parameters.rvic.prm.COLUMBIA.20170927.nc
+        - OUTLET_pcic_parameters.rvic.prm.COLUMBIA.20170927.nc
+        - PLEI_pcic_parameters.rvic.prm.COLUMBIA.20170927.nc
+        - PRD_pcic_parameters.rvic.prm.COLUMBIA.20170927.nc
+        - PRVO_pcic_parameters.rvic.prm.COLUMBIA.20170927.nc
+        - REXI_pcic_parameters.rvic.prm.COLUMBIA.20170927.nc
+        - RML_pcic_parameters.rvic.prm.COLUMBIA.20170927.nc
+        - ROMO_pcic_parameters.rvic.prm.COLUMBIA.20170927.nc
+        - RVC_pcic_parameters.rvic.prm.COLUMBIA.20170927.nc
+        - SIMHE_pcic_parameters.rvic.prm.COLUMBIA.20170927.nc
+        - SIMNI_pcic_parameters.rvic.prm.COLUMBIA.20170927.nc
+        - SIMPR_pcic_parameters.rvic.prm.COLUMBIA.20170927.nc
+        - SKHI_pcic_parameters.rvic.prm.COLUMBIA.20170927.nc
+        - SLOCR_pcic_parameters.rvic.prm.COLUMBIA.20170927.nc
+        - SPD_pcic_parameters.rvic.prm.COLUMBIA.20170927.nc
+        - SVN_pcic_parameters.rvic.prm.COLUMBIA.20170927.nc
+        - SWAI_pcic_parameters.rvic.prm.COLUMBIA.20170927.nc
+        - THOMP_pcic_parameters.rvic.prm.COLUMBIA.20170927.nc
+        - TOM_pcic_parameters.rvic.prm.COLUMBIA.20170927.nc
+        - TULPR_pcic_parameters.rvic.prm.COLUMBIA.20170927.nc
+        - UMATI_pcic_parameters.rvic.prm.COLUMBIA.20170927.nc
+        - UMTW_pcic_parameters.rvic.prm.COLUMBIA.20170927.nc
+        - WARMS_pcic_parameters.rvic.prm.COLUMBIA.20170927.nc
+        - WAT_pcic_parameters.rvic.prm.COLUMBIA.20170927.nc
+        - WAV_pcic_parameters.rvic.prm.COLUMBIA.20170927.nc
+        - WEII_pcic_parameters.rvic.prm.COLUMBIA.20170927.nc
+        - WENPE_pcic_parameters.rvic.prm.COLUMBIA.20170927.nc
+        - WHB_pcic_parameters.rvic.prm.COLUMBIA.20170927.nc
+      domain_id: domain_pnw_20170920
+      input_id: input_pnw_20170927
+      uh_file: /storage/data/projects/hydrology/vic_gen2/input/routing/uh/uhydrograph_day.csv
+      description: Individual parameter files per calibration site/basin; used for calibration
+    parameters_columbia_calib_sites:
+      domain: Columbia
+      case_dir: /storage/data/projects/hydrology/vic_gen2/input/routing/columbia/parameters/cases/calib_sites
+      file_names:
+        - CALIB_SITES.rvic.prm.COLUMBIA.20180221.nc
+      domain_id: domain_pnw_20170927
+      input_id: input_pnw_20170927
+      uh_file: /storage/data/projects/hydrology/vic_gen2/input/routing/uh/uhydrograph_day.csv
+      description: Single parameter file for all calibration sites/basins; used for projections
+    parameters_columbia_bch_sites:
+      domain: Columbia
+      case_dir: /storage/data/projects/hydrology/vic_gen2/input/routing/columbia/parameters/cases/bch_sites
+      file_names:
+        - BCHAR_pcic_parameters.rvic.prm.COLUMBIA.20171013.nc
+        - BCHDN_pcic_parameters.rvic.prm.COLUMBIA.20171013.nc
+        - BCHEL_pcic_parameters.rvic.prm.COLUMBIA.20171013.nc
+        - BCHKL_pcic_parameters.rvic.prm.COLUMBIA.20171013.nc
+        - BCHMI_pcic_parameters.rvic.prm.COLUMBIA.20171013.nc
+        - BCHRE_pcic_parameters.rvic.prm.COLUMBIA.20171013.nc
+        - BCWAT_pcic_parameters.rvic.prm.COLUMBIA.20171013.nc
+        - BULNW_pcic_parameters.rvic.prm.COLUMBIA.20171013.nc
+        - SPINS_pcic_parameters.rvic.prm.COLUMBIA.20171013.nc
+      domain_id: domain_pnw_20170920
+      input_id: input_pnw_20170927
+      uh_file: /storage/data/projects/hydrology/vic_gen2/input/routing/uh/uhydrograph_day.csv
+      description: Individual parameter files for BCHydro project sites
+    parameters_fraser_20170220:
+      domain: fraser
+      case_dir: /storage/data/projects/hydrology/vic_gen2/input/routing/fraser/parameters/cases/fraser_20170220
+      file_names:
+        - ADAMS_pcic_parameters.rvic.prm.FRASER.20170220.nc
+        - BAKER_pcic_parameters.rvic.prm.FRASER.20170220.nc
+        - BARRM_pcic_parameters.rvic.prm.FRASER.20170220.nc
+        - BCHAL_pcic_parameters.rvic.prm.FRASER.20170220.nc
+        - BCHLJ_pcic_parameters.rvic.prm.FRASER.20170220.nc
+        - BCHSF_pcic_parameters.rvic.prm.FRASER.20170220.nc
+        - BCHSG_pcic_parameters.rvic.prm.FRASER.20170220.nc
+        - BCHST_pcic_parameters.rvic.prm.FRASER.20170220.nc
+        - BCHTR_pcic_parameters.rvic.prm.FRASER.20170220.nc
+        - BCHWL_pcic_parameters.rvic.prm.FRASER.20170220.nc
+        - BIGCR_pcic_parameters.rvic.prm.FRASER.20170220.nc
+        - BONAP_pcic_parameters.rvic.prm.FRASER.20170220.nc
+        - BOWRB_pcic_parameters.rvic.prm.FRASER.20170220.nc
+        - CAYOO_pcic_parameters.rvic.prm.FRASER.20170220.nc
+        - CHILB_pcic_parameters.rvic.prm.FRASER.20170220.nc
+        - CHILK_pcic_parameters.rvic.prm.FRASER.20170220.nc
+        - CHILLI_pcic_parameters.rvic.prm.FRASER.20170220.nc
+        - CLEAO_pcic_parameters.rvic.prm.FRASER.20170220.nc
+        - CLEAS_pcic_parameters.rvic.prm.FRASER.20170220.nc
+        - COTTO_pcic_parameters.rvic.prm.FRASER.20170220.nc
+        - EAGLE_pcic_parameters.rvic.prm.FRASER.20170220.nc
+        - FRSHA_pcic_parameters.rvic.prm.FRASER.20170220.nc
+        - FRSHP_pcic_parameters.rvic.prm.FRASER.20170220.nc
+        - FRSMC_pcic_parameters.rvic.prm.FRASER.20170220.nc
+        - FRSMG_pcic_parameters.rvic.prm.FRASER.20170220.nc
+        - FRSMT_pcic_parameters.rvic.prm.FRASER.20170220.nc
+        - FRSRP_pcic_parameters.rvic.prm.FRASER.20170220.nc
+        - HARRI_pcic_parameters.rvic.prm.FRASER.20170220.nc
+        - HORSE_pcic_parameters.rvic.prm.FRASER.20170220.nc
+        - LILLO_pcic_parameters.rvic.prm.FRASER.20170220.nc
+        - MAHOO_pcic_parameters.rvic.prm.FRASER.20170220.nc
+        - MCGRE_pcic_parameters.rvic.prm.FRASER.20170220.nc
+        - NAUTL_pcic_parameters.rvic.prm.FRASER.20170220.nc
+        - NAZKO_pcic_parameters.rvic.prm.FRASER.20170220.nc
+        - NECHC_pcic_parameters.rvic.prm.FRASER.20170220.nc
+        - NICOL_pcic_parameters.rvic.prm.FRASER.20170220.nc
+        - NTHMB_pcic_parameters.rvic.prm.FRASER.20170220.nc
+        - QUESL_pcic_parameters.rvic.prm.FRASER.20170220.nc
+        - QUESQ_pcic_parameters.rvic.prm.FRASER.20170220.nc
+        - SALMO_pcic_parameters.rvic.prm.FRASER.20170220.nc
+        - SANJO_pcic_parameters.rvic.prm.FRASER.20170220.nc
+        - SEYMO_pcic_parameters.rvic.prm.FRASER.20170220.nc
+        - STELL_pcic_parameters.rvic.prm.FRASER.20170220.nc
+        - STHOM_pcic_parameters.rvic.prm.FRASER.20170220.nc
+        - STUAR_pcic_parameters.rvic.prm.FRASER.20170220.nc
+        - TASEK_pcic_parameters.rvic.prm.FRASER.20170220.nc
+        - WESTR_pcic_parameters.rvic.prm.FRASER.20170220.nc
+        - WILLO_pcic_parameters.rvic.prm.FRASER.20170220.nc
+      domain_id: domain_xxx
+      input_id: input_xxx
+      uh_file: /storage/data/projects/hydrology/vic_gen2/input/routing/uh/uhydrograph_day.csv
+      description: Individual parameter files per calibration site/basin; used for calibration
+    parameters_fraser_wsc_sites:
+      domain: fraser
+      case_dir: /storage/data/projects/hydrology/vic_gen2/input/routing/fraser/parameters/cases/wsc_sites
+      file_names:
+        - WSC_SITES.rvic.prm.FRASER.20180923.nc
+      domain_id: domain_xxx
+      input_id: input_xxx
+      uh_file: /storage/data/projects/hydrology/vic_gen2/input/routing/uh/uhydrograph_day.csv
+      description: Single parameter file for all WSC sites/basins; used for projections
+    parameters_nechako_20191216:
+      domain: nechc
+      case_dir: /storage/data/projects/hydrology/vic_gen2/input/routing/fraser/parameters/cases/nechako_20191216
+      file_names:
+        - CHEDA_pcic_parameters.rvic.prm.nechako.20191216.nc
+        - CHELA_pcic_parameters.rvic.prm.nechako.20191216.nc
+        - ENTIA_pcic_parameters.rvic.prm.nechako.20191216.nc
+        - EUTSU_pcic_parameters.rvic.prm.nechako.20191216.nc
+        - KASAL_pcic_parameters.rvic.prm.nechako.20191216.nc
+        - NECHB_pcic_parameters.rvic.prm.nechako.20191216.nc
+        - NECHC_pcic_parameters.rvic.prm.nechako.20191216.nc
+        - NECHO_pcic_parameters.rvic.prm.nechako.20191216.nc
+        - TAHOL_pcic_parameters.rvic.prm.nechako.20191216.nc
+        - TAHTL_pcic_parameters.rvic.prm.nechako.20191216.nc
+        - TETAC_pcic_parameters.rvic.prm.nechako.20191216.nc
+        - WHITE_pcic_parameters.rvic.prm.nechako.20191216.nc
+      domain_id: domain_nechc_20190906
+      input_id: input_nechc_20190906
+      uh_file: /storage/data/projects/hydrology/vic_gen2/input/routing/uh/uhydrograph_day.csv
+      description: Individual parameter files for calibration sites/basins for sub-divided Nechako drainage
+    parameters_peace_20161103:
+      domain: peace
+      case_dir: /storage/data/projects/hydrology/vic_gen2/input/routing/peace/parameters/cases/peace_20161103
+      file_names:
+        - peace_ARNT7_routing.rvic.prm.pnw0625.20161103.nc
+        - peace_BRBAC_routing.rvic.prm.pnw0625.20161103.nc
+        - peace_BRNFS_routing.rvic.prm.pnw0625.20161103.nc
+        - peace_FRAAR_routing.rvic.prm.pnw0625.20161103.nc
+        - peace_GRACC_routing.rvic.prm.pnw0625.20161103.nc
+        - peace_HERNN_routing.rvic.prm.pnw0625.20161103.nc
+        - peace_HRAGR_routing.rvic.prm.pnw0625.20161103.nc
+        - peace_HRNFC_routing.rvic.prm.pnw0625.20161103.nc
+        - peace_IRASR_routing.rvic.prm.pnw0625.20161103.nc
+        - peace_KIRNF_routing.rvic.prm.pnw0625.20161103.nc
+        - peace_KWRNW_routing.rvic.prm.pnw0625.20161103.nc
+        - peace_LSRNG_routing.rvic.prm.pnw0625.20161103.nc
+        - peace_MRAGC_routing.rvic.prm.pnw0625.20161103.nc
+        - peace_MRAWR_routing.rvic.prm.pnw0625.20161103.nc
+        - peace_MRNFS_routing.rvic.prm.pnw0625.20161103.nc
+        - peace_MRNTM_routing.rvic.prm.pnw0625.20161103.nc
+        - peace_NRNFS_routing.rvic.prm.pnw0625.20161103.nc
+        - peace_NRNTM_routing.rvic.prm.pnw0625.20161103.nc
+        - peace_ORAAC_routing.rvic.prm.pnw0625.20161103.nc
+        - peace_ORAOR_routing.rvic.prm.pnw0625.20161103.nc
+        - peace_ORNEL_routing.rvic.prm.pnw0625.20161103.nc
+        - peace_PCRBH_routing.rvic.prm.pnw0625.20161103.nc
+        - peace_PERNT_routing.rvic.prm.pnw0625.20161103.nc
+        - peace_PRABD_routing.rvic.prm.pnw0625.20161103.nc
+        - peace_PRAEP_routing.rvic.prm.pnw0625.20161103.nc
+        - peace_PRAMR_routing.rvic.prm.pnw0625.20161103.nc
+        - peace_PRAOO_routing.rvic.prm.pnw0625.20161103.nc
+        - peace_PRAPR_routing.rvic.prm.pnw0625.20161103.nc
+        - peace_RRNRG_routing.rvic.prm.pnw0625.20161103.nc
+        - peace_SMRAW_routing.rvic.prm.pnw0625.20161103.nc
+        - peace_SRNTM_routing.rvic.prm.pnw0625.20161103.nc
+        - peace_WRNGP_routing.rvic.prm.pnw0625.20161103.nc
+        - peace_WRNTM_routing.rvic.prm.pnw0625.20161103.nc
+      domain_id: domain_peace_20161018
+      input_id: input_peace_20171019
+      uh_file: /storage/data/projects/hydrology/vic_gen2/input/routing/uh/uhydrograph_day.csv
+      description: Individual parameter files per calibration site/basin; used for calibration
+    parameters_peace_calib_sites:
+      domain: peace
+      case_dir: /storage/data/projects/hydrology/vic_gen2/input/routing/peace/parameters/cases/calib_sites
+      file_names:
+        - PEACE.rvic.prm.PEACE.20190117.nc
+      domain_id: domain_peace_20161018
+      input_id: input_peace_20171019
+      uh_file: /storage/data/projects/hydrology/vic_gen2/input/routing/uh/uhydrograph_day.csv
+      description: Single parameter file for all calibration sites/basins; used for projections
+    parameters_peace_bch_sites:
+      domain: peace
+      case_dir: /storage/data/projects/hydrology/vic_gen2/input/routing/peace/parameters/cases/bch_sites
+      file_names:
+        - BCGMS_pcic_parameters/params/{BASIN}_pcic_parameters.rvic.prm.PEACE.20171019.nc
+        - PEACT_pcic_parameters/params/{BASIN}_pcic_parameters.rvic.prm.PEACE.20171019.nc
+        - PEAPN_pcic_parameters/params/{BASIN}_pcic_parameters.rvic.prm.PEACE.20171019.nc
+      domain_id: domain_peace_20161018
+      input_id: input_peace_20171019
+      uh_file: /storage/data/projects/hydrology/vic_gen2/input/routing/uh/uhydrograph_day.csv
+      description: Individual parameter files for BCHydro sites BCGMS, PEAPN and PEACT
+    parameters_vanisle_20180125:
+      domain: vanisle
+      case_dir: /storage/data/projects/hydrology/vic_gen2/input/routing/vanisle_03125/parameters/cases/vanisle_20180125
+      file_names:
+        - BCASH_pcic_parameters.rvic.prm.VANISLE.20180130.nc
+        - BCCMX_pcic_parameters.rvic.prm.VANISLE.20180130.nc
+        - BCJHR_pcic_parameters.rvic.prm.VANISLE.20180130.nc
+        - BCLAD_pcic_parameters.rvic.prm.VANISLE.20180130.nc
+        - BCPUD_pcic_parameters.rvic.prm.VANISLE.20180130.nc
+        - BCPUP_pcic_parameters.rvic.prm.VANISLE.20180130.nc
+        - BCQN1_pcic_parameters.rvic.prm.VANISLE.20180130.nc
+        - BCQN2_pcic_parameters.rvic.prm.VANISLE.20180130.nc
+        - BCSCA_pcic_parameters.rvic.prm.VANISLE.20180130.nc
+      domain_id: vanisle_20180125
+      input_id: vanisle_20180125
+      uh_file: /storage/data/projects/hydrology/vic_gen2/input/routing/uh/uhydrograph_day.csv
+      description: Individual parameter files per calibration site/basin; used for calibration
+
+HYDROCONDUCTOR::
+  pixel_map: ~
+  surf_dem: ~
+  bed_dem: ~
+  glac_mask: ~
+

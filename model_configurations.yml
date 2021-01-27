@@ -1,0 +1,301 @@
+--- # Hydrologic modelling component configuration settings
+VICGL_1_0.0: # Configuration settings for VIC Model
+  MODEL: Variable Infiltration Capacity Model
+  VERSION: 1.0
+  DESCRIPTION: Standard run without glacier dynamics
+  COMPILE_OPTIONS:
+    Simulation_Parameters:
+      NO_REWIND: FALSE
+      LINK_DEBUG: TRUE
+      CLOSE_ENERGY: FALSE
+      LOW_RES_MOIST: FALSE
+      QUICK_FS: FALSE
+      SPATIAL_FROST: FALSE
+      SPATIAL_SNOW: FALSE
+      EXCESS_ICE: FALSE
+    Maximum_Array_Sizes:
+      MAX_BANDS: 20
+      MAX_FRONTS: 3
+      MAX_LAKE_NODES: 20
+      MAX_LAYERS: 3
+      MAX_NODES: 50
+    Snow_Constants:
+      TraceSnow: 0.030000
+    Other_Constants:
+      LAI_WATER_FACTOR: 0.200000
+      LWAVE_COR: 1.000000
+      MAXIT_FE: 25
+  RUN_TIME_OPTIONS:
+    Simulation_Dimensions:
+      NLAYER: 3
+      EQUAL_AREA: FALSE
+      RESOLUTION: 0.062500
+      TIME_STEP: 3
+      SNOW_STEP: 3
+    Simulation_Parameters:
+      AERO_RESIST_CANSNOW: AR_406_FULL
+      BLOWING: FALSE
+      COMPUTE_TREELINE: FALSE
+      CONTINUEONERROR: FALSE
+      CORRPREC: FALSE
+      DIST_PRCP: FALSE
+      EXP_TRANS: FALSE
+      FROZEN_SOIL: FALSE
+      FULL_ENERGY: TRUE
+      GRND_FLUX_TYPE: GF_410
+      IMPLICIT: FALSE
+      LW_TYPE: LW_TVA
+      LW_CLOUD: LW_CLOUD_DEARDORFF
+      MIN_WIND_SPEED: 0.100000
+      MTCLIM_SWE_CORR: TRUE
+      NODES: 3
+      NOFLUX: FALSE
+      PLAPSE: TRUE
+      PREC_EXPT: 0.600000
+      QUICK_FLUX: TRUE
+      QUICK_SOLVE: FALSE
+      SNOW_ALBEDO: USACE
+      SNOW_DENSITY: DENS_BRAS
+      SW_PREC_THRESH: 0.000000
+      TEMP_TH_TYPE: KIENZLE
+      TFALLBACK: TRUE
+      VP_INTERP: TRUE
+      VP_ITER: VP_ITER_ALWAYS
+    Forcing:
+      GRID_DECIMAL: 5
+      WIND_H: 10.000000
+      MEASURE_H: 2.000000
+      ALMA_INPUT: FALSE
+      N_TYPES: 8
+      FORCE_TYPE: PREC
+      FORCE_TYPE: AIR_TEMP
+      FORCE_TYPE: SHORTWAVE
+      FORCE_TYPE: LONGWAVE
+      FORCE_TYPE: DENSITY
+      FORCE_TYPE: PRESSURE
+      FORCE_TYPE: VP 
+      FORCE_TYPE: WIND
+      FORCE_DT: 3
+    Soil:
+      BASEFLOW: ARNO
+      JULY_TAVG_SUPPLIED: TRUE
+      ORGANIC_FRACT: FALSE
+    Vegetation:
+      ROOT_ZONES: 3
+      VEGPARAM_LAI: FALSE
+      LAI_SRC: LAI_FROM_VEGLIB
+    Elevation:
+      BAND_SIZE: 200
+      BAND_TYPE: FIXED
+      SNOW_BAND: 20
+    Glacier_Dynamics:
+      GLACIER_DYNAMICS: FALSE
+      GLACIER_ACCUM_START_MONTH: NA
+      GLACIER_ACCUM_START_DAY: NA
+      GLACIER_ACCUM_INTERVAL: NA
+    Lake:
+      LAKES: FALSE
+      LAKE_PROFILE: FALSE
+    Output_Data:
+      OUT_STEP: 24
+      MOISTFRACT: FALSE
+
+VICGL_1_0.1: # Configuration settings for VIC Model with glacier dynamics
+  MODEL: Variable Infiltration Capacity Model
+  VERSION: 1.0
+  DESCRIPTION: Standard run with glacier dynamics
+  COMPILE_OPTIONS:
+    Simulation_Parameters:
+      NO_REWIND: FALSE
+      LINK_DEBUG: TRUE
+      CLOSE_ENERGY: FALSE
+      LOW_RES_MOIST: FALSE
+      QUICK_FS: FALSE
+      SPATIAL_FROST: FALSE
+      SPATIAL_SNOW: FALSE
+      EXCESS_ICE: FALSE
+    Maximum_Array_Sizes:
+      MAX_BANDS: 20
+      MAX_FRONTS: 3
+      MAX_LAKE_NODES: 20
+      MAX_LAYERS: 3
+      MAX_NODES: 50
+    Snow_Constants:
+      TraceSnow: 0.030000
+    Other_Constants:
+      LAI_WATER_FACTOR: 0.200000
+      LWAVE_COR: 1.000000
+      MAXIT_FE: 25
+  RUN_TIME_OPTIONS:
+    Simulation_Dimensions:
+      NLAYER: 3
+      EQUAL_AREA: FALSE
+      RESOLUTION: 0.062500
+      TIME_STEP: 3
+      SNOW_STEP: 3
+    Simulation_Parameters:
+      AERO_RESIST_CANSNOW: AR_406_FULL
+      BLOWING: FALSE
+      COMPUTE_TREELINE: FALSE
+      CONTINUEONERROR: FALSE
+      CORRPREC: FALSE
+      DIST_PRCP: FALSE
+      EXP_TRANS: FALSE
+      FROZEN_SOIL: FALSE
+      FULL_ENERGY: TRUE
+      GRND_FLUX_TYPE: GF_410
+      IMPLICIT: FALSE
+      LW_TYPE: LW_TVA
+      LW_CLOUD: LW_CLOUD_DEARDORFF
+      MIN_WIND_SPEED: 0.100000
+      MTCLIM_SWE_CORR: TRUE
+      NODES: 3
+      NOFLUX: FALSE
+      PLAPSE: TRUE
+      PREC_EXPT: 0.600000
+      QUICK_FLUX: TRUE
+      QUICK_SOLVE: FALSE
+      SNOW_ALBEDO: USACE
+      SNOW_DENSITY: DENS_BRAS
+      SW_PREC_THRESH: 0.000000
+      TEMP_TH_TYPE: KIENZLE
+      TFALLBACK: TRUE
+      VP_INTERP: TRUE
+      VP_ITER: VP_ITER_ALWAYS
+    Forcing:
+      GRID_DECIMAL: 5
+      WIND_H: 10.000000
+      MEASURE_H: 2.000000
+      ALMA_INPUT: FALSE
+      N_TYPES: 8
+      FORCE_TYPE: PREC
+      FORCE_TYPE: AIR_TEMP
+      FORCE_TYPE: SHORTWAVE
+      FORCE_TYPE: LONGWAVE
+      FORCE_TYPE: DENSITY
+      FORCE_TYPE: PRESSURE
+      FORCE_TYPE: VP 
+      FORCE_TYPE: WIND
+      FORCE_DT: 3
+    Soil:
+      BASEFLOW: ARNO
+      JULY_TAVG_SUPPLIED: TRUE
+      ORGANIC_FRACT: FALSE
+    Vegetation:
+      ROOT_ZONES: 3
+      VEGPARAM_LAI: FALSE
+      LAI_SRC: LAI_FROM_VEGLIB
+    Elevation:
+      BAND_SIZE: 200
+      BAND_TYPE: FIXED
+      SNOW_BAND: 20
+    Glacier_Dynamics:
+      GLACIER_DYNAMICS: TRUE
+      GLACIER_ACCUM_START_MONTH: 10
+      GLACIER_ACCUM_START_DAY: 1
+      GLACIER_ACCUM_INTERVAL: 1
+    Lake:
+      LAKES: FALSE
+      LAKE_PROFILE: FALSE
+    Output_Data:
+      OUT_STEP: 24
+      MOISTFRACT: FALSE
+
+RGM_3_0.0: # Configuration settings for Regional Glaciation Model component
+  MODEL: UBC Regional Glaciation Model
+  VERSION: 3.0
+  DESCRIPTION: Default RGM configuration
+  COMPILE_OPTIONS: ~
+  RUN_TIME_OPTIONS:
+    Global_Parameters:
+      GLEN_LAW_COEFF: 1.0e-15
+      SLIDING_COEF: 0
+      SUB_STEPS: 10
+      HINDMARSH: 1.5000
+      DIFF_STAB: 0.125
+      VERBOSITY: 2
+      START_YEAR: 0
+      BENCHMARK: 0
+      TRANS_STATUS: TRUE
+      ACCUM_STATUS: FALSE
+
+HC_1_0.0: # Configuration settings for HydroConductor wrapper
+  MODEL: Hydro-Conductor wrapper
+  VERSION: 1.0
+  DESCRIPTION: Standard HydroConductor configuration
+  COMPILE_OPTIONS:
+  RUN_TIME_OPTIONS:
+    DEM_Parameters:
+      RESOLUTION: 100
+    Simulation_Parameters:
+      BAND_SIZE: 200.0
+      MIN_GLAC_THICK: 2.0
+      GLAC_ROOT_ZONE: default
+      OPEN_ROOT_ZONE: default
+
+RVIC_1_1.0:  # Configuration settings for RVIC model
+  MODEL: RVIC Streamflow Routing Model
+  VERSION: 1.1.1
+  DESCRIPTION: Standard RVIC configuration
+  PARAMETRIZATION:
+    OPTIONS:
+      REMAP: False
+      AGGREGATE: False
+      AGG_PAD: 25
+      SUBSET_DAYS: ~
+      CONSTRAIN_FRACTIONS: False
+      SEARCH_FOR_CHANNEL: False
+    POUR_POINTS:
+      FILE_NAME: job_specific
+    UH_BOX:
+      FILE_NAME: job_specific
+    ROUTING:
+      FILE_NAME: job_specific
+      LONGITUDE_VAR: lon
+      LATITUDE_VAR: lat
+      FLOW_DISTANCE_VAR: Flow_Distance
+      FLOW_DIRECTION_VAR: Flow_Direction
+      BASIN_ID_VAR: Basin_ID
+      VELOCITY: velocity
+      DIFFUSION: diffusion
+      OUTPUT_INTERVAL: 86400
+      BASIN_FLOWDAYS: 100
+      CELL_FLOWDAYS: 4
+    DOMAIN:
+      FILE_NAME: job_specific
+      LONGITUDE_VAR: lon
+      LATITUDE_VAR: lat
+      LAND_MASK_VAR: mask
+      FRACTION_VAR: frac
+      AREA_VAR: area
+  CONVOLUTION:
+    OPTIONS:
+      RUN_TYPE: drystart
+    HISTORY:
+      RVICHIST_NTAPES: 1
+      RVICHIST_MFILT: 100000
+      RVICHIST_NDENS: 1
+      RVICHIST_NHTFRQ: 1
+      RVICHIST_AVGFLAG: A
+      RVICHIST_OUTTYPE: array
+      RVICHIST_NCFORM: NETCDF4
+      RVICHIST_UNITS: m3/s
+    DOMAIN:
+      FILE_NAME: job_specific
+      LONGITUDE_VAR: lon 
+      LATITUDE_VAR: lat
+      AREA_VAR: area
+      LAND_MASK_VAR: mask
+      FRACTION_VAR: frac
+    INITIAL_STATE:
+      FILE_NAME: job_specific
+    PARAM_FILE:
+      FILE_NAME: job_specific
+    INPUT_FORCINGS:
+      FILE_NAME: job_specific
+      TIME_VAR: time
+      LATITUDE_VAR: lat
+      DATL_LIQ_FLDS: RUNOFF, BASEFLOW
+      START: None
+      END: None
+

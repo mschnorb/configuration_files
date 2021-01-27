@@ -1,0 +1,278 @@
+--- # Variable set description
+forceset1: # VIC-GL meterological forcings
+  description: Standard VICGL met forcings
+  frequency: daily
+  no_variables: 4
+  variables:
+    - name: PREC
+      long_name: precipitation
+    - name: TMAX
+      long_name: maximum surface air temperature
+    - name: TMIN
+      long_name: minimum surface air temperature
+    - name: WIND
+      long_name: 10-m wind speed
+
+forceset2: # Disaggregated met forcings
+  description: Standard VICGL sub-daily met forcings
+  frequency: 3-hourly
+  no_variables: 8
+  variables:
+    - name: AIR_TEMP
+      long_name: surface air temperature
+    - name: DENSITY
+      long_name: near surface atmospheric density
+    - name: LONGWAVE
+      long_name: incoming longwave radiation
+    - name: PREC
+      long_name: precipitation
+    - name: PRESSURE
+      long_name: near surface atmospheric pressure
+    - name: SHORTWAVE
+      long_name: incoming shortwave radiation
+    - name: VP
+      long_name: near surface vapor pressure
+    - name: WIND
+      long_name: near surface wind speed
+
+vicset1: # Standard VICGL gridded output
+  description: Standard VICGL gridded output
+  frequency: daily
+  no_variables: 16
+  variables:
+    BASEFLOW:
+      long_name: baseflow
+      standard_name: thickness_of_subsurface_runoff_amount
+      type: cell
+      cell_method:
+       time: sum
+       area: mean
+    EVAP:
+      long_name: total evapotranspiration
+      standard_name: lwe_thickness_of_water_evapotranspiration_amount
+      type: cell
+      cell_method:
+       time: sum
+       area: mean
+    GLAC_MELT:
+      long_name: ice melt
+      standard_name: thickness_of_land_ice_surface_melt_amount
+      type: cell
+      cell_method:
+       time: sum
+       area: mean
+    GLAC_OUTFLOW:
+      long_name: glacier outflow
+      standard_name: thickness_of_land_ice_runoff_amount
+      type: cell
+      cell_method:
+       time: sum
+       area: mean
+    PET_NATVEG:
+      long_name: potential evapotranspiration of natural vegetation
+      standard_name: ~
+      type: cell
+      cell_method:
+       time: sum
+       area: mean
+    PREC:
+      long_name: precipitation
+      standard_name: lwe_thickness_of_precipitation_amount
+      type: cell
+      cell_method:
+       time: sum
+       area: mean
+    RAINF:
+      long_name: rainfall
+      standard_name: thickness_of_rainfall_amount
+      type: cell
+      cell_method:
+       time: sum
+       area: mean
+    RUNOFF:
+      long_name: surface runoff
+      standard_name: thickness_of_surface_runoff_amount
+      type: cell
+      cell_method:
+       time: sum
+       area: mean
+    SNOW_COVER:
+      long_name: snow cover fraction
+      standard_name: surface_snow_area_fraction
+      type: cell
+      cell_method:
+       time: point
+       area: sum
+    SNOW_MELT:
+      long_name: snow melt
+      standard_name: thickness_of_snow_melt_amount
+      type: cell
+      cell_method:
+       time: sum
+       area: mean
+    SOIL_MOIST_TOT:
+      long_name: total column soil moisture
+      standard_name: lwe_thickness_of_soil_moisture_content
+      type: cell
+      cell_method:
+       time: point
+       area: mean
+    SWE:
+      long_name: snow water equivalent
+      standard_name: lwe_thickness_of_snow_amount
+      type: cell
+      cell_method:
+       time: point
+       area: mean
+    TRANSP_VEG:
+      long_name: transpiration
+      standard_name: thickness_of_transpiration_amount
+      type: cell
+      cell_method:
+       time: sum
+       area: mean
+    GLAC_AREA_BAND:
+      long_name: glacier area
+      standard_name: land_ice_area_fraction
+      type: band
+      cell_method:
+       time: point
+       area: sum
+    GLAC_MBAL_BAND:
+      long_name: glacier mass balance
+      standard_name: thickness_of_land_ice_lwe_surface_mass_balance_amount
+      type: band
+      cell_method:
+       time: sum
+       area: mean
+    SWE_BAND:
+      long_name: snow water equivalent
+      standard_name: lwe_thickness_of_snow_amount
+      type: band
+      cell_method:
+       time: point
+       area: mean
+
+vicset2: #VICGL gridded output
+  description: VICGL gridded output
+  frequency: daily
+  no_variables: 13
+  variables:
+    - name: BASEFLOW
+      long_name: baseflow
+      standard_name: thickness_of_subsurface_runoff_amount
+      type: cell
+      cell_method:
+       time: sum
+       area: mean
+    - name: EVAP
+      long_name: evapotranspiration
+      standard_name: lwe_thickness_of_water_evapotranspiration_amount
+      type: cell
+      cell_method:
+       time: sum
+       area: mean
+    - name: GLAC_AREA
+      long_name: glacier area
+      standard_name: land_ice_area_fraction
+      type: cell
+      cell_method:
+       time: point
+       area: sum
+    - name: GLAC_MBAL
+      long_name: glacier mass balance
+      standard_name: thickness_of_land_ice_lwe_surface_mass_balance_amount
+      type: cell
+      cell_method:
+       time: sum
+       area: mean
+    - name: GLAC_OUTFLOW
+      long_name: glacier outflow
+      standard_name: thickness_of_land_ice_runoff_amount
+      type: cell
+      cell_method:
+       time: sum
+       area: mean
+    - name: PET_NATVEG
+      long_name: potential evapotranspiration of natural vegetation
+      standard_name: ~
+      type: cell
+      cell_method:
+       time: sum
+       area: mean
+    - name: PREC
+      long_name: precipitation
+      standard_name: lwe_thickness_of_precipitation_amount
+      type: cell
+      cell_method:
+       time: sum
+       area: mean
+    - name: RAINF
+      long_name: rainfall
+      standard_name: thickness_of_rainfall_amount
+      type: cell
+      cell_method:
+       time: sum
+       area: mean
+    - name: RUNOFF
+      long_name: surface runoff
+      standard_name: thickness_of_surface_runoff_amount
+      type: cell
+      cell_method:
+       time: sum
+       area: mean
+    - name: SNOW_MELT
+      long_name: snow melt
+      standard_name: thickness_of_snow_melt_amount
+      type: cell
+      cell_method:
+       time: sum
+       area: mean
+    - name: SOIL_MOIST_TOT
+      long_name: total column soil moisture
+      standard_name: lwe_thickness_of_soil_moisture_content
+      type: cell
+      cell_method:
+       time: point
+       area: mean
+    - name: SWE
+      long_name: snow water equivalent
+      standard_name: lwe_thickness_of_snow_amount
+      type: cell
+      cell_method:
+       time: point
+       area: mean
+    - name: TRANSP_VEG
+      long_name: transpiration
+      standard_name: thickness_of_transpiration_amount
+      type: cell
+      cell_method:
+       time: sum
+       area: mean
+
+hconset1: # HydroCon-RGM gridded output
+  description: RGM output collected by hydro-conductor
+  frequency: annual
+  no_variables: 3
+  variables:
+    - name: GLAC_MASK
+      long_name: glacier mask
+      standard_name: ~
+      type: gridded
+      cell_method:
+       time: point
+       area: sum
+    - name: GLAC_MBAL
+      long_name: glacier net mass balance
+      standard_name: thickness_of_land_ice_lwe_surface_mass_balance_amount
+      type: gridded
+      cell_method:
+       time: sum
+       area: mean
+    - name: SURF_ELEV
+      long_name: surface elevation
+      standard_name: ground_level_altitude
+      type: gridded
+      cell_method:
+       time: point
+       area: mean

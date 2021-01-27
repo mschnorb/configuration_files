@@ -1,0 +1,218 @@
+--- # VICGL calibration configurations
+NSGAII_0_0.0: # Calibration w/o glaciers
+  method:
+    name: NSGAII
+    description: multi-objective non-dominated genetic algorithm
+  settings:
+    population: 60
+    iterations: 30
+    crossover_prob: 0.7
+    crossover_dist_index: 5
+    mutation_prob: 0.2
+    mutation_dist_index: 10
+  parameters:
+    no_parameters: 9
+    BI:
+      description: variable infiltration curve parameter
+      adjustment: absolute
+      layers: 1
+      min: 0.0001
+      max: 0.5000
+    DS:
+      description: fraction of DSMAX where non-linear baseflow begins
+      adjustment: absolute
+      layers: 1
+      min: 0.0001
+      max: 0.2000
+    WS:
+      description: fraction of maximum soil moisture where non-linear baseflow occurs
+      adjustment: absolute
+      layers: 1
+      min: 0.200
+      max: 0.950
+    DSMAX:
+      description: maximum velocity of baseflow
+      adjustment: scaling
+      layers: 1
+      min: 0.001
+      max: 2.000
+    EXP:
+      description: vertical change in hydraulic conductivity in all soil layers
+      adjustment: scaling
+      layers: 3
+      min: 1.000
+      max: 3.000
+    D3:
+      description: thickness of soil layer 3
+      adjustment: scaling
+      layers: 1
+      min: 0.500
+      max: 3.000
+    NEWALB:
+      description: albedo of new snow
+      adjustment: absolute
+      layers: 1
+      min: 0.850
+      max: 0.950
+    PADJ:
+      description: scaling factor for precipitation
+      adjustment: absolute
+      layers: 1
+      min: 0.250
+      max: 2.000
+    TLAPSE:
+      description: temperature lapse rate (deg-C/km)
+      adjustment: delta from -7.5
+      layers: 1
+      min: -2.500
+      max: 2.500
+  objectives:
+    no_objectives: 5
+    KGE_Q:
+      description: Kling-Gupta efficiency
+      variable: streamflow
+      temporal_frequency: daily
+      spatial_domain: point
+      data_source: Water Survey of Canada, US Geological Survey, Bonnevile Power Authority, BC Hydro, and Rio-Tinto Alcan
+    LNSE_Q:
+      description: Nash-Sutcliffe efficiency of log-transformed data
+      variable: streamflow
+      temporal_frequency: daily
+      spatial_domain: point
+      data_source: Water Survey of Canada, US Geological Survey, Bonnevile Power Authority, BC Hydro, and Rio-Tinto Alcan
+    HMLE_Q:
+      description: heteroscedastic maximum likelihood efficiency
+      variable: streamflow
+      temporal_frequency: daily
+      spatial_domain: point
+      data_source: Water Survey of Canada, US Geological Survey, Bonnevile Power Authority, BC Hydro, and Rio-Tinto Alcan
+    BMF_ET:
+      description: avergage of monthly bell membership function
+      variable: evapotranspiration
+      temporal_frequency: monthly
+      spatial_domain: basin average
+      data_source: LandFlux-EVAL Merged evapotranspiration synthesis product 89-05
+    KGE_SCA:
+      description: Kling-Gupta efficiency
+      variable: snow cover area
+      temporal_frequency: monthly
+      spatial_domain: basin average
+      data_source: MODIS/Terra Snow Cover Monthly L3 Global 0.05Deg CMG, Version 6 (MOD10CM)
+
+NSGAII_0_1.1: # Calibration with glaciers
+  method:
+    name: NSGAII
+    description: multi-objective non-dominated genetic algorithm
+  settings:
+    population: 60
+    iterations: 30
+    crossover_prob: 0.7
+    crossover_dist_index: 5
+    mutation_prob: 0.2
+    mutation_dist_index: 10
+  parameters:
+    no_parameters: 11
+    BI:
+      description: variable infiltration curve parameter
+      adjustment: absolute
+      layers: 1
+      min: 0.0001
+      max: 0.5000
+    DS:
+      description: fraction of DSMAX where non-linear baseflow begins
+      adjustment: absolute
+      layers: 1
+      min: 0.0001
+      max: 0.2000
+    WS:
+      description: fraction of maximum soil moisture where non-linear baseflow occurs
+      adjustment: absolute
+      layers: 1
+      min: 0.200
+      max: 0.950
+    DSMAX:
+      description: maximum velocity of baseflow (mm/day)
+      adjustment: scaling
+      layers: 1
+      min: 0.001
+      max: 2.000
+    EXP:
+      description: vertical change in hydraulic conductivity in all soil layers
+      adjustment: scaling
+      layers: 3
+      min: 1.000
+      max: 3.000
+    D3:
+      description: thickness of soil layer 3
+      adjustment: scaling
+      layers: 1
+      min: 0.500
+      max: 3.000
+    NEWALB:
+      description: albedo of new snow
+      adjustment: absolute
+      layers: 1
+      min: 0.850
+      max: 0.950
+    PADJ:
+      description: scaling factor for precipitation
+      adjustment: absolute
+      layers: 1
+      min: 0.250
+      max: 2.000
+    TLAPSE:
+      description: temperature lapse rate
+      adjustment: delta from -7.5
+      layers: 1
+      min: -2.500
+      max: 2.500
+    GLACALB:
+      description: glacier albedo
+      adjustment: absolute
+      layers: 1
+      min: 0.200
+      max: 0.600
+    GLACRF:
+      description: snow redistribution to glaciers
+      adjustment: absolute
+      layers: 1
+      min: 0.000
+      max: 1.000
+  objectives:
+    no_objectives: 6
+    KGE_Q:
+      description: Kling-Gupta efficiency
+      variable: streamflow
+      temporal_frequency: daily
+      spatial_domain: point
+      data_source: Water Survey of Canada, US Geological Survey, Bonnevile Power Authority, BC Hydro, and Rio-Tinto Alcan
+    LNSE_Q:
+      description: Nash-Sutcliffe efficiency of log-transformed data
+      variable: streamflow
+      temporal_frequency: daily
+      spatial_domain: point
+      data_source: Water Survey of Canada, US Geological Survey, Bonnevile Power Authority, BC Hydro, and Rio-Tinto Alcan
+    HMLE_Q:
+      description: heteroscedastic maximum likelihood efficiency
+      variable: streamflow
+      temporal_frequency: daily
+      spatial_domain: point
+      data_source: Water Survey of Canada, US Geological Survey, Bonnevile Power Authority, BC Hydro, and Rio-Tinto Alcan
+    BMF_ET:
+      description: bell membership function
+      variable: evapotranspiration
+      temporal_frequency: monthly
+      spatial_domain: basin average
+      data_source: LandFlux-EVAL Merged evapotranspiration synthesis product 89-05
+    KGE_SCA:
+      description: Kling-Gupta efficiency
+      variable: snow cover area
+      temporal_frequency: monthly
+      spatial_domain: basin average
+      data_source: MODIS/Terra Snow Cover Monthly L3 Global 0.05Deg CMG, Version 6 (MOD10CM)
+    BMF_B:
+      description: bell membership function
+      variable: net glacier mass balance
+      temporal_frequency: integrated over 1985 to 1999
+      spatial_domain: basin average where glacier
+      data_source: Geodetic thinning rates from Schiefer et al. (2007)

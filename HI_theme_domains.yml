@@ -1,0 +1,164 @@
+--- # HI Theme domain descriptions
+nwna:
+  long_name: Northwestern North America
+  description: Region spanning northwestern North America
+  bounding_box:
+    xmin:
+    xmax:
+    ymin:
+    ymax:
+  includes:
+    - allwsbc
+  included_by:
+  
+allwsbc:
+  long_name: All watersheds in British Columbia
+  description: |
+    All drainage areas that originate and/or include parts of British Columbia,
+    including pnw, fraser, peace, columbia, bccoast, Yukon, and Mackenzie
+  bounding_box:
+    xmin:
+    xmax:
+    ymin:
+    ymax:
+  includes:
+    - bccoast
+    - fraser
+    - peace
+    - pnw
+    - vanisle
+  included_by:
+    - nwna
+
+pnw:
+  long_name: Pacific Northwest
+  description: |
+    Columbia River upstream of tidewater plus additional coastal drainages,
+    including the Skagit.
+  bounding_box:
+    xmin:
+    xmax:
+    ymin:
+    ymax:
+  includes:
+    - columbia
+  included_by:
+    - allwsbc
+
+columbia:
+  long_name: Columbia River
+  description: Columbia River drainage upstream of tidewater
+  bounding_box:
+    xmin:
+    xmax:
+    ymin:
+    ymax:
+  includes:
+  included_by:
+    - allwsbc
+    - pnw
+
+fraser: 
+  long_name: Fraser River
+  description: Fraser River drainage upstream of tidewater
+  bounding_box:
+    xmin:
+    xmax:
+    ymin:
+    ymax:
+  includes:
+    - upper_fraser
+    - nechc
+  included_by:
+    - allwsbc
+
+upper_fraser:
+  long_name: Upper Fraser
+  description: Fraser River drainage above Shelley, BC
+  bounding_box:
+    xmin:
+    xmax:
+    ymin:
+    ymax:
+  includes:
+  included_by:
+    - fraser
+
+nechc:
+  long_name: Nechako River above Cheslatta Falls
+  description: All drainage upstream of Kenney Dam, plus downstream to Cheslatta Falls
+  bounding_box:
+    xmin:
+    xmax:
+    ymin:
+    ymax:
+  includes:
+  included_by:
+    - fraser
+
+peace:
+  long_name: Peace River
+  description: Peace River drainage above Peace River, AB
+  bounding_box:
+    xmin:
+    xmax:
+    ymin:
+    ymax:
+  includes:
+  included_by:
+    - allwsbc
+
+bccoast:
+  long_name: BC Coastal Drainages
+  description: |
+    All watersheds draining to the Pacific Coast originating in BC, but excluding
+    the Fraser River
+  bounding_box:
+    xmin:
+    xmax:
+    ymin:
+    ymax:
+  includes:
+    - skeena
+    - stikine
+    - taku
+    - nass
+    - vanisle
+  included_by:
+    - allwsbc
+
+skeena:
+  long_name: Skeena River
+  description: Skeena River drainage upstream of tidewater
+  bounding_box:
+    xmin:
+    xmax:
+    ymin:
+    ymax:
+  includes:
+  included_by:
+    - bccoast
+
+stikine:
+  long_name: Stikine River
+  description: Stikine River drainage upstream of tidewater
+  bounding_box:
+    xmin:
+    xmax:
+    ymin:
+    ymax:
+  includes:
+  included_by:
+    - bccoast
+
+vanisle:
+  long_name: Vancouver Island
+  description: All basins draining Vancouver Island, not including the Gulf Islands
+  bounding_box:
+    xmin:
+    xmax:
+    ymin:
+    ymax:
+  includes:
+  included_by:
+    - bccoast

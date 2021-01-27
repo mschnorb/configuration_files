@@ -1,0 +1,331 @@
+--- # Calibration and run metadata
+columbia:
+  version_1.0:
+    ALB:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 3, glaciers: false}
+    ANA:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 3, glaciers: false}
+    ASHNO:
+      {configuration: NSGA_0_0.0, run_id: ~, run_no: ~, glaciers: false}
+    BEAVE:
+      {configuration: NSGA_0_1.0, run_id: 3, run_no: 4, glaciers: true}
+    BFE:
+      {configuration: NSGA_0_0.0, run_id: 2, run_no: 1, glaciers: false}
+    BIGI:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 5, glaciers: false}
+    BITDA:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 19, glaciers: false}
+    BON:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 20, glaciers: false}
+    BRI:
+      {configuration: NSGA_0_1.0, run_id: 2, run_no: 47, glaciers: true}
+    BRN:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 56, glaciers: false}
+    BruneauR:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 3, glaciers: false}
+    BULWA:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 2, glaciers: false}
+    CHL:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 1, glaciers: false}
+    COWKO:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 5, glaciers: false}
+    CRNIC:
+      {configuration: NSGA_0_1.0, run_id: 2, run_no: 3, glaciers: true}
+    DCD:
+      {configuration: NSGA_0_1.0, run_id: 2, run_no: 55, glaciers: true}
+    DEX:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 5, glaciers: false}
+    DONAL:
+      {configuration: NSGA_0_1.0, run_id: 3, run_no: 14, glaciers: true}
+    DWR:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 4, glaciers: false}
+    ELKFE:
+      {configuration: NSGA_0_1.0, run_id: 2, run_no: 54, glaciers: true}
+    FLAWE:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 54, glaciers: false}
+    GCL:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 27, glaciers: false}
+    GRANB:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 3, glaciers: false}
+    HANGM:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 21, glaciers: false}
+    ILLEC:
+      {configuration: NSGA_0_1.0, run_id: 2, run_no: 34, glaciers: true}
+    JDA:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 19, glaciers: false}
+    JFFO:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 11, glaciers: false}
+    JOECA:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 4, glaciers: false}
+    JOHND:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 44, glaciers: false}
+    KER:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 19, glaciers: false}
+    KETFE:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 4, glaciers: false}
+    KICHO:
+      {configuration: NSGA_0_1.0, run_id: 3, run_no: 33, glaciers: true}
+    KIMI:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 10, glaciers: false}
+    KIOW:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 9, glaciers: false}
+    KOOTE:
+      {configuration: NSGA_0_1.0, run_id: 2, run_no: 27, glaciers: true}
+    LARMA:
+       {configuration: NSGA1.10, run_id: 2, run_no: 2, glaciers: true}
+    LIB:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 4, glaciers: false}
+    LIM:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 21, glaciers: false}
+    LLK:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 24, glaciers: false}
+    LORI:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 45, glaciers: false}
+    Malheur:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 56, glaciers: false}
+    MAY:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 58, glaciers: false}
+    MCD:
+      {configuration: NSGA_0_1.0, run_id: 3, run_no: 28, glaciers: true}
+    MER:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 12, glaciers: false}
+    METPA:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 5, glaciers: false}
+    MISSI:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 1, glaciers: false}
+    MUC:
+      {configuration: NSGA_0_1.0, run_id: 2, run_no: 36, glaciers: true}
+    OKA:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 59, glaciers: false}
+    OKAPE:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 4, glaciers: false}
+    ORO:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 3, glaciers: false}
+    PLEI:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 35, glaciers: false}
+    PRD:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 4, glaciers: false}
+    PRVO:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 32, glaciers: false}
+    REXI:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 2, glaciers: false}
+    RML:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 17, glaciers: false}
+    ROMO:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 22, glaciers: false}
+    RVC:
+      {configuration: NSGA_0_1.0, run_id: 2, run_no: 56, glaciers: true}
+    SIMHE:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 60, glaciers: false}
+    SIMNI:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no:49, glaciers: false}
+    SIMPR:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 3, glaciers: false}
+    SKHI:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 3, glaciers: false}
+    SLOCR:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 3, glaciers: false}
+    SPD:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 20, glaciers: false}
+    SVN:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 1, glaciers: false}
+    SWAI:
+     {configuration: NSGA_0_0.0, run_id: 1, run_no: 3, glaciers: false}
+    THOMP:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 54, glaciers: false}
+    TOM:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 3, glaciers: false}
+    TULPR:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 1, glaciers: false}
+    UMATI:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 3, glaciers: false}
+    UMTW:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 21, glaciers: false}
+    WARMS:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 16, glaciers: false}
+    WAT:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 20, glaciers: false}
+    WAV:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 20, glaciers: false}
+    WEII:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 25, glaciers: false}
+    WENPE:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 3, glaciers: false}
+    WHB:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 1, glaciers: false}
+
+fraser:
+  version_1.0:
+    ADAMS:
+      {configuration: NSGA_0_1.0, run_id: 1, run_no: 43, glaciers: true}
+    BAKER:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 1, glaciers: false}
+    BARRM:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 2, glaciers: false}
+    BCHAL:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 23, glaciers: false}
+    BCHLJ:
+      {configuration: NSGA_0_1.0, run_id: 1, run_no: 27, glaciers: true}
+    BCHSF:
+      {configuration: NSGA_0_1.0, run_id: 1, run_no: 3, glaciers: true}
+    BCHSG:
+      {configuration: NSGA_0_1.0, run_id: 1, run_no: 36, glaciers: true}
+    BCHST:
+      {configuration: NSGA_0_1.0, run_id: 1, run_no: 29, glaciers: true}
+    BCHTR:
+      {configuration: NSGA_0_1.0, run_id: 1, run_no: 2, glaciers: true}
+    BCHWL:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 5, glaciers: false}
+    BIGCR:
+      {configuration: NSGA_0_1.0, run_id: 1, run_no: 26, glaciers: true}
+    BONAP:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 5, glaciers: false}
+    BOWRB:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 4, glaciers: false}
+    CAYOO:
+      {configuration: NSGA_0_1.0, run_id: 1, run_no: 36, glaciers: true}
+    CHILB:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 46, glaciers: false}
+    CHILK:
+      {configuration: NSGA_0_1.0, run_id: 1, run_no: 35, glaciers: true}
+    CHILLI:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 23, glaciers: false}
+    CLEAO:
+      {configuration: NSGA_0_1.0, run_id: 1, run_no: 3, glaciers: true}
+    CLEAS:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 8, glaciers: false}
+    COTTO:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 5, glaciers: false}
+    EAGLE:
+      {configuration: NSGA_0_1.0, run_id: 1, run_no: 33, glaciers: true}
+    FRSHA:
+      {configuration: NSGA_0_1.0, run_id: 1, run_no: 34, glaciers: true}
+    FRSHP:
+      {configuration: NSGA_0_1.0, run_id: 2, run_no: 6, glaciers: true}
+    FRSMC:
+      {configuration: NSGA_0_1.0, run_id: 1, run_no: 4, glaciers: true}
+    FRSMG:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 6, glaciers: false}
+    FRSMT:
+      {configuration: NSGA_0_1.0, run_id: ~, run_no: ~, glaciers: true}
+    FRSRP:
+      {configuration: NSGA_0_1.0, run_id: 1, run_no: 13, glaciers: true}
+    HARRI:
+      {configuration: NSGA_0_1.0, run_id: 1, run_no: 8, glaciers: true}
+    HORSE:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 49, glaciers: false}
+    LILLO:
+      {configuration: NSGA_0_1.0, run_id: 1, run_no: 48, glaciers: true}
+    MAHOO:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 1, glaciers: false}
+    MCGRE:
+      {configuration: NSGA_0_1.0, run_id: 1, run_no: 12, glaciers: true}
+    NAUTL:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 54, glaciers: false}
+    NAZKO:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 4, glaciers: false}
+    NECHC:
+      {configuration: NSGA_0_1.0, run_id: 1, run_no:6, glaciers: true}
+    NICOL:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 3, glaciers: false}
+    NTHMB:
+      {configuration: NSGA_0_1.0, run_id: 1, run_no: 5, glaciers: true}
+    QUESL:
+      {configuration: NSGA_0_1.0, run_id: 1, run_no: 6, glaciers: true}
+    QUESQ:
+      {configuration: NSGA_0_1.0, run_id: 1, run_no: 4, glaciers: true}
+    SALMO:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 37, glaciers: false}
+    SANJO:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 19, glaciers: false}
+    SEYMO:
+      {configuration: NSGA_0_1.0, run_id: 1, run_no: 58, glaciers: true}
+    STELL:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 5, glaciers: false}
+    STHOM:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 47, glaciers: false}
+    STUAR:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 2, glaciers: false}
+    TASEK:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 48, glaciers: false}
+    WESTR:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 25, glaciers: false}
+    WILLO:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 4, glaciers: false}
+
+peace:
+  version_1.0:
+    KWRNW:
+      {configuration: NSGA_0_1.0, run_id: 2, run_no: 2, glaciers: true}
+    FRAAR:
+      {configuration: NSGA_0_1.0, run_id: 4, run_no: 2, glaciers: true}
+    ARNT7:
+      {configuration: NSGA_0_1.0, run_id: 2, run_no: 31, glaciers: true}
+    IRASR:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 4, glaciers: false}
+    ORAAC:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 1, glaciers: false}
+    MRAGC:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 5, glaciers: false}
+    ORNEL:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 5, glaciers: false}
+    ORAOR:
+      {configuration: NSGA_0_1.0, run_id: 2, run_no: 17, glaciers: true}
+    NRNFS:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 1, glaciers: false}
+    NRNTM:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 3, glaciers: false}
+    PRAOO:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 2, glaciers: false}
+    PRAMR:
+      {configuration: NSGA_0_1.0, run_id: 2, run_no: 28, glaciers: true}
+    PRABD:
+      {configuration: NSGA_0_0.0, run_id: 3, run_no: 3, glaciers: false}
+    GRACC:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 3, glaciers: false}
+    HRAGR:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 2, glaciers: false}
+    HRNFC:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 43, glaciers: false}
+    MRNFS:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 1, glaciers: false}
+    PERNT:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 6, glaciers: false}
+    MRAWR:
+      {configuration: NSGA_0_1.0, run_id: 2, run_no: 4, glaciers: true}
+    MRNTM:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 27, glaciers: false}
+    SRNTM:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 12, glaciers: false}
+    PRAEP:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 36, glaciers: false}
+    BRBAC:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 49, glaciers: false}
+    BRNFS:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 3, glaciers: false}
+    KIRNF:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 46, glaciers: false}
+    PCRBH:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 49, glaciers: false}
+    RRNRG:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 35, glaciers: false}
+    WRNGP:
+      {configuration: NSGA_0_1.0, run_id: 2, run_no: 2, glaciers: true}
+    WRNTM:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 58, glaciers: false}
+    LSRNG:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 2, glaciers: false}
+    SMRAW:
+      {configuration: NSGA_0_1.0, run_id: 2, run_no: 53, glaciers: true}
+    HERNN:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 52, glaciers: false}
+    PRAPR:
+      {configuration: NSGA_0_0.0, run_id: 1, run_no: 39, glaciers: false}
+    PEACE:
+      {configuration: ~, run_id: ~, run_no: ~, glaciers: ~}
+
+vanisle:
+  version_1.0:
+    BCCMX:
+      {configuration: NSGA_0_1.0, run_id: ~, run_no: ~, glaciers: true}
+

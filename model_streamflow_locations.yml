@@ -1,0 +1,629 @@
+--- # Routing locations
+columbia:
+  - sites: bchydro
+    - name: SPINS
+      long_name: Spillimacheen River
+      type: run-of-river
+      station_id: 
+      regime: regulated
+    - name: BCHMI
+      long_name: Columbia River at Mica Dam
+      type: storage
+      station_id: 
+      regime: regulated
+    - name: BCHRE
+      long_name: Columbia River at Revelstoke Dam
+      type: run-of-river
+      station_id: 
+      regime: regulated
+    - name: BCWAT
+      long_name: Whatshan Dam
+      type: storage
+      station_id: 
+      regime: regulated
+    - name: BCHAR
+      long_name: Columbia River at Keenlyside Dam
+      type: storage
+      station_id: 
+      regime: regulated
+    - name: BCHEL
+      long_name: Elko River at Elko Dam
+      type: run-of-river
+      station_id: 
+      regime: regulated
+    - name: BULWA
+      long_name: Bull River near Wardner
+      type: run-of-river
+      station_id: 
+      regime: regulated
+    - name: BCLIB
+      long_name: Kootenai River at Libby Dam
+      type: storage
+      station_id: 
+      regime: regulated
+    - name: BCHDN
+      long_name: Duncan River at Duncan Dam
+      type: storage
+      station_id: 
+      regime: regulated
+    - name: BCHKL
+      long_name: Kootenay Canal
+      type: run-of-river
+      station_id: 
+      regime: regulated
+  - sites: calibration
+    - name: ALB
+      long_name: Albany (Willamette)
+      type: USGS
+      regime: regulated
+    - name: ANA
+      long_name: Anatone (Lower Snake)
+      type: USGA
+      regime: regulated
+    - name: ASHNO
+      long_name: Ashnola River near Keremeos
+      type: WSC
+      regime: natural
+    - name: BEAVE
+      long_name: Beaver River near the mouth
+      type: WSC
+      regime: natural
+    - name: BFE
+      long_name: Bonners Ferry (Kootenai River)
+      type: USGS
+      regime: regulated
+    - name: BIGI
+      long_name: Boise River at Glenwood Bridge nr Boise
+      type: USGS
+      regime: regulated
+    - name: BITDA
+      long_name: Bitterroot River near Darby
+      type: USGS
+      regime: natural
+    - name: BON
+      long_name: Columbia River at Bonneville Dame
+      type: storage
+      regime: regulated
+    - name: BRI
+      long_name: Kootenay River at Brilliant Dam
+      type: storage
+      regime: regulated
+    - name: BRN
+      long_name: Snake River at Brownlee Dam
+      type: storage
+      regime: regulated
+    - name: BruneauR
+      long_name: Bruneau River near Hot Spring, ID
+      type: USGS
+      regime: regulated
+    - name: BULWA
+      long_name: Bull River near Wardner
+      type: WSC
+      regime: natural
+    - name: CHL
+      long_name: Chelan River at Chelan Dam
+      type: storage
+      regime: regulated
+    - name: COWKO
+      long_name: Cowlitz River near Kosmos
+      type: USGS
+      regime: natural
+    - name: CRNIC
+      long_name: Columbia River at Nicholson
+      type: WSC
+      regime: natural
+    - name: DCD
+      long_name: Duncan River at Duncan Dam
+      type: storage
+      regime: regulated
+    - name: DEX
+      long_name: Willamette River at Dexter
+      type: run-of-river
+      regime: regulated
+    - name: DONAL
+      long_name: Columbia River at Donald
+      type: WSC
+      regime: natural
+    - name: DWR
+      long_name: North Fork Clearwater at Dworshak Dam
+      type: storage
+      regime: regulated
+    - name: ELKFE
+      long_name: Elk River at Fernie
+      type: WSC
+      regime: natural
+    - name: FLAWE
+      long_name: Flathead River near West Glacier
+      type: USGS
+      regime: natural
+    - name: GCL
+      long_name: Columbia River at Grand Coulee Dam
+      type: storage
+      regime: regulated
+    - name: GRANB
+      long_name: Granby River at Grand Forks
+      type: WSC
+      regime: natural
+    - name: HANGM
+      long_name: Hangman Creek at Spokane
+      type: USGS
+      regime: natural
+    - name: ILLEC
+      long_name: Illecillewaet River at Greeley
+      type: WSC
+      regime: natural
+    - name: JDA
+      long_name: Columbia River at John Day Dam
+      type: storage
+      regime: regulated
+    - name: JFFO
+      long_name: Santiam River at Jefferson
+      tyep: USGS
+      regime: natural
+    - name: JOECA
+      long_name: St. Joe River at Calder
+      type: USGS
+      regime: natural
+    - name: JOHND
+      long_name: John Day River at Mcdonald Ferry
+      type: USGS
+      regime: natural
+    - name: KER
+      long_name: Flathead River at Kerr Dam
+      type: storage
+      regime: regulated
+    - name: KETFE
+      long_name: Kettle River near Ferry
+      type: USGA
+      regime: unknown
+    - name: KICHO
+      long_name: Kicking Horse River
+      type: WSC
+      regime: natural
+    - name: KIMI
+      long_name: Snake River near Kimberly, ID
+      type: USGS
+      regime: regulated
+    - name: KIOW
+      long_name: Yakima River at Kiona
+      type: USGA
+      regime: regulated
+    - name: KOOTE
+      long_name: Kootenay River at Fort Steel
+      type: WSC
+      regime: natural
+    - name: LARMA
+      long_name: Lardeau River at Marblehead
+      type: WSC
+      regime: natural
+    - name: LIB
+      long_name: Kootenai River at Libby Dam
+      type: storage
+      regime: regulated
+    - name: LIM
+      long_name: Snake River at Lime Point
+      type: USGA
+      regime: regulated
+    - name: LLK
+      long_name: Spokane River at Little Falls Dam
+      type: USGS
+      regime: run-of-river
+    - name: LORI
+      long_name: Snake River at Lorenzo
+      type: USGS
+      regime: regulated
+    - name: Malheur
+      long_name: Malheur River below Nevada Dam near Vale
+      type: USGS
+      regime: regulated
+    - name: MAY
+      long_name: Cowlitz River at Mayfield Dam
+      type: run-of-river
+      regime: regulated
+    - name: MCD
+      long_name: Columbia River at Mica Dam
+      type: storage
+      regime: regulated
+    - name: MER
+      long_name: Lewis River at Merwin Dam
+      type: storage
+      regime: regulated
+    - name: METPA
+      long_name: Methow River near Pateros
+      type: USGS
+      regime: natural
+    - name: MISSI
+      long_name: Misson Creek near East Kelowna
+      type: WSC
+      regime: regulated
+    - name: MUC
+      long_name: Columbia River at Birchbank (Murphy Creek)
+      type: WSC
+      regime: regulated
+    - name: OKA
+      long_name: Okanagan River near Oliver
+      type: WSC
+      regime: regulated
+    - name: OKAPE
+      long_name: Okanagan River at Penticton
+      type: WSC
+      regime: regulated
+    - name: ORO
+      long_name: Clearwater River at Orofino
+      type: USGS
+      regime: regulated
+    - name: PLEI
+      long_name: Payette River near Letha
+      type: USGS
+      regime: regulated
+    - name: PRD
+      long_name: Columbia River at Priest Rapids Dam
+      type: run-of-river
+      regime: regulated
+    - name: PRVO
+      long_name: Crooked Rivert near Prineville
+      type: storage
+      regime: regulated
+    - name: REXI
+      long_name: Henrys Fork near Rexburg
+      type: USGS
+      regime: regulated
+    - name: RML
+      long_name: Clackamas Rivert at River Mill Dam
+      type: unknown
+      regime: regulated
+    - name: ROMO
+      long_name: Owyhee River near Rome
+      type: USGS
+      regime: regulated
+    - name: RVC
+      long_name: Columbia River at Revelstoke Dam
+      type: storage
+      regime: regulated
+    - name: SIMHE
+      long_name: Similkameen River near Hedley
+      type: WSC
+      regime: natural
+    - name: SIMNI
+      long_name: Similkameen River near Nighthawk
+      type: USGS
+      regime: natural
+    - name: SIMPR
+      long_name: Similkameen River at Princeton
+      type: WSC
+      regime: natural
+    - name: SKHI
+      long_name: Snake River at King Hill
+      type: USGS
+      regime: regulated
+    - name: SLOCR
+      long_name: Slocan River near Crescent Valley
+      type: WSC
+      regime: natural
+    - name: SPD
+      long_name: Clearwater River at Spalding
+      type: USGS
+      regime: regulated
+    - name: SVN
+      long_name: T. W. Sullivan Power Plant, Willamette Falls
+      type: unknown
+      regime: regulated
+    - name: SWAI
+      long_name: Snake River near Murphy
+      type: USGS
+      regime: regulated
+    - name: THOMP
+      long_name: Thompson River near Thompson Falls
+      type: USGS
+      regime: natural
+    - name: TOM
+      long_name: Clark Fork River at Thompson Falls Dam
+      type: run-of-river
+      regime: regulated
+    - name: TULPR
+      long_name: Tulameen River at Princeton
+      type: WSC
+      regime: natural
+    - name: UMATI
+      long_name: Umatilla River near Umatilla
+      type: USGS
+      regime: natural
+    - name: UMTW
+      long_name: Yakima River at Umtanum, WA
+      type: USGS
+      regime: regulated
+    - name: WARMS
+      long_name: Warm Springs River near Kahneeta Hot Springd
+      type: USGS
+      regime: natural
+    - name: WAT
+      long_name: Pend Oreille River at Seven Mile Dam
+      type: run-of-river
+      regime: regulated
+    - name: WAV
+      long_name: McKenzie River at Leaburg-Walterville Hydroelectric Project
+      type: run-of-river
+      regime: regulated
+    - name: WEII
+      long_name: Snake River near Weiser
+      type: USGS
+      regime: regulated
+    - name: WENPE
+      long_name: Wenatchee River at Peshastin
+      type: USGS
+      regime: natural
+    - name: WHB
+      long_name: Salmon River at White Bird
+      type: USGS
+      regime: regulated
+
+fraser:
+  - sites: bchydo
+    - name: BCHAL
+      long_name: ????
+      type: storage
+      station_id: 
+      regime: regulated
+    - name: BCHLJ
+      long_name: Bridge River at La Joie Dam
+      type: storage
+      station_id: 
+      regime: regulated
+    - name: BCHSF
+      long_name: Stave River at Stave Falls
+      type: storage
+      station_id: 
+      regime: regulated
+    - name: BCHSG
+      long_name: 
+      type: storage
+      station_id: 
+      regime: regulated
+    - name: BCHST
+      long_name: Seton Rivert at Seton Dam
+      type: storage
+      station_id: 
+      regime: regulated
+    - name: BCHTR
+      long_name: Seton River at Terzhagi Dam
+      regime: regulated
+    - name: BCHWL
+      long_name: ????
+      type: ????
+      station_id: 
+      regime: regulated
+    - name: CAYOO
+      long_name: Cayoosh Creek near Lillooet (??)
+      type: WSC (??)
+      station_id: 08ME002 (??)
+      regime: regulated
+  - sites: calibration
+    - name: ADAMS
+    - name: BAKER
+    - name: BARRM
+    - name: BCHAL
+    - name: BCHLJ
+    - name: BCHSF
+    - name: BCHSG
+    - name: BCHST
+    - name: BCHTR
+    - name: BCHWL
+    - name: BIGCR
+    - name: BONAP
+    - name: BOWRB
+    - name: CAYOO
+    - name: CHILB
+    - name: CHILK
+    - name: CHILL
+    - name: CLEAO
+    - name: CLEAS
+    - name: COTTO
+    - name: EAGLE
+    - name: FRSHA
+    - name: FRSHP
+    - name: FRSMC
+    - name: FRSMG
+    - name: FRSMT
+    - name: FRSRP
+    - name: HARRI
+    - name: HORSE
+    - name: LILLO
+    - name: MAHOO
+    - name: MCGRE
+    - name: NAUTL
+    - name: NAZKO
+    - name: NECHC
+    - name: NICOL
+    - name: NTHMB
+    - name: QUESL
+    - name: QUESQ
+    - name: SALMO
+    - name: SANJO
+    - name: SEYMO
+    - name: STELL
+    - name: STHOM
+    - name: STUAR
+    - name: TASEK
+    - name: WESTR
+    - name: WILLO
+
+peace:
+  - sites: bchydro
+    - name: BCGMS
+      long_name: Peace River at Bennett Dam
+      type: storage
+      station_id: 
+      regime: regulated
+    - name: PEAPN
+      long_name: Peace River above Pine River
+      type: WSC
+      station_id: 07FA004
+      regime: regulated
+    - name: PEACT
+      long_name: Peace River near Taylor
+      type: WSC
+      station_id: 07FD002
+      regime: regulated
+  - sites: calibration
+    - name: ARNT7
+      long_name: Akie River near the 760-m contour
+      type: WSC
+      station_id: 07EA007
+      regime: natural
+    - name: BRBAC
+      long_name: Blueberry River below Aitken Creek
+      type: WSC
+      station_id: 07FC003
+      regime: natural
+    - name: BRNFS
+      long_name: Beatton River near Fort St. John
+      type: WSC
+      station_id: 07FC001
+      regime: natural
+    - name: FRAAR
+      long_name: Finlay River above Akie River
+      type: WSC
+      station_id: 07EA005
+      regime: natural
+    - name: GRACC
+      long_name: Graham River above Colt Creek
+      type: WSC
+      station_id: 07FA005
+      regime: natural
+    - name: HERNN
+      long_name: Heart River near Nampa
+      type: WSC
+      station_id: 07HA003
+      regime: natural
+    - name: HRAGR
+      long_name: Halfway River above Graham River
+      type: WSC
+      station_id: 07FA003
+      regime: natural
+    - name: HRNFC
+      long_name: Halfway River near Farrell Creek
+      type: WSC
+      station_id: 07FA006
+      regime: natural
+    - name: IRASR
+      long_name: Ingenika River above Swannel River
+      type: WSC
+      station_id: 07EA004
+    - name: KIRNF
+      long_name: Kiskatinaw River near Farmington
+      type: WSC
+      station_id: 07FD001
+      regime: natural
+    - name: KWRNW
+      long_name: Kwadacha River near Ware
+      type: WSC
+      station_id: 07EA002
+      regime: natural
+    - name: LSRNG
+      long_name: Little Smoky River near Guy
+      type: WSC
+      station_id: 07GH002
+      regime: natural
+    - name: MRAGC
+      long_name: Mesilinka River above Gopherhole Creek
+      type: WSC
+      station_id: 07EC003
+    - name: MRAWR
+      long_name: Murray River above Wolverine River
+      type: WSC
+      station_id: 07FB006
+      regime: natural
+    - name: MRNFS
+      long_name: Moberly River near Fort St. John
+      type: WSC
+      station_id: 07FB008
+      regime: natural
+    - name: MRNTM
+      long_name: Murray River near the mouth
+      type: WSC
+      station_id: 07FB002
+      regime: natural
+    - name: NRNFS
+      long_name: Nation River near Fort St. James
+      type: WSC
+      station_id: 07ED001
+      regime: natural
+    - name: NRNTM
+      long_name: Nation River near the mouth
+      type: WSC
+      station_id: 07ED003
+      regime: natural
+    - name: ORAAC
+      long_name: Ospika River above Aly Creek
+      type: WSC
+      station_id: 07EB002
+      regime: natural
+    - name: ORAOR
+      long_name: Omineca River above Osilinka River
+      type: WSC
+      station_id: 07EC002
+      regime: natural
+    - name: ORNEL
+      long_name: Osilinka River near End Lake
+      type: WSC
+      station_id: 07EC004
+      regime: natural
+    - name: PCRBH
+      long_name: Pouce Coupe River below Henderson Creek
+      type: WSC
+      station_id: 07FD007
+      regime: natural
+    - name: PERNT
+      long_name: Peace River near Taylor
+      type: WSC
+      station_id: 07FD002
+      regime: regulated
+    - name: PRABD
+      long_name: Peace River at Bennett Dam
+      type: storage
+      regime: regulated
+    - name: PRAEP
+      long_name: Pine River at East Pine
+      type: WSC
+      station_id: 07FB001
+      regime: natural
+    - name: PRAMR
+      long_name: Parsnip River above Misinchinka River
+      type: WSC
+      station_id: 07EE007
+      regime: natural
+    - name: PRAOO
+      long_name: Pack River at outlet of McLeod Lake
+      type: WSC
+      station_id: 07EE010
+      regime: natural
+    - name: PRAPR
+      long_name: Peace River at Peace River
+      type: WSC
+      regime: regulated
+    - name: RRNRG
+      long_name: Redwillow River near Rio Grande
+      type: WSC
+      station_id: 07GD004
+      regime: natural
+    - name: SMRAW
+      long_name: Smoky River at Watino
+      type: WSC
+      station_id: 07GJ001
+      regime: natural
+    - name: SRNTM
+      long_name: Sukunka River near the mouth
+      type: WSC
+      station_id: 07FB003
+      regime: natural
+    - name: WRNGP
+      long_name: Wapiti River near Grande Prairie
+      type: WSC
+      station_id: 07GE001
+      regime: natural
+    - name: WRNTM
+      long_name: Waskahigan River near the mouth
+      type: WSC
+      station_id: 07GG001
+      regime: natural
+
