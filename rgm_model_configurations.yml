@@ -1,0 +1,18 @@
+--- # Configuration settings for Regional Glaciation Model
+RGM_3_0.0:
+  MODEL: UBC Regional Glaciation Model
+  VERSION: 3.0
+  DESCRIPTION: Default RGM configuration
+  COMPILE_OPTIONS: ~
+  RUN_TIME_OPTIONS:
+    Global_Parameters:
+      GLEN_LAW_COEFF: 1.0e-15
+      SLIDING_COEF: 0
+      SUB_STEPS: 10
+      HINDMARSH: 1.5000
+      DIFF_STAB: 0.125
+      VERBOSITY: 2
+      START_YEAR: 0
+      BENCHMARK: 0
+      TRANS_STATUS: TRUE
+      ACCUM_STATUS: FALSE

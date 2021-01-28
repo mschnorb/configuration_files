@@ -1,0 +1,617 @@
+--- # Hydrologic Impacts Theme forcing experiments
+CMIP5: # Coupled Model Inter-comparison Project Phase 5 Experiment
+  description: Projections from the Coupled Model Intercomparison Project Phase 5
+  scenarios:
+    rcp45:
+      description: Representative concentration pathway 4.5
+      models:
+        access1-0:
+          model_name: Australian Community Climate and Earth System Simulator (version 1.0)
+          model_id: ACCESS1-0
+          institution: CSIRO (Commonwealth Scientific and Industrial Research Organisation) and BOM (Bureau of Meteorology)
+          institute_id: CSIRO-BOM
+          experiments:
+            - access1-0_rcp45_r1i1p1:
+              realization: 1
+              initialization_method: 1
+              physics_version: 1
+        canesm2:
+          model_name: Canadian Earth System Model (second generation)
+          model_id: CanESM2
+          institution: Canadian Centre for Climate Modelling and Analysis
+          institute_id: CCCma
+          experiments:
+            - canesm2_rcp45_r1i1p1:
+              realization: 1
+              initialization_method: 1
+              physics_version: 1
+            - canesm2_rcp45_r2i1p1:
+              realization: 2
+              initialization_method: 1
+              physics_version: 1
+            - canesm2_rcp45_r3i1p1:
+              realization: 3
+              initialization_method: 1
+              physics_version: 1
+            - canesm2_rcp45_r4i1p1:
+              realization: 4
+              initialization_method: 1
+              physics_version: 1
+            - canesm2_rcp45_r5i1p1:
+              realization: 5
+              initialization_method: 1
+              physics_version: 1
+        ccsm4:
+          model_name: Community Climate System Model (version 4.0)
+          model_id: CCSM4
+          institution: National Center for Atmospheric Research
+          institute_id: NCAR
+          experiments:
+            - ccsm4_rcp45_r1i1p1:
+              realization: 1
+              initialization_method: 1
+              physics_version: 1
+            - ccsm4_rcp45_r2i1p1:
+              realization: 2
+              initialization_method: 1
+              physics_version: 1
+            - ccsm4_rcp45_r6i1p1:
+              realization: 6
+              initialization_method: 1
+              physics_version: 1
+        cnrm-cm5:
+          model_name: Centre National de Recherches Météorologiques Climate Model
+          model_id: CNRM-CM5
+          institution: Centre National de Recherches Meteorologiques and Centre Europeen de Recherche et Formation Avancee en Calcul Scientifique
+          institute_id: CNRM-CERFACS
+          experiments:
+            - cnrm-cm5__rcp45_r1i1p1:
+              realization: 1
+              initialization_method: 1
+              physics_version: 1
+        hadgem-es:
+          model_name: Hadley Global Environment Model (full Earth System configuration)
+          model_id: HadGEM2-ES
+          institution: Met Office Hadley Centre (additional HadGEM2-ES realizations contributed by Instituto Nacional de Pesquisas Espaciais)
+          institute_id: MOHC-INPE
+          experiments:
+            - hadgem-es_rcp45_r1i1p1:
+              realization: 1
+              initialization_method: 1
+              physics_version: 1
+            - hadgem-es_rcp45_r2i1p1:
+              realization: 2
+              initialization_method: 1
+              physics_version: 1
+            - hadgem-es_rcp45_r3i1p1:
+              realization: 3
+              initialization_method: 1
+              physics_version: 1
+            - hadgem-es_rcp45_r4i1p1:
+              realization: 4
+              initialization_method: 1
+              physics_version: 1
+        mpi-esm-lr:
+          model_name: MPI Earth System Model (base resolution)
+          model_id: MPI-ESM-LR
+          institution: Met Office Hadley Centre (additional HadGEM2-ES realizations contributed by Instituto Nacional de Pesquisas Espaciais)
+          institute_id: MOHC-INPE
+          experiments:
+            - mpi-esm-lr_rcp45_r1i1p1:
+              realization: 1
+              initialization_method: 1
+              physics_version: 1
+            - mpi-esm-lr_rcp45_r2i1p1:
+              realization: 2
+              initialization_method: 1
+              physics_version: 1
+            - mpi-esm-lr_rcp45_r3i1p1:
+              realization: 3
+              initialization_method: 1
+              physics_version: 1
+    rcp85:
+      description: Representative concentration pathway 4.5
+      models:
+        access1-0:
+          model_name: Australian Community Climate and Earth System Simulator (version 1.0)
+          model_id: ACCESS1-0
+          institution: CSIRO (Commonwealth Scientific and Industrial Research Organisation) and BOM (Bureau of Meteorology)
+          institute_id: CSIRO-BOM
+          experiments:
+            - access1-0_rcp85_r1i1p1:
+              realization: 1
+              initialization_method: 1
+              physics_version: 1
+        canesm2:
+          model_name: Canadian Earth System Model (second generation)
+          model_id: CanESM2
+          institution: Canadian Centre for Climate Modelling and Analysis
+          institute_id: CCCma
+          experiments:
+            - canesm2_rcp85_r1i1p1:
+              realization: 1
+              initialization_method: 1
+              physics_version: 1
+            - canesm2_rcp85_r2i1p1:
+              realization: 2
+              initialization_method: 1
+              physics_version: 1
+            - canesm2_rcp85_r3i1p1:
+              realization: 3
+              initialization_method: 1
+              physics_version: 1
+            - canesm2_rcp85_r4i1p1:
+              realization: 4
+              initialization_method: 1
+              physics_version: 1
+            - canesm2_rcp85_r5i1p1:
+              realization: 5
+              initialization_method: 1
+              physics_version: 1
+        ccsm4:
+          model_name: Community Climate System Model (version 4.0)
+          model_id: CCSM4
+          institution: National Center for Atmospheric Research
+          institute_id: NCAR
+          experiments:
+            - ccsm4_rcp85_r1i1p1:
+              realization: 1
+              initialization_method: 1
+              physics_version: 1
+            - ccsm4_rcp85_r2i1p1:
+              realization: 2
+              initialization_method: 1
+              physics_version: 1
+            - ccsm4_rcp85_r6i1p1:
+              realization: 6
+              initialization_method: 1
+              physics_version: 1
+        cnrm-cm5:
+          model_name: Centre National de Recherches Météorologiques Climate Model
+          model_id: CNRM-CM5
+          institution: Centre National de Recherches Meteorologiques and Centre Europeen de Recherche et Formation Avancee en Calcul Scientifique
+          institute_id: CNRM-CERFACS
+          experiments:
+            - cnrm-cm5_rcp85_r1i1p1:
+              realization: 1
+              initialization_method: 1
+              physics_version: 1
+        hadgem-es:
+          model_name: Hadley Global Environment Model (full Earth System configuration)
+          model_id: HadGEM2-ES
+          institution: Met Office Hadley Centre (additional HadGEM2-ES realizations contributed by Instituto Nacional de Pesquisas Espaciais)
+          institute_id: MOHC-INPE
+          experiments:
+            - hadgem-es_rcp85_r1i1p1:
+              realization: 1
+              initialization_method: 1
+              physics_version: 1
+            - hadgem-es_rcp85_r2i1p1:
+              realization: 2
+              initialization_method: 1
+              physics_version: 1
+            - hadgem-es_rcp85_r3i1p1:
+              realization: 3
+              initialization_method: 1
+              physics_version: 1
+            - hadgem-es_rcp85_r4i1p1:
+              realization: 4
+              initialization_method: 1
+              physics_version: 1
+        mpi-esm-lr:
+          model_name: MPI Earth System Model (base resolution)
+          model_id: MPI-ESM-LR
+          institution: Met Office Hadley Centre (additional HadGEM2-ES realizations contributed by Instituto Nacional de Pesquisas Espaciais)
+          institute_id: MOHC-INPE
+          experiments:
+            - mpi-esm-lr_rcp85_r1i1p1:
+              realization: 1
+              initialization_method: 1
+              physics_version: 1
+            - mpi-esm-lr_rcp85_r2i1p1:
+              realization: 2
+              initialization_method: 1
+              physics_version: 1
+            - mpi-esm-lr_rcp85_r3i1p1:
+              realization: 3
+              initialization_method: 1
+              physics_version: 1
+
+CanESM2_LE: # CanESM2 Large Ensemble
+  description: Projections from CanESM2 large ensemble
+  scenarios:
+    rcp85:
+      models:
+        canesm2:
+          model_name: Canadian Earth System Model (second generation)
+          model_id: CanESM2
+          institution: Canadian Centre for Climate Modelling and Analysis
+          institute_id: CCCma
+          experiments:
+            - canesm2_rcp85_r1_r1i1p1:
+              run: 1
+              realization: 1
+              initialization_method: 1
+              physics_version: 1
+            - canesm2_rcp85_r1_r2i1p1:
+              run: 1
+              realization: 1
+              initialization_method: 1
+              physics_version: 1
+            - canesm2_rcp85_r1_r3i1p1:
+              run: 1
+              realization: 3
+              initialization_method: 1
+              physics_version: 1
+            - canesm2_rcp85_r1_r4i1p1:
+              run: 1
+              realization: 4
+              initialization_method: 1
+              physics_version: 1
+            - canesm2_rcp85_r1_r5i1p1:
+              run: 1
+              realization: 5
+              initialization_method: 1
+              physics_version: 1
+            - canesm2_rcp85_r1_r6i1p1:
+              run: 1
+              realization: 6
+              initialization_method: 1
+              physics_version: 1
+            - canesm2_rcp85_r1_r7i1p1:
+              run: 1
+              realization: 7
+              initialization_method: 1
+              physics_version: 1
+            - canesm2_rcp85_r1_r8i1p1:
+              run: 1
+              realization: 8
+              initialization_method: 1
+              physics_version: 1
+            - canesm2_rcp85_r1_r9i1p1:
+              run: 1
+              realization: 9
+              initialization_method: 1
+              physics_version: 1
+            - canesm2_rcp85_r1_r10i1p1:
+              run: 1
+              realization: 10
+              initialization_method: 1
+              physics_version: 1
+            - canesm2_rcp85_r2_r1i1p1:
+              run: 2
+              realization: 1
+              initialization_method: 1
+              physics_version: 1
+            - canesm2_rcp85_r2_r2i1p1:
+              run: 2
+              realization: 2
+              initialization_method: 1
+              physics_version: 1
+            - canesm2_rcp85_r2_r3i1p1:
+              run: 2
+              realization: 3
+              initialization_method: 1
+              physics_version: 1
+            - canesm2_rcp85_r2_r4i1p1:
+              run: 2
+              realization: 4
+              initialization_method: 1
+              physics_version: 1
+            - canesm2_rcp85_r2_r5i1p1:
+              run: 2
+              realization: 5
+              initialization_method: 1
+              physics_version: 1
+            - canesm2_rcp85_r2_r6i1p1:
+              run: 2
+              realization: 6
+              initialization_method: 1
+              physics_version: 1
+            - canesm2_rcp85_r2_r7i1p1:
+              run: 2
+              realization: 7
+              initialization_method: 1
+              physics_version: 1
+            - canesm2_rcp85_r2_r8i1p1:
+              run: 2
+              realization: 8
+              initialization_method: 1
+              physics_version: 1
+            - canesm2_rcp85_r2_r9i1p1:
+              run: 2
+              realization: 9
+              initialization_method: 1
+              physics_version: 1
+            - canesm2_rcp85_r2_r10i1p1:
+              run: 2
+              realization: 10
+              initialization_method: 1
+              physics_version: 1
+            - canesm2_rcp85_r3_r1i1p1:
+              run: 3
+              realization: 1
+              initialization_method: 1
+              physics_version: 1
+            - canesm2_rcp85_r3_r2i1p1:
+              run: 3
+              realization: 2
+              initialization_method: 1
+              physics_version: 1
+            - canesm2_rcp85_r3_r3i1p1:
+              run: 3
+              realization: 3
+              initialization_method: 1
+              physics_version: 1
+            - canesm2_rcp85_r3_r4i1p1:
+              run: 3
+              realization: 4
+              initialization_method: 1
+              physics_version: 1
+            - canesm2_rcp85_r3_r5i1p1:
+              run: 3
+              realization: 5
+              initialization_method: 1
+              physics_version: 1
+            - canesm2_rcp85_r3_r6i1p1:
+              run: 3
+              realization: 6
+              initialization_method: 1
+              physics_version: 1
+            - canesm2_rcp85_r3_r7i1p1:
+              run: 3
+              realization: 7
+              initialization_method: 1
+              physics_version: 1
+            - canesm2_rcp85_r3_r8i1p1:
+              run: 3
+              realization: 8
+              initialization_method: 1
+              physics_version: 1
+            - canesm2_rcp85_r3_r9i1p1:
+              run: 3
+              realization: 9
+              initialization_method: 1
+              physics_version: 1
+            - canesm2_rcp85_r3_r10i1p1:
+              run: 3
+              realization: 10
+              initialization_method: 1
+              physics_version: 1
+            - canesm2_rcp85_r4_r1i1p1:
+              run: 4
+              realization: 1
+              initialization_method: 1
+              physics_version: 1
+            - canesm2_rcp85_r4_r2i1p1:
+              run: 4
+              realization: 2
+              initialization_method: 1
+              physics_version: 1
+            - canesm2_rcp85_r4_r3i1p1:
+              run: 4
+              realization: 3
+              initialization_method: 1
+              physics_version: 1
+            - canesm2_rcp85_r4_r4i1p1:
+              run: 4
+              realization: 4
+              initialization_method: 1
+              physics_version: 1
+            - canesm2_rcp85_r4_r5i1p1:
+              run: 4
+              realization: 5
+              initialization_method: 1
+              physics_version: 1
+            - canesm2_rcp85_r4_r6i1p1:
+              run: 4
+              realization: 6
+              initialization_method: 1
+              physics_version: 1
+            - canesm2_rcp85_r4_r7i1p1:
+              run: 4
+              realization: 7
+              initialization_method: 1
+              physics_version: 1
+            - canesm2_rcp85_r4_r8i1p1:
+              run: 4
+              realization: 8
+              initialization_method: 1
+              physics_version: 1
+            - canesm2_rcp85_r4_r9i1p1:
+              run: 4
+              realization: 9
+              initialization_method: 1
+              physics_version: 1
+            - canesm2_rcp85_r4_r10i1p1:
+              run: 4
+              realization: 10
+              initialization_method: 1
+              physics_version: 1
+            - canesm2_rcp85_r5_r1i1p1:
+              run: 5
+              realization: 1
+              initialization_method: 1
+              physics_version: 1
+            - canesm2_rcp85_r5_r2i1p1:
+              run: 5
+              realization: 2
+              initialization_method: 1
+              physics_version: 1
+            - canesm2_rcp85_r5_r3i1p1:
+              run: 5
+              realization: 3
+              initialization_method: 1
+              physics_version: 1
+            - canesm2_rcp85_r5_r4i1p1:
+              run: 5
+              realization: 4
+              initialization_method: 1
+              physics_version: 1
+            - canesm2_rcp85_r5_r5i1p1:
+              run: 5
+              realization: 5
+              initialization_method: 1
+              physics_version: 1
+            - canesm2_rcp85_r5_r6i1p1:
+              run: 5
+              realization: 6
+              initialization_method: 1
+              physics_version: 1
+            - canesm2_rcp85_r5_r7i1p1:
+              run: 5
+              realization: 7
+              initialization_method: 1
+              physics_version: 1
+            - canesm2_rcp85_r5_r8i1p1:
+              run: 5
+              realization: 8
+              initialization_method: 1
+              physics_version: 1
+            - canesm2_rcp85_r5_r9i1p1:
+              run: 5
+              realization: 9
+              initialization_method: 1
+              physics_version: 1
+            - canesm2_rcp85_r5_r10i1p1:
+              run: 5
+              realization: 10
+              initialization_method: 1
+              physics_version: 1
+            - canesm2_rcp85_r6_r1i1p1:
+              run: 6
+              realization: 1
+              initialization_method: 1
+              physics_version: 1
+            - canesm2_rcp85_r6_r2i1p1:
+              run: 6
+              realization: 2
+              initialization_method: 1
+              physics_version: 1
+            - canesm2_rcp85_r6_r3i1p1:
+              run: 6
+              realization: 3
+              initialization_method: 1
+              physics_version: 1
+            - canesm2_rcp85_r6_r4i1p1:
+              run: 6
+              realization: 4
+              initialization_method: 1
+              physics_version: 1
+            - canesm2_rcp85_r6_r6i1p1:
+              run: 6
+              realization: 5
+              initialization_method: 1
+              physics_version: 1
+            - canesm2_rcp85_r6_r6i1p1:
+              run: 6
+              realization: 6
+              initialization_method: 1
+              physics_version: 1
+            - canesm2_rcp85_r6_r7i1p1:
+              run: 6
+              realization: 7
+              initialization_method: 1
+              physics_version: 1
+            - canesm2_rcp85_r6_r8i1p1:
+              run: 6
+              realization: 8
+              initialization_method: 1
+              physics_version: 1
+            - canesm2_rcp85_r6_r9i1p1:
+              run: 6
+              realization: 9
+              initialization_method: 1
+              physics_version: 1
+            - canesm2_rcp85_r6_r10i1p1:
+              run: 6
+              realization: 10
+              initialization_method: 1
+              physics_version: 1
+            - canesm2_rcp85_r7_r1i1p1:
+              run: 7
+              realization: 1
+              initialization_method: 1
+              physics_version: 1
+            - canesm2_rcp85_r7_r2i1p1:
+              run: 7
+              realization: 2
+              initialization_method: 1
+              physics_version: 1
+            - canesm2_rcp85_r7_r3i1p1:
+              run: 7
+              realization: 3
+              initialization_method: 1
+              physics_version: 1
+            - canesm2_rcp85_r7_r4i1p1:
+              run: 7
+              realization: 4
+              initialization_method: 1
+              physics_version: 1
+            - canesm2_rcp85_r7_r7i1p1:
+              run: 7
+              realization: 5
+              initialization_method: 1
+              physics_version: 1
+            - canesm2_rcp85_r7_r7i1p1:
+              run: 7
+              realization: 6
+              initialization_method: 1
+              physics_version: 1
+            - canesm2_rcp85_r7_r7i1p1:
+              run: 7
+              realization: 7
+              initialization_method: 1
+              physics_version: 1
+            - canesm2_rcp85_r7_r8i1p1:
+              run: 7
+              realization: 8
+              initialization_method: 1
+              physics_version: 1
+            - canesm2_rcp85_r7_r9i1p1:
+              run: 7
+              realization: 9
+              initialization_method: 1
+              physics_version: 1
+            - canesm2_rcp85_r7_r10i1p1:
+              run: 7
+              realization: 10
+              initialization_method: 1
+              physics_version: 1
+
+Reanalysis:
+  description: Simulations based on Reanalysis
+  scenarios:
+    historical:
+      description: ~
+      models:
+        ncep-gfs:
+          model_name: NCEP Global Forecast System 2008ex
+          model_id: NCEP_GFS_2008ex
+          institution: National Oceanic and Atmospheric Administration - Cooperative Institute for Research in Environmental Sciences
+          institute_id: NOAA-CIRES
+          experiments:
+            - 20cr_v2c:
+              run: V2c
+              initialization_method: ~
+              physics_version: NCEP_GFS_2008ex
+        era-ifs-38r1:
+          model_name: Integrated Forecasting System cycle 38r1
+          model_id: IFS_Cy38r1
+          institution: European Centre for Medium-Range Weather Forecasts
+          institute_id: ECMWF
+          experiments:
+            - era-20c:
+              run: 20C
+              initialization_method: ~
+              physics_version: IFS_Cy38r1
+        era-ifs-31r2:
+          model_name: Integrated Forecasting System cycle 31r2
+          model_id: IFS_Cy38r1
+          institution: European Centre for Medium-Range Weather Forecasts
+          institute_id: ECMWF
+          experiments:
+            - era-interim:
+              run: Interim
+              initialization_method: ~
+              physics_version: IFS_Cy31r2

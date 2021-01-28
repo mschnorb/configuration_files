@@ -1,0 +1,14 @@
+--- # Configuration settings for HydroConductor wrapper
+HC_1_0.0:
+  MODEL: Hydro-Conductor wrapper
+  VERSION: 1.0
+  DESCRIPTION: Standard HydroConductor configuration
+  COMPILE_OPTIONS:
+  RUN_TIME_OPTIONS:
+    DEM_Parameters:
+      RESOLUTION: 100
+    Simulation_Parameters:
+      BAND_SIZE: 200.0
+      MIN_GLAC_THICK: 2.0
+      GLAC_ROOT_ZONE: default
+      OPEN_ROOT_ZONE: default

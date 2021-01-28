@@ -1,0 +1,67 @@
+--- # Configuration settings for RVIC model
+RVIC_1_1.0:
+  MODEL: RVIC Streamflow Routing Model
+  VERSION: 1.1.1
+  DESCRIPTION: Standard RVIC configuration
+  PARAMETRIZATION:
+    OPTIONS:
+      REMAP: False
+      AGGREGATE: False
+      AGG_PAD: 25
+      SUBSET_DAYS: ~
+      CONSTRAIN_FRACTIONS: False
+      SEARCH_FOR_CHANNEL: False
+    POUR_POINTS:
+      FILE_NAME: job_specific
+    UH_BOX:
+      FILE_NAME: job_specific
+    ROUTING:
+      FILE_NAME: job_specific
+      LONGITUDE_VAR: lon
+      LATITUDE_VAR: lat
+      FLOW_DISTANCE_VAR: Flow_Distance
+      FLOW_DIRECTION_VAR: Flow_Direction
+      BASIN_ID_VAR: Basin_ID
+      VELOCITY: velocity
+      DIFFUSION: diffusion
+      OUTPUT_INTERVAL: 86400
+      BASIN_FLOWDAYS: 100
+      CELL_FLOWDAYS: 4
+    DOMAIN:
+      FILE_NAME: job_specific
+      LONGITUDE_VAR: lon
+      LATITUDE_VAR: lat
+      LAND_MASK_VAR: mask
+      FRACTION_VAR: frac
+      AREA_VAR: area
+  CONVOLUTION:
+    OPTIONS:
+      RUN_TYPE: drystart
+    HISTORY:
+      RVICHIST_NTAPES: 1
+      RVICHIST_MFILT: 100000
+      RVICHIST_NDENS: 1
+      RVICHIST_NHTFRQ: 1
+      RVICHIST_AVGFLAG: A
+      RVICHIST_OUTTYPE: array
+      RVICHIST_NCFORM: NETCDF4
+      RVICHIST_UNITS: m3/s
+    DOMAIN:
+      FILE_NAME: job_specific
+      LONGITUDE_VAR: lon 
+      LATITUDE_VAR: lat
+      AREA_VAR: area
+      LAND_MASK_VAR: mask
+      FRACTION_VAR: frac
+    INITIAL_STATE:
+      FILE_NAME: job_specific
+    PARAM_FILE:
+      FILE_NAME: job_specific
+    INPUT_FORCINGS:
+      FILE_NAME: job_specific
+      TIME_VAR: time
+      LATITUDE_VAR: lat
+      DATL_LIQ_FLDS: RUNOFF, BASEFLOW
+      START: None
+      END: None
+
