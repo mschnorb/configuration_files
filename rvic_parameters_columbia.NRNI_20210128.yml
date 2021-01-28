@@ -1,0 +1,13 @@
+--- # Description of parameter files for RVIC routing model
+parameters_columbia.NRNI_20210128:
+  domain: columbia
+  description: Single parameter file for all NRNI sites in the Columbia 
+  resolution: 0.0625
+  RVIC_model_config: RVIC_1_1.0
+  domain_file: /storage/data/projects/hydrology/vic_gen2/input/routing/columbia/parameters/domain.pnw.pcic.20170927.nc
+  input_file: /storage/data/projects/hydrology/vic_gen2/input/routing/columbia/parameters/pcic.pnw.rvic.input_20170927.nc
+  unit_hydrograph_file: /storage/data/projects/hydrology/vic_gen2/input/routing/uh/uhbox.csv
+  pour_point_file: /storage/data/projects/hydrology/vic_gen2/input/routing/columbia/parameters/nrni.columbia.pour-points_20210128.csv
+  case_directory: /storage/data/projects/hydrology/vic_gen2/input/routing/columbia/parameters/cases/NRNI_stations
+  parameter_files:
+    - NRNI_stations.rvic.prm.COLUMBIA.20210128.nc
