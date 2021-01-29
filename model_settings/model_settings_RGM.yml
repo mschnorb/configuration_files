@@ -1,4 +1,4 @@
---- # Configuration settings for Regional Glaciation Model
+--- # Model settings for Regional Glaciation Model
 RGM_3_0.0:
   MODEL: UBC Regional Glaciation Model
   VERSION: 3.0

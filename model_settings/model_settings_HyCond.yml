@@ -1,4 +1,4 @@
---- # Configuration settings for HydroConductor wrapper
+--- # Model settings for HydroConductor wrapper
 HC_1_0.0:
   MODEL: Hydro-Conductor wrapper
   VERSION: 1.0

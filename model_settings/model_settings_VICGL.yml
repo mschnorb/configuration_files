@@ -1,4 +1,4 @@
---- # Configuration settings for VICGL Model
+--- # Model settings for VICGL
 VICGL_1_0.0: # Configuration settings for static glaciers
   MODEL: Variable Infiltration Capacity Model
   VERSION: 1.0

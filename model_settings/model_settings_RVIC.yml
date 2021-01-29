@@ -1,4 +1,4 @@
---- # Configuration settings for RVIC model
+--- # Model settings for RVIC model
 RVIC_1_1.0:
   MODEL: RVIC Streamflow Routing Model
   VERSION: 1.1.1
