@@ -3,7 +3,7 @@ parameters_upper_fraser_20210322:
   domain: upper_fraser
   description: Gridded routing for upper Fraser
   resolution: 0.0625
-  RVIC_model_config: RVIC_1_1.0
+  RVIC_model_config: RVIC_1_1.0 (https://github.com/mschnorb/configuration_files/blob/main/model_settings/model_settings_RVIC.yml)
   domain_file: /storage/data/projects/hydrology/vic_gen2/input/routing/upperfraser/parameters/rvic.domain_upperfraser_full.nc
   input_file: /storage/data/projects/hydrology/vic_gen2/input/routing/upperfraser/parameters/rvic.parameters_upperfraser.nc
   unit_hydrograph_file: /storage/data/projects/hydrology/vic_gen2/input/routing/upperfraser/uhbox.csv
