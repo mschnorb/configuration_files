@@ -1,0 +1,12 @@
+--- # Description of parameter files for RVIC routing model
+parameters_upper_fraser_20210322:
+  domain: upper_fraser
+  description: Gridded routing for upper Fraser
+  resolution: 0.0625
+  RVIC_model_config: RVIC_1_1.0
+  domain_file: /storage/data/projects/hydrology/vic_gen2/input/routing/upperfraser/parameters/rvic.domain_upperfraser_full.nc
+  input_file: /storage/data/projects/hydrology/vic_gen2/input/routing/upperfraser/parameters/rvic.parameters_upperfraser.nc
+  unit_hydrograph_file: /storage/data/projects/hydrology/vic_gen2/input/routing/upperfraser/uhbox.csv
+  case_directory: /storage/data/projects/hydrology/vic_gen2/input/routing/upperfraser/parameters/cases/uf1229/params
+  parameter_files:
+    - uf1229.rvic.prm.uf1229.20210322.nc
