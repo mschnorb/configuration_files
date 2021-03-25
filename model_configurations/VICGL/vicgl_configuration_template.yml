@@ -1,0 +1,110 @@
+--- # VICGL settings template
+title: VICGL template for model configuration and parameter files
+author: Markus Schnorbus
+institution: Pacific Climate Impacts Consortium
+contact: mschnorb@uvic.ca
+model_settings:
+  input_dir: /storage/data/projects/hydrology/vic_gen2/input
+  model_configuration:
+    dynamics_true:
+      VICGL_model_configuration: VICGL_1_0.1
+      HydCnd_model_configuration: HC_1_0.0
+      RGM_model_configuration: RGM_3_0.0
+      VICGL_calibration_configuration: NSGAII_0_1.1
+      initialization_method: cold_start + glacier_evolved_20cr
+    dynamics_false:
+      VICGL_model_configuration: VICGL_1_0.0
+      HydCnd_model_configuration: .na
+      RGM_model_configuration: .na
+      VICGL_calibration_configuration: NSGAII_0_0.0
+      initialization_method: cold_start
+  parameter_settings_by_domain:
+    fraser:
+      dynamics_true:
+        soil_parameters: soils/soil_files_by_subbasin/fraser/proj/soils.gen2.201802_fraser_calib_{BASIN}.txt
+        vegetation_library: vegetation/vlbc/vlbc_nalc_2005_final_050rmin_125L.txt
+        vegetation_parameters: vegetation/vpf_0625/fraser/vpf_{BASIN}_200_glac.txt
+        snowband_parameters: snowbands/snb_0625/fraser/snb_{BASIN}_200_glac.txt
+        surf_dem: rgm/output/fraser/initialization/rgm_surf_dem_out_1945-09-30_{BASIN}.gsa
+        bed_dem: rgm/output/fraser/bed_dem_{BASIN}.gsa
+        glac_mask: rgm/output/fraser/initialization/glacier_mask_1945-09-30_{BASIN}.gsa
+        pixel_map: rgm/output/fraser/pixel_map_{BASIN}.txt
+        initialization_method: cold_start + glacier_evolved_20cr
+      dynamics_false:
+        soil_parameters: soils/soil_files_by_subbasin/fraser/proj/soils.gen2.201802_fraser_calib_{BASIN}.txt
+        vegetation_library: vegetation/vlbc/vlbc_nalc_2005_final_050rmin_125L.txt
+        vegetation_parameters: vegetation/vpf_0625/fraser/vpf_fraser_200.txt
+        snowband_parameters: snowband/snb_0625/fraser/snb_fraser_200.txt
+        surf_dem: .na
+        bed_dem: .na
+        glac_mask: .na
+        pixel_map: .nn
+        initialization_method: cold_start
+      nested_domain: nwna__allwsbc
+    columbia:
+      dynamics_true:
+        soil_parameters: soils/soil_files_by_subbasin/columbia/proj/soils.gen2.20170606_columbia_calib_{BASIN}.txt
+        vegetation_library: vegetation/vlbc/vlbc_nalc_2005_final_050rmin_125L.txt
+        vegetation_parameters: vegetation/vpf_0625/columbia/vpf_{BASIN}_200_glac.txt
+        snowband_parameters: snowbands/snb_0625/columbia/snb_{BASIN}_200_glac.txt
+        surf_dem: rgm/output/columbia/initialization/rgm_surf_dem_out_1945-09-30_{BASIN}.gsa
+        bed_dem: rgm/output/columbia/bed_dem_{BASIN}.gsa
+        glac_mask: rgm/output/columbia/initialization/glacier_mask_1945-09-30_{BASIN}.gsa
+        pixel_map: rgm/output/columbia/pixel_map_{BASIN}.txt
+        initialization_method: cold_start + glacier_evolved_20cr
+      dynamics_false:
+        soil_parameters: soils/soil_files_by_subbasin/columbia/proj/soils.gen2.20170606_columbia_calib_{BASIN}.txt
+        vegetation_library: vegetation/vlbc/vlbc_nalc_2005_final_050rmin_125L.txt
+        vegetation_parameters: vegetation/vpf_0625/columbia/vpf_columbia_200.txt
+        snowband_parameters: snowband/snb_0625/columbia/snb_columbia_200.txt
+        surf_dem: .na
+        bed_dem: .na
+        glac_mask: .na
+        pixel_map: .na
+        initialization_method: cold_start
+      nested_domain: nwna__allwsbc
+    peace:
+      dynamics_true:
+        soil_parameters: soils/soil_files_by_subbasin/peace/proj/soils.gen2.20170606_peace_calib_{BASIN}.txt
+        vegetation_library: vegetation/vlbc/vlbc_nalc_2005_final_050rmin_125L.txt
+        vegetation_parameters: vegetation/vpf_0625/peace/vpf_{BASIN}_200_glac.txt
+        snowband_parameters: snowbands/snb_0625/peace/snb_{BASIN}_200_glac.txt
+        surf_dem: rgm/output/peace/initialization/rgm_surf_dem_out_1945-09-30_{BASIN}.gsa
+        bed_dem: rgm/output/peace/bed_dem_{BASIN}.gsa
+        glac_mask: rgm/output/peace/initialization/glacier_mask_1945-09-30_{BASIN}.gsa
+        pixel_map: rgm/output/peace/pixel_map_{BASIN}.txt
+        initialization_method: cold_start + glacier_evolved_20cr
+      dynamics_false:
+        soil_parameters: soils/soil_files_by_subbasin/peace/proj/soils.gen2.20170606_peace_calib_{BASIN}.txt
+        vegetation_library: vegetation/vlbc/vlbc_nalc_2005_final_050rmin_125L.txt
+        vegetation_parameters: vegetation/vpf_0625/peace/vpf_peace_200.txt
+        snowband_parameters: snowbands/snb_0625/peace/snb_peace_200.txt
+        surf_dem: .na
+        bed_dem: .na
+        glac_mask: .na
+        pixel_map: .na
+        initialization_method: cold_start
+      nested_domain: nwna__allwsbc
+    vanisle:
+      dynamics_true:
+        soil_parameters: /soils/soil_files_by_subbasin/vanisle/XXX/soils.gen2.20180109_VanIsle_03125_vanisle_XXX_{BASIN}.txt
+        vegetation_library: vegetation/vlbc/vlbc_nalc_2005_final_050rmin_125L.txt
+        vegetation_parameters: vegetation/vpf_03125/vanisle/vpf_{BASIN}_200_glac.txt
+        snowband_parameters: snowbands/snb_03125/vanisle/snb_{BASIN}_200_glac.txt
+        surf_dem: rgm/output/vanisle/srf_dem_1945_{BASIN}.gsa
+        bed_dem: rgm/output/vanisle/bed_dem_{BASIN}.gsa
+        glac_mask: rgm/output/vanisle/glac_mask_1945_{BASIN}.gsa
+        pixel_map: rgm/output/vanisle/pixel_map_{BASIN}.txt
+        initialization_method: cold_start + glacier_state_c100
+      dynamics_false:
+        soil_parameters: /soils/soil_files_by_subbasin/vanisle/XXX/soils.gen2.20180109_VanIsle_03125_vanisle_XXX_{BASIN}.txt
+        vegetation_library: vegetation/vlbc/vlbc_nalc_2005_final_050rmin_125L.txt
+        vegetation_parameters: vegetation/vpf_03125/vanisle/vpf_vanisle_200.txt
+        snowband_parameters: snowbands/snb_03125/vanisle/snb_vanisle_200.txt
+        surf_dem: .na
+        bed_dem: .na
+        glac_mask: .na
+        pixel_map: .na
+        initialization_method: cold_start
+      nested_domain: nwna__allwsbc__bccoast
+

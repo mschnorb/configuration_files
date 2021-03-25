@@ -1,0 +1,61 @@
+--- # VICGL Model Initialization
+cold_start:
+  description: cold start initialization from default values
+  method_steps:
+    - run VICGL from cold start from default internal state
+    - discard first several years of output
+  start_state: VICGL internal defaults
+  states_initialized:
+    - soil_moisture (all layers)
+    - soil_temperature (all layers)
+    - snow_water_equivalent (all layers)
+    - snow_temperature (all layers)
+    - snow_cold_content (all layers)
+  initialization_date: na
+
+glacier_from_state_c100:
+  description: initialize glacier from external state
+  method_steps:
+    - >
+    use glacier state from Clarke et al (2016) based
+    on CRU-driven historical run
+    - >
+    surface DEM state interpolated to 100-m bcalbers
+    from native 200-m lcc and merged with 2010 GMTED
+    - >
+    glacier mask calculated as difference from surface DEM
+    and 100-m bed DEM, originally onterpolated from 200-m
+    bed DEM from Clarke et al (2016)
+  start_states: na
+  states_initialized:
+    - glacier_mask
+    - surface_elevation
+  initialization_date: 1945-09-30
+
+glacier_evolved_20cr:
+  description: evolve glacier cover and depth from bare surface
+  method_steps:
+    - >
+    develop VICGL climatological mass balance field,
+    b<sub>clim<sub>, with PNWNAmet forcing and estimated
+    1945 surface dem
+    - > 
+    RGM forced with b<sub>clim<sub> for 500 years to
+    final equilibrium state at T=500, s<sub>equi<sub>
+    - > 
+    VICGL dynamic glacier run starting from s<sub>equi<sub>
+    with 20CR forcing over period 1900-01-01 to 1945-09-30
+  start_states:
+    - >
+    VICGL starts with 1945 surface dem from historical run
+    of Clark et al. (2016)
+    - >
+    RGM starts with surface dem equivalent to bed dem and
+    glacier mask equivalent to zero
+    - >
+    VICGL starts with RGM state at year T=500 for surface
+    dem and glacier mask
+  states_initialized:
+    - glacier_mask
+    - surface_elevation
+  initialization_date: 1945-09-30
