@@ -17,11 +17,11 @@ yaml_config_from_meta <- function(settingsFile, calibrationFile){
   
   #Construct list of configuration file dependencies
   configlist <- list()
-  configlist$model_configuration_key_VICGL  <- file.path(settingsDir, "model_configurations_VICGL.yml")
-  configlist$model_configuration_key_RVIC   <- file.path(settingsDir, "model_configurations_RVIC.yml")
-  configlist$model_configuration_key_RGM    <- file.path(settingsDir, "model_configurations_RGM.yml")
-  configlist$model_configuration_key_HyCond <- file.path(settingsDir, "model_configurations_HyCond.yml")
-  configlist$domain_configuration_key       <- file.path(settingsDir, "HI_theme_domains.yml")
+  configlist$model_settings_key_VICGL  <- file.path(settingsDir, "model_configurations_VICGL.yml")
+  configlist$model_settings_key_RVIC   <- file.path(settingsDir, "model_configurations_RVIC.yml")
+  configlist$model_settings_key_RGM    <- file.path(settingsDir, "model_configurations_RGM.yml")
+  configlist$model_settings_key_HyCond <- file.path(settingsDir, "model_configurations_HyCond.yml")
+  configlist$domain_description_key       <- file.path(settingsDir, "HI_theme_domains.yml")
   configlist$vicgl_calibration_configuration_key <- file.path(settingsDir, "vicgl_calibration_configurations.yml")
   
   # Specify main VICGL input directory for parameter files

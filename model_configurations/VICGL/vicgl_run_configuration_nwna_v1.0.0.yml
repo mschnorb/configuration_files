@@ -4,22 +4,22 @@ contact: mschnorb@uvic.ca
 institution: Pacific Climate Impacts Consortium
 write_date: Thu Jan 28 15:40:32 2021
 input_configurations:
-  model_metadata: vicgl_settings_meta.yml
-  calibration_metadata: vicgl_calibration_meta.yml
-configuration_dependency:
-  model_configuration_key_VICGL: /storage/data/projects/hydrology/configuration/model_configurations_VICGL.yml
-  model_configuration_key_RVIC: /storage/data/projects/hydrology/configuration/model_configurations_RVIC.yml
-  model_configuration_key_RGM: /storage/data/projects/hydrology/configuration/model_configurations_RGM.yml
-  model_configuration_key_HyCond: /storage/data/projects/hydrology/configuration/model_configurations_HyCond.yml
-  domain_configuration_key: /storage/data/projects/hydrology/configuration/HI_theme_domains.yml
-  vicgl_calibration_configuration_key: /storage/data/projects/hydrology/configuration/vicgl_calibration_configurations.yml
+  model_metadata: https://github.com/mschnorb/configuration_files/blob/main/model_configurations/VICGL/vicgl_configuration_template.yml
+  calibration_metadata: https://github.com/mschnorb/configuration_files/blob/main/calibration_settings/vicgl_calibration_attributes.yml
+model_settings_dependency:
+  model_settings_key_VICGL: https://github.com/mschnorb/configuration_files/blob/main/model_settings/model_settings_VICGL.yml
+  model_settings_key_RVIC: https://github.com/mschnorb/configuration_files/blob/main/model_settings/model_settings_RVIC.yml
+  model_settings_key_RGM: https://github.com/mschnorb/configuration_files/blob/main/model_settings/model_settings_RGM.yml
+  model_settings_key_HyCond: https://github.com/mschnorb/configuration_files/blob/main/model_settings/model_settings_HyCond.yml
+  domain_description_key: https://github.com/mschnorb/configuration_files/blob/main/misc_attributes/HI_theme_domains.yml
+  vicgl_calibration_configuration_key: https://github.com/mschnorb/configuration_files/blob/main/calibration_settings/vicgl_calibration_configurations.yml
 configuration_by_domain:
   nwna__allwsbc__bccoast__vanisle:
     BCCMX:
       dynamic_glaciers: yes
-      VICGL_model_configuration: VICGL_1_0.1
-      HydCnd_model_configuration: HC_1_0.0
-      RGM_model_configuration: RGM_3_0.0
+      HydCnd_model_settings: VICGL_1_0.1
+      HydCnd_model_settings: HC_1_0.0
+      RGM_model_settings: RGM_3_0.0
       VICGL_calibration_configuration: NSGAII_0_1.1
       VICGL_calibration_parameter_selection:
         run_id: ~
@@ -37,9 +37,9 @@ configuration_by_domain:
   nwna__allwsbc__columbia:
     ALB:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -56,9 +56,9 @@ configuration_by_domain:
         pixel_map: .na
     ANA:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -75,9 +75,9 @@ configuration_by_domain:
         pixel_map: .na
     ASHNO:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: ~
@@ -94,9 +94,9 @@ configuration_by_domain:
         pixel_map: .na
     BEAVE:
       dynamic_glaciers: yes
-      VICGL_model_configuration: VICGL_1_0.1
-      HydCnd_model_configuration: HC_1_0.0
-      RGM_model_configuration: RGM_3_0.0
+      VICGL_model_settings: VICGL_1_0.1
+      HydCnd_model_settings: HC_1_0.0
+      RGM_model_settings: RGM_3_0.0
       VICGL_calibration_configuration: NSGAII_0_1.1
       VICGL_calibration_parameter_selection:
         run_id: 3
@@ -113,9 +113,9 @@ configuration_by_domain:
         pixel_map: /storage/data/projects/hydrology/vic_gen2/input/rgm/output/columbia/pixel_map_BEAVE.txt
     BFE:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 2
@@ -132,9 +132,9 @@ configuration_by_domain:
         pixel_map: .na
     BIGI:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -151,9 +151,9 @@ configuration_by_domain:
         pixel_map: .na
     BITDA:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -170,9 +170,9 @@ configuration_by_domain:
         pixel_map: .na
     BON:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -189,9 +189,9 @@ configuration_by_domain:
         pixel_map: .na
     BRI:
       dynamic_glaciers: yes
-      VICGL_model_configuration: VICGL_1_0.1
-      HydCnd_model_configuration: HC_1_0.0
-      RGM_model_configuration: RGM_3_0.0
+      VICGL_model_settings: VICGL_1_0.1
+      HydCnd_model_settings: HC_1_0.0
+      RGM_model_settings: RGM_3_0.0
       VICGL_calibration_configuration: NSGAII_0_1.1
       VICGL_calibration_parameter_selection:
         run_id: 2
@@ -208,9 +208,9 @@ configuration_by_domain:
         pixel_map: /storage/data/projects/hydrology/vic_gen2/input/rgm/output/columbia/pixel_map_BRI.txt
     BRN:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -227,9 +227,9 @@ configuration_by_domain:
         pixel_map: .na
     BruneauR:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -246,9 +246,9 @@ configuration_by_domain:
         pixel_map: .na
     BULWA:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -265,9 +265,9 @@ configuration_by_domain:
         pixel_map: .na
     CHL:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -284,9 +284,9 @@ configuration_by_domain:
         pixel_map: .na
     COWKO:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -303,9 +303,9 @@ configuration_by_domain:
         pixel_map: .na
     CRNIC:
       dynamic_glaciers: yes
-      VICGL_model_configuration: VICGL_1_0.1
-      HydCnd_model_configuration: HC_1_0.0
-      RGM_model_configuration: RGM_3_0.0
+      VICGL_model_settings: VICGL_1_0.1
+      HydCnd_model_settings: HC_1_0.0
+      RGM_model_settings: RGM_3_0.0
       VICGL_calibration_configuration: NSGAII_0_1.1
       VICGL_calibration_parameter_selection:
         run_id: 2
@@ -322,9 +322,9 @@ configuration_by_domain:
         pixel_map: /storage/data/projects/hydrology/vic_gen2/input/rgm/output/columbia/pixel_map_CRNIC.txt
     DCD:
       dynamic_glaciers: yes
-      VICGL_model_configuration: VICGL_1_0.1
-      HydCnd_model_configuration: HC_1_0.0
-      RGM_model_configuration: RGM_3_0.0
+      VICGL_model_settings: VICGL_1_0.1
+      HydCnd_model_settings: HC_1_0.0
+      RGM_model_settings: RGM_3_0.0
       VICGL_calibration_configuration: NSGAII_0_1.1
       VICGL_calibration_parameter_selection:
         run_id: 2
@@ -341,9 +341,9 @@ configuration_by_domain:
         pixel_map: /storage/data/projects/hydrology/vic_gen2/input/rgm/output/columbia/pixel_map_DCD.txt
     DEX:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -360,9 +360,9 @@ configuration_by_domain:
         pixel_map: .na
     DONAL:
       dynamic_glaciers: yes
-      VICGL_model_configuration: VICGL_1_0.1
-      HydCnd_model_configuration: HC_1_0.0
-      RGM_model_configuration: RGM_3_0.0
+      VICGL_model_settings: VICGL_1_0.1
+      HydCnd_model_settings: HC_1_0.0
+      RGM_model_settings: RGM_3_0.0
       VICGL_calibration_configuration: NSGAII_0_1.1
       VICGL_calibration_parameter_selection:
         run_id: 3
@@ -379,9 +379,9 @@ configuration_by_domain:
         pixel_map: /storage/data/projects/hydrology/vic_gen2/input/rgm/output/columbia/pixel_map_DONAL.txt
     DWR:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -398,9 +398,9 @@ configuration_by_domain:
         pixel_map: .na
     ELKFE:
       dynamic_glaciers: yes
-      VICGL_model_configuration: VICGL_1_0.1
-      HydCnd_model_configuration: HC_1_0.0
-      RGM_model_configuration: RGM_3_0.0
+      VICGL_model_settings: VICGL_1_0.1
+      HydCnd_model_settings: HC_1_0.0
+      RGM_model_settings: RGM_3_0.0
       VICGL_calibration_configuration: NSGAII_0_1.1
       VICGL_calibration_parameter_selection:
         run_id: 2
@@ -417,9 +417,9 @@ configuration_by_domain:
         pixel_map: /storage/data/projects/hydrology/vic_gen2/input/rgm/output/columbia/pixel_map_ELKFE.txt
     FLAWE:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -436,9 +436,9 @@ configuration_by_domain:
         pixel_map: .na
     GCL:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -455,9 +455,9 @@ configuration_by_domain:
         pixel_map: .na
     GRANB:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -474,9 +474,9 @@ configuration_by_domain:
         pixel_map: .na
     HANGM:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -493,9 +493,9 @@ configuration_by_domain:
         pixel_map: .na
     ILLEC:
       dynamic_glaciers: yes
-      VICGL_model_configuration: VICGL_1_0.1
-      HydCnd_model_configuration: HC_1_0.0
-      RGM_model_configuration: RGM_3_0.0
+      VICGL_model_settings: VICGL_1_0.1
+      HydCnd_model_settings: HC_1_0.0
+      RGM_model_settings: RGM_3_0.0
       VICGL_calibration_configuration: NSGAII_0_1.1
       VICGL_calibration_parameter_selection:
         run_id: 2
@@ -512,9 +512,9 @@ configuration_by_domain:
         pixel_map: /storage/data/projects/hydrology/vic_gen2/input/rgm/output/columbia/pixel_map_ILLEC.txt
     JDA:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -531,9 +531,9 @@ configuration_by_domain:
         pixel_map: .na
     JFFO:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -550,9 +550,9 @@ configuration_by_domain:
         pixel_map: .na
     JOECA:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -569,9 +569,9 @@ configuration_by_domain:
         pixel_map: .na
     JOHND:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -588,9 +588,9 @@ configuration_by_domain:
         pixel_map: .na
     KER:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -607,9 +607,9 @@ configuration_by_domain:
         pixel_map: .na
     KETFE:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -626,9 +626,9 @@ configuration_by_domain:
         pixel_map: .na
     KICHO:
       dynamic_glaciers: yes
-      VICGL_model_configuration: VICGL_1_0.1
-      HydCnd_model_configuration: HC_1_0.0
-      RGM_model_configuration: RGM_3_0.0
+      VICGL_model_settings: VICGL_1_0.1
+      HydCnd_model_settings: HC_1_0.0
+      RGM_model_settings: RGM_3_0.0
       VICGL_calibration_configuration: NSGAII_0_1.1
       VICGL_calibration_parameter_selection:
         run_id: 3
@@ -645,9 +645,9 @@ configuration_by_domain:
         pixel_map: /storage/data/projects/hydrology/vic_gen2/input/rgm/output/columbia/pixel_map_KICHO.txt
     KIMI:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -664,9 +664,9 @@ configuration_by_domain:
         pixel_map: .na
     KIOW:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -683,9 +683,9 @@ configuration_by_domain:
         pixel_map: .na
     KOOTE:
       dynamic_glaciers: yes
-      VICGL_model_configuration: VICGL_1_0.1
-      HydCnd_model_configuration: HC_1_0.0
-      RGM_model_configuration: RGM_3_0.0
+      VICGL_model_settings: VICGL_1_0.1
+      HydCnd_model_settings: HC_1_0.0
+      RGM_model_settings: RGM_3_0.0
       VICGL_calibration_configuration: NSGAII_0_1.1
       VICGL_calibration_parameter_selection:
         run_id: 2
@@ -702,9 +702,9 @@ configuration_by_domain:
         pixel_map: /storage/data/projects/hydrology/vic_gen2/input/rgm/output/columbia/pixel_map_KOOTE.txt
     LARMA:
       dynamic_glaciers: yes
-      VICGL_model_configuration: VICGL_1_0.1
-      HydCnd_model_configuration: HC_1_0.0
-      RGM_model_configuration: RGM_3_0.0
+      VICGL_model_settings: VICGL_1_0.1
+      HydCnd_model_settings: HC_1_0.0
+      RGM_model_settings: RGM_3_0.0
       VICGL_calibration_configuration: NSGAII_0_1.1
       VICGL_calibration_parameter_selection:
         run_id: 2
@@ -721,9 +721,9 @@ configuration_by_domain:
         pixel_map: /storage/data/projects/hydrology/vic_gen2/input/rgm/output/columbia/pixel_map_LARMA.txt
     LIB:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -740,9 +740,9 @@ configuration_by_domain:
         pixel_map: .na
     LIM:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -759,9 +759,9 @@ configuration_by_domain:
         pixel_map: .na
     LLK:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -778,9 +778,9 @@ configuration_by_domain:
         pixel_map: .na
     LORI:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -797,9 +797,9 @@ configuration_by_domain:
         pixel_map: .na
     Malheur:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -816,9 +816,9 @@ configuration_by_domain:
         pixel_map: .na
     MAY:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -835,9 +835,9 @@ configuration_by_domain:
         pixel_map: .na
     MCD:
       dynamic_glaciers: yes
-      VICGL_model_configuration: VICGL_1_0.1
-      HydCnd_model_configuration: HC_1_0.0
-      RGM_model_configuration: RGM_3_0.0
+      VICGL_model_settings: VICGL_1_0.1
+      HydCnd_model_settings: HC_1_0.0
+      RGM_model_settings: RGM_3_0.0
       VICGL_calibration_configuration: NSGAII_0_1.1
       VICGL_calibration_parameter_selection:
         run_id: 3
@@ -854,9 +854,9 @@ configuration_by_domain:
         pixel_map: /storage/data/projects/hydrology/vic_gen2/input/rgm/output/columbia/pixel_map_MCD.txt
     MER:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -873,9 +873,9 @@ configuration_by_domain:
         pixel_map: .na
     METPA:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -892,9 +892,9 @@ configuration_by_domain:
         pixel_map: .na
     MISSI:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -911,9 +911,9 @@ configuration_by_domain:
         pixel_map: .na
     MUC:
       dynamic_glaciers: yes
-      VICGL_model_configuration: VICGL_1_0.1
-      HydCnd_model_configuration: HC_1_0.0
-      RGM_model_configuration: RGM_3_0.0
+      VICGL_model_settings: VICGL_1_0.1
+      HydCnd_model_settings: HC_1_0.0
+      RGM_model_settings: RGM_3_0.0
       VICGL_calibration_configuration: NSGAII_0_1.1
       VICGL_calibration_parameter_selection:
         run_id: 2
@@ -930,9 +930,9 @@ configuration_by_domain:
         pixel_map: /storage/data/projects/hydrology/vic_gen2/input/rgm/output/columbia/pixel_map_MUC.txt
     OKA:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -949,9 +949,9 @@ configuration_by_domain:
         pixel_map: .na
     OKAPE:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -968,9 +968,9 @@ configuration_by_domain:
         pixel_map: .na
     ORO:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -987,9 +987,9 @@ configuration_by_domain:
         pixel_map: .na
     PLEI:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -1006,9 +1006,9 @@ configuration_by_domain:
         pixel_map: .na
     PRD:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -1025,9 +1025,9 @@ configuration_by_domain:
         pixel_map: .na
     PRVO:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -1044,9 +1044,9 @@ configuration_by_domain:
         pixel_map: .na
     REXI:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -1063,9 +1063,9 @@ configuration_by_domain:
         pixel_map: .na
     RML:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -1082,9 +1082,9 @@ configuration_by_domain:
         pixel_map: .na
     ROMO:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -1101,9 +1101,9 @@ configuration_by_domain:
         pixel_map: .na
     RVC:
       dynamic_glaciers: yes
-      VICGL_model_configuration: VICGL_1_0.1
-      HydCnd_model_configuration: HC_1_0.0
-      RGM_model_configuration: RGM_3_0.0
+      VICGL_model_settings: VICGL_1_0.1
+      HydCnd_model_settings: HC_1_0.0
+      RGM_model_settings: RGM_3_0.0
       VICGL_calibration_configuration: NSGAII_0_1.1
       VICGL_calibration_parameter_selection:
         run_id: 2
@@ -1120,9 +1120,9 @@ configuration_by_domain:
         pixel_map: /storage/data/projects/hydrology/vic_gen2/input/rgm/output/columbia/pixel_map_RVC.txt
     SIMHE:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -1139,9 +1139,9 @@ configuration_by_domain:
         pixel_map: .na
     SIMNI:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -1158,9 +1158,9 @@ configuration_by_domain:
         pixel_map: .na
     SIMPR:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -1177,9 +1177,9 @@ configuration_by_domain:
         pixel_map: .na
     SKHI:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -1196,9 +1196,9 @@ configuration_by_domain:
         pixel_map: .na
     SLOCR:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -1215,9 +1215,9 @@ configuration_by_domain:
         pixel_map: .na
     SPD:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -1234,9 +1234,9 @@ configuration_by_domain:
         pixel_map: .na
     SVN:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -1253,9 +1253,9 @@ configuration_by_domain:
         pixel_map: .na
     SWAI:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -1272,9 +1272,9 @@ configuration_by_domain:
         pixel_map: .na
     THOMP:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -1291,9 +1291,9 @@ configuration_by_domain:
         pixel_map: .na
     TOM:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -1310,9 +1310,9 @@ configuration_by_domain:
         pixel_map: .na
     TULPR:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -1329,9 +1329,9 @@ configuration_by_domain:
         pixel_map: .na
     UMATI:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -1348,9 +1348,9 @@ configuration_by_domain:
         pixel_map: .na
     UMTW:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -1367,9 +1367,9 @@ configuration_by_domain:
         pixel_map: .na
     WARMS:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -1386,9 +1386,9 @@ configuration_by_domain:
         pixel_map: .na
     WAT:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -1405,9 +1405,9 @@ configuration_by_domain:
         pixel_map: .na
     WAV:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -1424,9 +1424,9 @@ configuration_by_domain:
         pixel_map: .na
     WEII:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -1443,9 +1443,9 @@ configuration_by_domain:
         pixel_map: .na
     WENPE:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -1462,9 +1462,9 @@ configuration_by_domain:
         pixel_map: .na
     WHB:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -1482,9 +1482,9 @@ configuration_by_domain:
   nwna__allwsbc__fraser:
     ADAMS:
       dynamic_glaciers: yes
-      VICGL_model_configuration: VICGL_1_0.1
-      HydCnd_model_configuration: HC_1_0.0
-      RGM_model_configuration: RGM_3_0.0
+      VICGL_model_settings: VICGL_1_0.1
+      HydCnd_model_settings: HC_1_0.0
+      RGM_model_settings: RGM_3_0.0
       VICGL_calibration_configuration: NSGAII_0_1.1
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -1501,9 +1501,9 @@ configuration_by_domain:
         pixel_map: /storage/data/projects/hydrology/vic_gen2/input/rgm/output/fraser/pixel_map_ADAMS.txt
     BAKER:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -1520,9 +1520,9 @@ configuration_by_domain:
         pixel_map: .na
     BARRM:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -1539,9 +1539,9 @@ configuration_by_domain:
         pixel_map: .na
     BCHAL:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -1558,9 +1558,9 @@ configuration_by_domain:
         pixel_map: .na
     BCHLJ:
       dynamic_glaciers: yes
-      VICGL_model_configuration: VICGL_1_0.1
-      HydCnd_model_configuration: HC_1_0.0
-      RGM_model_configuration: RGM_3_0.0
+      VICGL_model_settings: VICGL_1_0.1
+      HydCnd_model_settings: HC_1_0.0
+      RGM_model_settings: RGM_3_0.0
       VICGL_calibration_configuration: NSGAII_0_1.1
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -1577,9 +1577,9 @@ configuration_by_domain:
         pixel_map: /storage/data/projects/hydrology/vic_gen2/input/rgm/output/fraser/pixel_map_BCHLJ.txt
     BCHSF:
       dynamic_glaciers: yes
-      VICGL_model_configuration: VICGL_1_0.1
-      HydCnd_model_configuration: HC_1_0.0
-      RGM_model_configuration: RGM_3_0.0
+      VICGL_model_settings: VICGL_1_0.1
+      HydCnd_model_settings: HC_1_0.0
+      RGM_model_settings: RGM_3_0.0
       VICGL_calibration_configuration: NSGAII_0_1.1
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -1596,9 +1596,9 @@ configuration_by_domain:
         pixel_map: /storage/data/projects/hydrology/vic_gen2/input/rgm/output/fraser/pixel_map_BCHSF.txt
     BCHSG:
       dynamic_glaciers: yes
-      VICGL_model_configuration: VICGL_1_0.1
-      HydCnd_model_configuration: HC_1_0.0
-      RGM_model_configuration: RGM_3_0.0
+      VICGL_model_settings: VICGL_1_0.1
+      HydCnd_model_settings: HC_1_0.0
+      RGM_model_settings: RGM_3_0.0
       VICGL_calibration_configuration: NSGAII_0_1.1
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -1615,9 +1615,9 @@ configuration_by_domain:
         pixel_map: /storage/data/projects/hydrology/vic_gen2/input/rgm/output/fraser/pixel_map_BCHSG.txt
     BCHST:
       dynamic_glaciers: yes
-      VICGL_model_configuration: VICGL_1_0.1
-      HydCnd_model_configuration: HC_1_0.0
-      RGM_model_configuration: RGM_3_0.0
+      VICGL_model_settings: VICGL_1_0.1
+      HydCnd_model_settings: HC_1_0.0
+      RGM_model_settings: RGM_3_0.0
       VICGL_calibration_configuration: NSGAII_0_1.1
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -1634,9 +1634,9 @@ configuration_by_domain:
         pixel_map: /storage/data/projects/hydrology/vic_gen2/input/rgm/output/fraser/pixel_map_BCHST.txt
     BCHTR:
       dynamic_glaciers: yes
-      VICGL_model_configuration: VICGL_1_0.1
-      HydCnd_model_configuration: HC_1_0.0
-      RGM_model_configuration: RGM_3_0.0
+      VICGL_model_settings: VICGL_1_0.1
+      HydCnd_model_settings: HC_1_0.0
+      RGM_model_settings: RGM_3_0.0
       VICGL_calibration_configuration: NSGAII_0_1.1
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -1653,9 +1653,9 @@ configuration_by_domain:
         pixel_map: /storage/data/projects/hydrology/vic_gen2/input/rgm/output/fraser/pixel_map_BCHTR.txt
     BCHWL:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -1672,9 +1672,9 @@ configuration_by_domain:
         pixel_map: .na
     BIGCR:
       dynamic_glaciers: yes
-      VICGL_model_configuration: VICGL_1_0.1
-      HydCnd_model_configuration: HC_1_0.0
-      RGM_model_configuration: RGM_3_0.0
+      VICGL_model_settings: VICGL_1_0.1
+      HydCnd_model_settings: HC_1_0.0
+      RGM_model_settings: RGM_3_0.0
       VICGL_calibration_configuration: NSGAII_0_1.1
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -1691,9 +1691,9 @@ configuration_by_domain:
         pixel_map: /storage/data/projects/hydrology/vic_gen2/input/rgm/output/fraser/pixel_map_BIGCR.txt
     BONAP:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -1710,9 +1710,9 @@ configuration_by_domain:
         pixel_map: .na
     BOWRB:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -1729,9 +1729,9 @@ configuration_by_domain:
         pixel_map: .na
     CAYOO:
       dynamic_glaciers: yes
-      VICGL_model_configuration: VICGL_1_0.1
-      HydCnd_model_configuration: HC_1_0.0
-      RGM_model_configuration: RGM_3_0.0
+      VICGL_model_settings: VICGL_1_0.1
+      HydCnd_model_settings: HC_1_0.0
+      RGM_model_settings: RGM_3_0.0
       VICGL_calibration_configuration: NSGAII_0_1.1
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -1748,9 +1748,9 @@ configuration_by_domain:
         pixel_map: /storage/data/projects/hydrology/vic_gen2/input/rgm/output/fraser/pixel_map_CAYOO.txt
     CHILB:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -1767,9 +1767,9 @@ configuration_by_domain:
         pixel_map: .na
     CHILK:
       dynamic_glaciers: yes
-      VICGL_model_configuration: VICGL_1_0.1
-      HydCnd_model_configuration: HC_1_0.0
-      RGM_model_configuration: RGM_3_0.0
+      VICGL_model_settings: VICGL_1_0.1
+      HydCnd_model_settings: HC_1_0.0
+      RGM_model_settings: RGM_3_0.0
       VICGL_calibration_configuration: NSGAII_0_1.1
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -1786,9 +1786,9 @@ configuration_by_domain:
         pixel_map: /storage/data/projects/hydrology/vic_gen2/input/rgm/output/fraser/pixel_map_CHILK.txt
     CHILLI:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -1805,9 +1805,9 @@ configuration_by_domain:
         pixel_map: .na
     CLEAO:
       dynamic_glaciers: yes
-      VICGL_model_configuration: VICGL_1_0.1
-      HydCnd_model_configuration: HC_1_0.0
-      RGM_model_configuration: RGM_3_0.0
+      VICGL_model_settings: VICGL_1_0.1
+      HydCnd_model_settings: HC_1_0.0
+      RGM_model_settings: RGM_3_0.0
       VICGL_calibration_configuration: NSGAII_0_1.1
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -1824,9 +1824,9 @@ configuration_by_domain:
         pixel_map: /storage/data/projects/hydrology/vic_gen2/input/rgm/output/fraser/pixel_map_CLEAO.txt
     CLEAS:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -1843,9 +1843,9 @@ configuration_by_domain:
         pixel_map: .na
     COTTO:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -1862,9 +1862,9 @@ configuration_by_domain:
         pixel_map: .na
     EAGLE:
       dynamic_glaciers: yes
-      VICGL_model_configuration: VICGL_1_0.1
-      HydCnd_model_configuration: HC_1_0.0
-      RGM_model_configuration: RGM_3_0.0
+      VICGL_model_settings: VICGL_1_0.1
+      HydCnd_model_settings: HC_1_0.0
+      RGM_model_settings: RGM_3_0.0
       VICGL_calibration_configuration: NSGAII_0_1.1
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -1881,9 +1881,9 @@ configuration_by_domain:
         pixel_map: /storage/data/projects/hydrology/vic_gen2/input/rgm/output/fraser/pixel_map_EAGLE.txt
     FRSHA:
       dynamic_glaciers: yes
-      VICGL_model_configuration: VICGL_1_0.1
-      HydCnd_model_configuration: HC_1_0.0
-      RGM_model_configuration: RGM_3_0.0
+      VICGL_model_settings: VICGL_1_0.1
+      HydCnd_model_settings: HC_1_0.0
+      RGM_model_settings: RGM_3_0.0
       VICGL_calibration_configuration: NSGAII_0_1.1
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -1900,9 +1900,9 @@ configuration_by_domain:
         pixel_map: /storage/data/projects/hydrology/vic_gen2/input/rgm/output/fraser/pixel_map_FRSHA.txt
     FRSHP:
       dynamic_glaciers: yes
-      VICGL_model_configuration: VICGL_1_0.1
-      HydCnd_model_configuration: HC_1_0.0
-      RGM_model_configuration: RGM_3_0.0
+      VICGL_model_settings: VICGL_1_0.1
+      HydCnd_model_settings: HC_1_0.0
+      RGM_model_settings: RGM_3_0.0
       VICGL_calibration_configuration: NSGAII_0_1.1
       VICGL_calibration_parameter_selection:
         run_id: 2
@@ -1919,9 +1919,9 @@ configuration_by_domain:
         pixel_map: /storage/data/projects/hydrology/vic_gen2/input/rgm/output/fraser/pixel_map_FRSHP.txt
     FRSMC:
       dynamic_glaciers: yes
-      VICGL_model_configuration: VICGL_1_0.1
-      HydCnd_model_configuration: HC_1_0.0
-      RGM_model_configuration: RGM_3_0.0
+      VICGL_model_settings: VICGL_1_0.1
+      HydCnd_model_settings: HC_1_0.0
+      RGM_model_settings: RGM_3_0.0
       VICGL_calibration_configuration: NSGAII_0_1.1
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -1938,9 +1938,9 @@ configuration_by_domain:
         pixel_map: /storage/data/projects/hydrology/vic_gen2/input/rgm/output/fraser/pixel_map_FRSMC.txt
     FRSMG:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -1957,9 +1957,9 @@ configuration_by_domain:
         pixel_map: .na
     FRSMT:
       dynamic_glaciers: yes
-      VICGL_model_configuration: VICGL_1_0.1
-      HydCnd_model_configuration: HC_1_0.0
-      RGM_model_configuration: RGM_3_0.0
+      VICGL_model_settings: VICGL_1_0.1
+      HydCnd_model_settings: HC_1_0.0
+      RGM_model_settings: RGM_3_0.0
       VICGL_calibration_configuration: NSGAII_0_1.1
       VICGL_calibration_parameter_selection:
         run_id: ~
@@ -1976,9 +1976,9 @@ configuration_by_domain:
         pixel_map: /storage/data/projects/hydrology/vic_gen2/input/rgm/output/fraser/pixel_map_FRSMT.txt
     FRSRP:
       dynamic_glaciers: yes
-      VICGL_model_configuration: VICGL_1_0.1
-      HydCnd_model_configuration: HC_1_0.0
-      RGM_model_configuration: RGM_3_0.0
+      VICGL_model_settings: VICGL_1_0.1
+      HydCnd_model_settings: HC_1_0.0
+      RGM_model_settings: RGM_3_0.0
       VICGL_calibration_configuration: NSGAII_0_1.1
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -1995,9 +1995,9 @@ configuration_by_domain:
         pixel_map: /storage/data/projects/hydrology/vic_gen2/input/rgm/output/fraser/pixel_map_FRSRP.txt
     HARRI:
       dynamic_glaciers: yes
-      VICGL_model_configuration: VICGL_1_0.1
-      HydCnd_model_configuration: HC_1_0.0
-      RGM_model_configuration: RGM_3_0.0
+      VICGL_model_settings: VICGL_1_0.1
+      HydCnd_model_settings: HC_1_0.0
+      RGM_model_settings: RGM_3_0.0
       VICGL_calibration_configuration: NSGAII_0_1.1
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -2014,9 +2014,9 @@ configuration_by_domain:
         pixel_map: /storage/data/projects/hydrology/vic_gen2/input/rgm/output/fraser/pixel_map_HARRI.txt
     HORSE:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -2033,9 +2033,9 @@ configuration_by_domain:
         pixel_map: .na
     LILLO:
       dynamic_glaciers: yes
-      VICGL_model_configuration: VICGL_1_0.1
-      HydCnd_model_configuration: HC_1_0.0
-      RGM_model_configuration: RGM_3_0.0
+      VICGL_model_settings: VICGL_1_0.1
+      HydCnd_model_settings: HC_1_0.0
+      RGM_model_settings: RGM_3_0.0
       VICGL_calibration_configuration: NSGAII_0_1.1
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -2052,9 +2052,9 @@ configuration_by_domain:
         pixel_map: /storage/data/projects/hydrology/vic_gen2/input/rgm/output/fraser/pixel_map_LILLO.txt
     MAHOO:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -2071,9 +2071,9 @@ configuration_by_domain:
         pixel_map: .na
     MCGRE:
       dynamic_glaciers: yes
-      VICGL_model_configuration: VICGL_1_0.1
-      HydCnd_model_configuration: HC_1_0.0
-      RGM_model_configuration: RGM_3_0.0
+      VICGL_model_settings: VICGL_1_0.1
+      HydCnd_model_settings: HC_1_0.0
+      RGM_model_settings: RGM_3_0.0
       VICGL_calibration_configuration: NSGAII_0_1.1
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -2090,9 +2090,9 @@ configuration_by_domain:
         pixel_map: /storage/data/projects/hydrology/vic_gen2/input/rgm/output/fraser/pixel_map_MCGRE.txt
     NAUTL:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -2109,9 +2109,9 @@ configuration_by_domain:
         pixel_map: .na
     NAZKO:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -2128,9 +2128,9 @@ configuration_by_domain:
         pixel_map: .na
     NECHC:
       dynamic_glaciers: yes
-      VICGL_model_configuration: VICGL_1_0.1
-      HydCnd_model_configuration: HC_1_0.0
-      RGM_model_configuration: RGM_3_0.0
+      VICGL_model_settings: VICGL_1_0.1
+      HydCnd_model_settings: HC_1_0.0
+      RGM_model_settings: RGM_3_0.0
       VICGL_calibration_configuration: NSGAII_0_1.1
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -2147,9 +2147,9 @@ configuration_by_domain:
         pixel_map: /storage/data/projects/hydrology/vic_gen2/input/rgm/output/fraser/pixel_map_NECHC.txt
     NICOL:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -2166,9 +2166,9 @@ configuration_by_domain:
         pixel_map: .na
     NTHMB:
       dynamic_glaciers: yes
-      VICGL_model_configuration: VICGL_1_0.1
-      HydCnd_model_configuration: HC_1_0.0
-      RGM_model_configuration: RGM_3_0.0
+      VICGL_model_settings: VICGL_1_0.1
+      HydCnd_model_settings: HC_1_0.0
+      RGM_model_settings: RGM_3_0.0
       VICGL_calibration_configuration: NSGAII_0_1.1
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -2185,9 +2185,9 @@ configuration_by_domain:
         pixel_map: /storage/data/projects/hydrology/vic_gen2/input/rgm/output/fraser/pixel_map_NTHMB.txt
     QUESL:
       dynamic_glaciers: yes
-      VICGL_model_configuration: VICGL_1_0.1
-      HydCnd_model_configuration: HC_1_0.0
-      RGM_model_configuration: RGM_3_0.0
+      VICGL_model_settings: VICGL_1_0.1
+      HydCnd_model_settings: HC_1_0.0
+      RGM_model_settings: RGM_3_0.0
       VICGL_calibration_configuration: NSGAII_0_1.1
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -2204,9 +2204,9 @@ configuration_by_domain:
         pixel_map: /storage/data/projects/hydrology/vic_gen2/input/rgm/output/fraser/pixel_map_QUESL.txt
     QUESQ:
       dynamic_glaciers: yes
-      VICGL_model_configuration: VICGL_1_0.1
-      HydCnd_model_configuration: HC_1_0.0
-      RGM_model_configuration: RGM_3_0.0
+      VICGL_model_settings: VICGL_1_0.1
+      HydCnd_model_settings: HC_1_0.0
+      RGM_model_settings: RGM_3_0.0
       VICGL_calibration_configuration: NSGAII_0_1.1
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -2223,9 +2223,9 @@ configuration_by_domain:
         pixel_map: /storage/data/projects/hydrology/vic_gen2/input/rgm/output/fraser/pixel_map_QUESQ.txt
     SALMO:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -2242,9 +2242,9 @@ configuration_by_domain:
         pixel_map: .na
     SANJO:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -2261,9 +2261,9 @@ configuration_by_domain:
         pixel_map: .na
     SEYMO:
       dynamic_glaciers: yes
-      VICGL_model_configuration: VICGL_1_0.1
-      HydCnd_model_configuration: HC_1_0.0
-      RGM_model_configuration: RGM_3_0.0
+      VICGL_model_settings: VICGL_1_0.1
+      HydCnd_model_settings: HC_1_0.0
+      RGM_model_settings: RGM_3_0.0
       VICGL_calibration_configuration: NSGAII_0_1.1
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -2280,9 +2280,9 @@ configuration_by_domain:
         pixel_map: /storage/data/projects/hydrology/vic_gen2/input/rgm/output/fraser/pixel_map_SEYMO.txt
     STELL:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -2299,9 +2299,9 @@ configuration_by_domain:
         pixel_map: .na
     STHOM:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -2318,9 +2318,9 @@ configuration_by_domain:
         pixel_map: .na
     STUAR:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -2337,9 +2337,9 @@ configuration_by_domain:
         pixel_map: .na
     TASEK:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -2356,9 +2356,9 @@ configuration_by_domain:
         pixel_map: .na
     WESTR:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -2375,9 +2375,9 @@ configuration_by_domain:
         pixel_map: .na
     WILLO:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -2395,9 +2395,9 @@ configuration_by_domain:
   nwna__allwsbc__peace:
     ARNT7:
       dynamic_glaciers: yes
-      VICGL_model_configuration: VICGL_1_0.1
-      HydCnd_model_configuration: HC_1_0.0
-      RGM_model_configuration: RGM_3_0.0
+      VICGL_model_settings: VICGL_1_0.1
+      HydCnd_model_settings: HC_1_0.0
+      RGM_model_settings: RGM_3_0.0
       VICGL_calibration_configuration: NSGAII_0_1.1
       VICGL_calibration_parameter_selection:
         run_id: 2
@@ -2414,9 +2414,9 @@ configuration_by_domain:
         pixel_map: /storage/data/projects/hydrology/vic_gen2/input/rgm/output/peace/pixel_map_ARNT7.txt
     BRBAC:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -2433,9 +2433,9 @@ configuration_by_domain:
         pixel_map: .na
     BRNFS:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -2452,9 +2452,9 @@ configuration_by_domain:
         pixel_map: .na
     FRAAR:
       dynamic_glaciers: yes
-      VICGL_model_configuration: VICGL_1_0.1
-      HydCnd_model_configuration: HC_1_0.0
-      RGM_model_configuration: RGM_3_0.0
+      VICGL_model_settings: VICGL_1_0.1
+      HydCnd_model_settings: HC_1_0.0
+      RGM_model_settings: RGM_3_0.0
       VICGL_calibration_configuration: NSGAII_0_1.1
       VICGL_calibration_parameter_selection:
         run_id: 4
@@ -2471,9 +2471,9 @@ configuration_by_domain:
         pixel_map: /storage/data/projects/hydrology/vic_gen2/input/rgm/output/peace/pixel_map_FRAAR.txt
     GRACC:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -2490,9 +2490,9 @@ configuration_by_domain:
         pixel_map: .na
     HERNN:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -2509,9 +2509,9 @@ configuration_by_domain:
         pixel_map: .na
     HRAGR:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -2528,9 +2528,9 @@ configuration_by_domain:
         pixel_map: .na
     HRNFC:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -2547,9 +2547,9 @@ configuration_by_domain:
         pixel_map: .na
     IRASR:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -2566,9 +2566,9 @@ configuration_by_domain:
         pixel_map: .na
     KIRNF:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -2585,9 +2585,9 @@ configuration_by_domain:
         pixel_map: .na
     KWRNW:
       dynamic_glaciers: yes
-      VICGL_model_configuration: VICGL_1_0.1
-      HydCnd_model_configuration: HC_1_0.0
-      RGM_model_configuration: RGM_3_0.0
+      VICGL_model_settings: VICGL_1_0.1
+      HydCnd_model_settings: HC_1_0.0
+      RGM_model_settings: RGM_3_0.0
       VICGL_calibration_configuration: NSGAII_0_1.1
       VICGL_calibration_parameter_selection:
         run_id: 2
@@ -2604,9 +2604,9 @@ configuration_by_domain:
         pixel_map: /storage/data/projects/hydrology/vic_gen2/input/rgm/output/peace/pixel_map_KWRNW.txt
     LSRNG:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -2623,9 +2623,9 @@ configuration_by_domain:
         pixel_map: .na
     MRAGC:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -2642,9 +2642,9 @@ configuration_by_domain:
         pixel_map: .na
     MRAWR:
       dynamic_glaciers: yes
-      VICGL_model_configuration: VICGL_1_0.1
-      HydCnd_model_configuration: HC_1_0.0
-      RGM_model_configuration: RGM_3_0.0
+      VICGL_model_settings: VICGL_1_0.1
+      HydCnd_model_settings: HC_1_0.0
+      RGM_model_settings: RGM_3_0.0
       VICGL_calibration_configuration: NSGAII_0_1.1
       VICGL_calibration_parameter_selection:
         run_id: 2
@@ -2661,9 +2661,9 @@ configuration_by_domain:
         pixel_map: /storage/data/projects/hydrology/vic_gen2/input/rgm/output/peace/pixel_map_MRAWR.txt
     MRNFS:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -2680,9 +2680,9 @@ configuration_by_domain:
         pixel_map: .na
     MRNTM:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -2699,9 +2699,9 @@ configuration_by_domain:
         pixel_map: .na
     NRNFS:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -2718,9 +2718,9 @@ configuration_by_domain:
         pixel_map: .na
     NRNTM:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -2737,9 +2737,9 @@ configuration_by_domain:
         pixel_map: .na
     ORAAC:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -2756,9 +2756,9 @@ configuration_by_domain:
         pixel_map: .na
     ORAOR:
       dynamic_glaciers: yes
-      VICGL_model_configuration: VICGL_1_0.1
-      HydCnd_model_configuration: HC_1_0.0
-      RGM_model_configuration: RGM_3_0.0
+      VICGL_model_settings: VICGL_1_0.1
+      HydCnd_model_settings: HC_1_0.0
+      RGM_model_settings: RGM_3_0.0
       VICGL_calibration_configuration: NSGAII_0_1.1
       VICGL_calibration_parameter_selection:
         run_id: 2
@@ -2775,9 +2775,9 @@ configuration_by_domain:
         pixel_map: /storage/data/projects/hydrology/vic_gen2/input/rgm/output/peace/pixel_map_ORAOR.txt
     ORNEL:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -2794,9 +2794,9 @@ configuration_by_domain:
         pixel_map: .na
     PCRBH:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -2813,9 +2813,9 @@ configuration_by_domain:
         pixel_map: .na
     PERNT:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -2832,9 +2832,9 @@ configuration_by_domain:
         pixel_map: .na
     PRABD:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 3
@@ -2851,9 +2851,9 @@ configuration_by_domain:
         pixel_map: .na
     PRAEP:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -2870,9 +2870,9 @@ configuration_by_domain:
         pixel_map: .na
     PRAMR:
       dynamic_glaciers: yes
-      VICGL_model_configuration: VICGL_1_0.1
-      HydCnd_model_configuration: HC_1_0.0
-      RGM_model_configuration: RGM_3_0.0
+      VICGL_model_settings: VICGL_1_0.1
+      HydCnd_model_settings: HC_1_0.0
+      RGM_model_settings: RGM_3_0.0
       VICGL_calibration_configuration: NSGAII_0_1.1
       VICGL_calibration_parameter_selection:
         run_id: 2
@@ -2889,9 +2889,9 @@ configuration_by_domain:
         pixel_map: /storage/data/projects/hydrology/vic_gen2/input/rgm/output/peace/pixel_map_PRAMR.txt
     PRAOO:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -2908,9 +2908,9 @@ configuration_by_domain:
         pixel_map: .na
     PRAPR:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -2927,9 +2927,9 @@ configuration_by_domain:
         pixel_map: .na
     RRNRG:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -2946,9 +2946,9 @@ configuration_by_domain:
         pixel_map: .na
     SMRAW:
       dynamic_glaciers: yes
-      VICGL_model_configuration: VICGL_1_0.1
-      HydCnd_model_configuration: HC_1_0.0
-      RGM_model_configuration: RGM_3_0.0
+      VICGL_model_settings: VICGL_1_0.1
+      HydCnd_model_settings: HC_1_0.0
+      RGM_model_settings: RGM_3_0.0
       VICGL_calibration_configuration: NSGAII_0_1.1
       VICGL_calibration_parameter_selection:
         run_id: 2
@@ -2965,9 +2965,9 @@ configuration_by_domain:
         pixel_map: /storage/data/projects/hydrology/vic_gen2/input/rgm/output/peace/pixel_map_SMRAW.txt
     SRNTM:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
@@ -2984,9 +2984,9 @@ configuration_by_domain:
         pixel_map: .na
     WRNGP:
       dynamic_glaciers: yes
-      VICGL_model_configuration: VICGL_1_0.1
-      HydCnd_model_configuration: HC_1_0.0
-      RGM_model_configuration: RGM_3_0.0
+      VICGL_model_settings: VICGL_1_0.1
+      HydCnd_model_settings: HC_1_0.0
+      RGM_model_settings: RGM_3_0.0
       VICGL_calibration_configuration: NSGAII_0_1.1
       VICGL_calibration_parameter_selection:
         run_id: 2
@@ -3003,9 +3003,9 @@ configuration_by_domain:
         pixel_map: /storage/data/projects/hydrology/vic_gen2/input/rgm/output/peace/pixel_map_WRNGP.txt
     WRNTM:
       dynamic_glaciers: no
-      VICGL_model_configuration: VICGL_1_0.0
-      HydCnd_model_configuration: .na
-      RGM_model_configuration: .na
+      VICGL_model_settings: VICGL_1_0.0
+      HydCnd_model_settings: .na
+      RGM_model_settings: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
       VICGL_calibration_parameter_selection:
         run_id: 1
