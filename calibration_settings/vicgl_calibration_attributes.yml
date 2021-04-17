@@ -245,7 +245,7 @@ fraser:
     STUAR:
       {configuration: NSGA_0_0.0, run_id: 1, run_no: 2, glaciers: false}
     TASEK:
-      {configuration: NSGA_0_0.0, run_id: 1, run_no: 48, glaciers: true}
+      {configuration: NSGA_0_1.0, run_id: 1, run_no: 48, glaciers: true}
     WESTR:
       {configuration: NSGA_0_0.0, run_id: 1, run_no: 25, glaciers: false}
     WILLO:
