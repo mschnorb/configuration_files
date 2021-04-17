@@ -1,6 +1,5 @@
 --- # Calibration and run metadata
 columbia:
-  version_1.0:
     ALB:
       {configuration: NSGA_0_0.0, run_id: 1, run_no: 3, glaciers: false}
     ANA:
@@ -155,7 +154,6 @@ columbia:
       {configuration: NSGA_0_0.0, run_id: 1, run_no: 1, glaciers: false}
 
 fraser:
-  version_1.0:
     ADAMS:
       {configuration: NSGA_0_1.0, run_id: 1, run_no: 43, glaciers: true}
     BAKER:
@@ -254,7 +252,6 @@ fraser:
       {configuration: NSGA_0_0.0, run_id: 1, run_no: 4, glaciers: false}
 
 peace:
-  version_1.0:
     KWRNW:
       {configuration: NSGA_0_1.0, run_id: 2, run_no: 2, glaciers: true}
     FRAAR:
@@ -325,7 +322,6 @@ peace:
       {configuration: ~, run_id: ~, run_no: ~, glaciers: ~}
 
 vanisle:
-  version_1.0:
     BCCMX:
       {configuration: NSGA_0_1.0, run_id: ~, run_no: ~, glaciers: true}
 

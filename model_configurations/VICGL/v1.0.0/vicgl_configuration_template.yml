@@ -11,13 +11,11 @@ model_settings:
       HydCnd_model_configuration: HC_1_0.0
       RGM_model_configuration: RGM_3_0.0
       VICGL_calibration_configuration: NSGAII_0_1.1
-      initialization_method: cold_start + glacier_evolved_20cr
     dynamics_false:
       VICGL_model_configuration: VICGL_1_0.0
       HydCnd_model_configuration: .na
       RGM_model_configuration: .na
       VICGL_calibration_configuration: NSGAII_0_0.0
-      initialization_method: cold_start
   parameter_settings_by_domain:
     fraser:
       dynamics_true:
@@ -38,7 +36,7 @@ model_settings:
         surf_dem: .na
         bed_dem: .na
         glac_mask: .na
-        pixel_map: .nn
+        pixel_map: .na
         initialization_method: cold_start
       nested_domain: nwna__allwsbc
     columbia:

@@ -1,0 +1,41 @@
+--- # VICGL settings template
+title: VICGL template for model configuration and parameter files
+author: Markus Schnorbus
+institution: Pacific Climate Impacts Consortium
+contact: mschnorb@uvic.ca
+model_settings:
+  input_dir: /storage/data/projects/hydrology/vic_gen2/input
+  model_configuration:
+    dynamics_true:
+      VICGL_model_configuration: VICGL_1_0.1
+      HydCnd_model_configuration: HC_1_0.0
+      RGM_model_configuration: RGM_3_0.0
+      VICGL_calibration_configuration: NSGAII_0_1.1
+    dynamics_false:
+      VICGL_model_configuration: VICGL_1_0.0
+      HydCnd_model_configuration: .na
+      RGM_model_configuration: .na
+      VICGL_calibration_configuration: NSGAII_0_0.0
+  parameter_settings_by_domain:
+    fraser:
+      dynamics_true:
+        soil_parameters: soils/soil_files_by_subbasin/fraser/proj/soils.gen2.201802_fraser_calib_{BASIN}.txt
+        vegetation_library: vegetation/vlbc/vlbc_nalc_2005_final_050rmin_125L.txt
+        vegetation_parameters: vegetation/vpf_0625/fraser/vpf_{BASIN}_200_glac.txt
+        snowband_parameters: snowbands/snb_0625/fraser/snb_{BASIN}_200_glac.txt
+        surf_dem: rgm/output/fraser/initialization/srf_dem_1945_{BASIN}_CRU_TRIM200.gsa
+        bed_dem: rgm/output/fraser/bed_dem_{BASIN}_TRIM200.gsa
+        glac_mask: rgm/output/fraser/initialization/glac_mask_1945_{BASIN}_CRU_TRIM200.gsa
+        pixel_map: rgm/output/fraser/pixel_map_{BASIN}_TRIM200.txt
+        initialization_method: cold_start + glacier_from_state_c200
+      dynamics_false:
+        soil_parameters: soils/soil_files_by_subbasin/fraser/proj/soils.gen2.201802_fraser_calib_{BASIN}.txt
+        vegetation_library: vegetation/vlbc/vlbc_nalc_2005_final_050rmin_125L.txt
+        vegetation_parameters: vegetation/vpf_0625/fraser/vpf_fraser_200.txt
+        snowband_parameters: snowband/snb_0625/fraser/snb_fraser_200.txt
+        surf_dem: .na
+        bed_dem: .na
+        glac_mask: .na
+        pixel_map: .na
+        initialization_method: cold_start
+      nested_domain: nwna__allwsbc

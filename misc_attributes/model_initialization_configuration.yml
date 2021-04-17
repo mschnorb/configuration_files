@@ -32,6 +32,23 @@ glacier_from_state_c100:
     - surface_elevation
   initialization_date: 1945-09-30
 
+glacier_from_state_c200:
+  description: initialize glacier from external state
+  method_steps:
+    - >
+    use glacier state from Clarke et al (2016) based
+    on CRU-driven historical RGM run
+    - >
+    surface DEM state from native 200-m lcc RGM grid
+    - >
+    glacier mask calculated as difference from surface DEM
+    200-m bed DEM from Clarke et al (2016)
+  start_states: na
+  states_initialized:
+    - glacier_mask
+    - surface_elevation
+  initialization_date: 1945-09-30
+
 glacier_evolved_20cr:
   description: evolve glacier cover and depth from bare surface
   method_steps:
