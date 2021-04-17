@@ -1,0 +1,36 @@
+title: HI Theme model run metadata
+author: Markus Schnorbus
+contact: mschnorb@uvic.ca
+institution: Pacific Climate Impacts Consortium
+write_date: Fri Apr 16 18:42:13 2021
+basin: FRSRP
+nested_domain: nwna__allwsbc__fraser
+input_configurations:
+  model_metadata: ../model_configurations/VICGL/v1.0.0/vicgl_configuration_template.yml
+  calibration_metadata: ../calibration_settings/vicgl_calibration_attributes.yml
+configuration_dependency:
+  model_settings_key_VICGL: https://github.com/mschnorb/configuration_files/tree/main/model_settings/model_settings_VICGL.yml
+  model_settings_key_RVIC: https://github.com/mschnorb/configuration_files/tree/main/model_settings/model_settings_RVIC.yml
+  model_settings_key_RGM: https://github.com/mschnorb/configuration_files/tree/main/model_settings/model_settings_RGM.yml
+  model_settings_key_HyCond: https://github.com/mschnorb/configuration_files/tree/main/model_settings/model_settings_HyCond.yml
+  domain_description_key: https://github.com/mschnorb/configuration_files/blob/main/misc_attributes/HI_theme_domains.yml
+  vicgl_calibration_configuration_key: https://github.com/mschnorb/configuration_files/blob/main/calibration_settings/vicgl_calibration_configurations.yml
+model_configuration:
+  dynamic_glaciers: 'yes'
+  VICGL_model_settings: VICGL_1_0.1
+  HyCond_model_settings: HC_1_0.0
+  RGM_model_settings: RGM_3_0.0
+  VICGL_calibration_configuration: NSGAII_0_1.1
+  VICGL_calibration_parameter_selection:
+    run_id: 1
+    run_no: 13
+  initialization_method: cold_start + glacier_evolved_20cr
+  parameter_files:
+    soil_parameters: /storage/data/projects/hydrology/vic_gen2/input/soils/soil_files_by_subbasin/fraser/proj/soils.gen2.201802_fraser_calib_FRSRP.txt
+    vegetation_library: /storage/data/projects/hydrology/vic_gen2/input/vegetation/vlbc/vlbc_nalc_2005_final_050rmin_125L.txt
+    vegetation_parameters: /storage/data/projects/hydrology/vic_gen2/input/vegetation/vpf_0625/fraser/vpf_FRSRP_200_glac.txt
+    snowband_parameters: /storage/data/projects/hydrology/vic_gen2/input/snowbands/snb_0625/fraser/snb_FRSRP_200_glac.txt
+    surf_dem: /storage/data/projects/hydrology/vic_gen2/input/rgm/output/fraser/initialization/rgm_surf_dem_out_1945-09-30_FRSRP.gsa
+    bed_dem: /storage/data/projects/hydrology/vic_gen2/input/rgm/output/fraser/bed_dem_FRSRP.gsa
+    glac_mask: /storage/data/projects/hydrology/vic_gen2/input/rgm/output/fraser/initialization/glacier_mask_1945-09-30_FRSRP.gsa
+    pixel_map: /storage/data/projects/hydrology/vic_gen2/input/rgm/output/fraser/pixel_map_FRSRP.txt

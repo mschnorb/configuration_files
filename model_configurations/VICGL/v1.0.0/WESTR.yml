@@ -1,0 +1,36 @@
+title: HI Theme model run metadata
+author: Markus Schnorbus
+contact: mschnorb@uvic.ca
+institution: Pacific Climate Impacts Consortium
+write_date: Fri Apr 16 18:42:14 2021
+basin: WESTR
+nested_domain: nwna__allwsbc__fraser
+input_configurations:
+  model_metadata: ../model_configurations/VICGL/v1.0.0/vicgl_configuration_template.yml
+  calibration_metadata: ../calibration_settings/vicgl_calibration_attributes.yml
+configuration_dependency:
+  model_settings_key_VICGL: https://github.com/mschnorb/configuration_files/tree/main/model_settings/model_settings_VICGL.yml
+  model_settings_key_RVIC: https://github.com/mschnorb/configuration_files/tree/main/model_settings/model_settings_RVIC.yml
+  model_settings_key_RGM: https://github.com/mschnorb/configuration_files/tree/main/model_settings/model_settings_RGM.yml
+  model_settings_key_HyCond: https://github.com/mschnorb/configuration_files/tree/main/model_settings/model_settings_HyCond.yml
+  domain_description_key: https://github.com/mschnorb/configuration_files/blob/main/misc_attributes/HI_theme_domains.yml
+  vicgl_calibration_configuration_key: https://github.com/mschnorb/configuration_files/blob/main/calibration_settings/vicgl_calibration_configurations.yml
+model_configuration:
+  dynamic_glaciers: 'no'
+  VICGL_model_settings: VICGL_1_0.0
+  HyCond_model_settings: .na
+  RGM_model_settings: .na
+  VICGL_calibration_configuration: NSGAII_0_0.0
+  VICGL_calibration_parameter_selection:
+    run_id: 1
+    run_no: 25
+  initialization_method: cold_start
+  parameter_files:
+    soil_parameters: /storage/data/projects/hydrology/vic_gen2/input/soils/soil_files_by_subbasin/fraser/proj/soils.gen2.201802_fraser_calib_WESTR.txt
+    vegetation_library: /storage/data/projects/hydrology/vic_gen2/input/vegetation/vlbc/vlbc_nalc_2005_final_050rmin_125L.txt
+    vegetation_parameters: .na
+    snowband_parameters: .na
+    surf_dem: .na
+    bed_dem: .na
+    glac_mask: .na
+    pixel_map: .na
