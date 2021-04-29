@@ -1,0 +1,95 @@
+--- # NetCDF attribute data for VIC-GL output files
+retrospective1: # VIC-GL retrospective simulation
+  description: Retrospective run with PNWNAmet gridded observations
+  attributes:
+    frequency: daily
+    contact: Markus Schnorbus, mschnorb@uvic.ca
+    Conventions: CF-1.8
+    configuration_id: https://github.com/mschnorb/configuration_files/blob/main/model_configurations/VICGL/vicgl_run_configuration_nwna_v1.0.0.yml
+    creation_date: __ATT_CREATION_DATE__
+    domain: __ATT_DOMAIN__
+    frequency: daily
+    institute_id: PCIC
+    institution: Pacific Climate Impacts Consortium
+    method: Variable Infiltration Capacity Model GL with glacier dynamics
+    method_id : VICGL, RGM, and HydroConductor
+    modeling_realm: land surface
+    product: retrospective hydrological model output
+    project_id: VIC Generation 2 Hydrologic Modelling
+    references: http://www.pacificclimate.org
+    resolution: 0.0625dd
+    table_id: na
+    title: __ATT_TITLE__
+    tracking_id: na
+    type: gridded fluxes
+    version: VICGL 1.0, RGM 3.0, HydroConductor 1.0
+    forcing_type: gridded observations
+    forcing_domain: Northwestern North America
+    observations__contact: Markus Schnorbus, mschnorb@uvic.ca
+    observations__dataset: Thin plate spline w/ ClimateWNA for northwestern North America
+    observations__dataset_id: PNWNAmet
+    observations__frequency: daily
+    observations__institute_id: PCIC
+    observations__institution: Pacific Climate Impacts Consortium
+    observations__references: https://www.nature.com/articles/sdata2018299
+    observations__version: 1.0
+    model_cal__contact: Markus Schnorbus, mschnorb@uvic.ca
+    model_cal__dataset: Thin plate spline w/ ClimateWNA for northwestern North America
+    model_cal__dataset_id: PNWNAmet
+    model_cal__start_date: 1985-01-01T00:00:00
+    model_cal__end_date: 2005-12-31T23:00:00
+    model_cal__institute_id: PCIC
+    model_cal__institution: Pacific Climate Impacts Consortium (PCIC)
+    model_cal__references: http://www.pacificclimate.org
+    model_cal__version: __ATT_CALIB_VERS__
+
+projection1: # VIC-GL CMIP5 projection
+  description: Projection run with CMIP5 forcing
+  attributes:
+    title: __ATT_TITLE__
+    Conventions: CF-1.8
+    contact: Markus Schnorbus, mschnorb@uvic.ca
+    references: http://www.pacificclimate.org
+    project_id: CMIP5_Projections
+    creation_date: __ATT_CREATION_DATE__
+    institute_id: PCIC
+    institution: Pacific Climate Impacts Consortium (PCIC)
+    domain: __ATT_DOMAIN__
+    modeling_realm: land surface
+    product: hydrological model output
+    type: gridded fluxes
+    frequency: daily
+    resolution: 0.0625dd
+    method: __ATT_HYDROMODEL_METHOD__
+    method_id: __ATT_HYDROMODEL_METHOD_ID__
+    version: __ATT_HYDROMODEL_VER__
+    configuration_id: __ATT_HYDROMODEL_CONFIG__
+    table_id: na
+    forcing_type: downscaled gcm
+    forcing_domain: Northwestern North America
+    downscaling_method: Bias-corrected Constructed Analogues with Quantile Reordering
+    downscaling_method_id: BCCAQv2
+    downscaling_package_id: CLIMDOWN 1.0.2
+    downscaling__GCM__experiment: Representative Concentration Pathways
+    downscaling__GCM__experiment_id: __ATT_RCP__
+    downscaling__GCM__initialization_method:  __ATT_INIT__
+    downscaling__GCM__institute_id: __ATT_INST_ID__
+    downscaling__GCM__institution: __ATT_INST_NAME__
+    downscaling__GCM__model_id: __ATT_GCM_ID__
+    downscaling__GCM__physics_version: __ATT_PHYSICS__
+    downscaling__GCM__realization: __ATT_REALIZATION__
+    downscaling__target__contact: Markus Schnorbus, mschnorb@uvic.ca
+    downscaling__target__dataset: Thin plate spline w/ ClimateWNA for northwestern North America
+    downscaling__target__dataset_id: PNWNAmet
+    downscaling__target__institute_id: PCIC
+    downscaling__target__institution: Pacific Climate Impacts Consortium (PCIC)
+    downscaling__target__references: https://www.nature.com/articles/sdata2018299
+    downscaling__target__version: 1.0
+    model_cal__contact: Markus Schnorbus, mschnorb@uvic.ca
+    model_cal__dataset: Thin plate spline w/ ClimateWNA for northwestern North America
+    model_cal__dataset_id: PNWNAmet
+    model_cal__start_date: 1985-01-01T00:00:00
+    model_cal__end_date: 2005-12-31T23:00:00
+    model_cal__institute_id: PCIC
+    model_cal__institution: Pacific Climate Impacts Consortium (PCIC)
+    model_cal___version: __ATT_CALIB_VERS__
