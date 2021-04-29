@@ -1,0 +1,106 @@
+--- # VICGL run configurations
+config1: # Standard VICGL run-time configuration
+  description: Standard VICGL runtime configuration
+  configuration:
+    simulation_parameters:  
+      time_step: 3
+      snow_step: 3
+      start_year: __STARTYEAR__
+      start_month: __STARTMONTH__
+      start_day: __STARTDAY__
+      start_hour: 0
+      end_year: __ENDYEAR__
+      end_month: 12
+      end_day: 31
+      nlayer: 3
+      nodes: 3
+      tfallback: TRUE
+      continueonerror: FALSE
+      max_memory: 0.0
+      parallel_threads: __THREADS__
+      glacier_dynamics: __GLACDYNAMICS__
+    energy_balance:
+      full_energy: TRUE
+    soil_parameters:
+      frozen_soil: FALSE
+      quick_flux: TRUE
+      quick_solve: FALSE
+      no_flux: FALSE
+      implicit: FALSE
+      exp_trans: FALSE
+      grnd_flux_type: GF_410
+    snow_parameters:
+      snow_albedo: USACE
+      snow_density: DENS_BRAS
+      blowing: FALSE
+    meteorology_parameters:
+      output_force: FALSE
+      dist_prcp: FALSE
+      prec_expt: 0.6
+      corrprec: FALSE
+      min_wind_speed: 0.1
+      aero_resist_cansnow: AR_406_FULL
+      plapse: TRUE
+      sw_prec_thresh: 0.0
+      mtclim_swe_corr: TRUE
+      lw_type: LW_TVA
+      lw_cloud: LW_CLOUD_DEARDORFF
+      vp_iter: VP_ITER_ALWAYS
+      vp_interp: TRUE
+      temp_th_type: KIENZLE
+    glacier_parameters:
+      glacier_id: 22
+      glacier_accum_start_year: __GLACSTART__
+      glacier_accum_start_month: 10
+      glacier_accum_start_day: 1
+      glacier_accum_interval: 1
+    state_parameters:
+      init_state: __INPUTSTATE__
+      statename: __OUTPUTSTATE__
+      stateyear: __ENDYEAR__
+      statemonth: 12
+      stateday: 31
+      state_format: NETCDF
+    forcing_files:
+      grid_decimal: 5
+      wind_h: 10
+      measure_h: 2
+      alma_input: FALSE
+      forcing1: __FORCEFILE__
+      force_format: NETCDF
+      force_endian: LITTLE
+      force_dt: 3
+      forceyear: __FORCEYEAR__
+      forcemonth: 1
+      forceday: 1
+      forcehour: 0
+    surface_files:
+      soil: __SOILFILE__
+      baseflow: ARNO
+      compute_treeline: FALSE
+      july_tavg_supplied: TRUE
+      organic_fract: FALSE
+      arc_soil: FALSE
+      vegparam:  __VEGPFILE__
+      veglib: __VEGLBFILE__
+      vegparam_lai: FALSE
+      lai_src: LAI_FROM_VEGLIB
+      root_zones: 3
+      snow_band: 20 
+      bandfile: __BANDFILE__
+    lake_parameters:
+      lakes: FALSE
+      lake_profile: FALSE
+      equal_area: FALSE
+      resolution: 0.0625
+    output_files:
+      result_dir : __OUTDIR__
+      output_format: NETCDF
+      netcdf_output_filename: results.nc
+      compress: FALSE
+      out_step: 24
+      skipyear: 0
+      alma_output: FALSE
+      prt_header: FALSE
+      prt_snow_band: FALSE
+      moistfrac: FALSE
