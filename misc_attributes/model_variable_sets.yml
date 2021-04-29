@@ -242,8 +242,8 @@ vicset1: # Standard VICGL gridded output
          time: point
          area: mean
 
-vicset2: #VICGL gridded output
-  description: VICGL gridded output without band data
+vicset2: #Standard VICGL gridded output
+  description: Standard VICGL gridded output without band variables
   frequency: daily
   no_variables: 13
   convention: CF_v1.8
@@ -356,218 +356,8 @@ vicset2: #VICGL gridded output
           time: sum
           area: mean
 
-vicset3: # Expanded VICGL gridded output for RBM
-  description: VICGL gridded cell output for RBM compatability without band data
-  frequency: daily
-  no_variables: 25
-  convention: CF_v1.8
-  variables:
-    no_cell_variables: 25
-    no_band_variables: 0
-    cell_variables:
-      AIR_TEMP:
-        long_name: surface air temperature
-        standard_name: air_temperature
-        units: C
-        levels: ~
-        cell_methods:
-          time: mean
-          area: mean
-      BASEFLOW:
-        long_name: baseflow
-        standard_name: thickness_of_subsurface_runoff_amount
-        units: mm
-        levels: ~
-        cell_methods:
-          time: sum
-          area: mean
-      DENSITY:
-        long_name: near surface atmospheric density
-        standard_name: air_density
-        units: kg m-3
-        levels: ~
-        cell_methods:
-          time: mean
-          area: mean
-      EVAP:
-        long_name: total evapotranspiration
-        standard_name: lwe_thickness_of_water_evapotranspiration_amount
-        units: mm
-        levels: ~
-        cell_methods:
-          time: sum
-          area: mean
-      GLAC_AREA:
-        long_name: glacier area
-        standard_name: land_ice_area_fraction
-        units: 1
-        levels: ~
-        cell_methods:
-          time: point
-          area: sum
-      GLAC_MBAL:
-        long_name: glacier mass balance
-        standard_name: thickness_of_land_ice_lwe_surface_mass_balance_amount
-        units: mm
-        levels: ~
-        cell_methods:
-          time: sum
-          area: mean
-      GLAC_MELT:
-        long_name: ice melt
-        standard_name: thickness_of_land_ice_surface_melt_amount
-        units: mm
-        levels: ~
-        cell_methods:
-          time: sum
-          area: mean
-      GLAC_OUTFLOW:
-        long_name: glacier outflow
-        standard_name: thickness_of_land_ice_runoff_amount
-        units: mm
-        levels: ~
-        cell_methods:
-          time: sum
-          area: mean
-      LONGWAVE:
-        long_name: incoming longwave radiation
-        standard_name: surface_downwelling_longwave_flux_in_air
-        units: W m-2
-        levels: ~
-        cell_methods:
-          time: mean
-          area: mean
-      PET_H2OSURF:
-        long_name: potential evap from open water
-        standard_name: ~
-        units: mm
-        levels: ~
-        cell_methods:
-          time: sum
-          area: mean
-      PET_NATVEG:
-        long_name: potential evapotranspiration of natural vegetation
-        standard_name: ~
-        units: mm
-        levels: ~
-        cell_methods:
-          time: sum
-          area: mean
-      PREC:
-        long_name: precipitation
-        standard_name: lwe_thickness_of_precipitation_amount
-        units: mm
-        levels: ~
-        cell_methods:
-          time: sum
-          area: mean
-      PRESSURE:
-        long_name: near surface atmospheric pressure
-        standard_name: surface_air_pressure
-        units: kPa
-        levels: ~
-        cell_methods:
-          time: mean
-          area: mean
-      RAINF:
-        long_name: rainfall
-        standard_name: thickness_of_rainfall_amount
-        units: mm
-        levels: ~
-        cell_methods:
-          time: sum
-          area: mean
-      RUNOFF:
-        long_name: surface runoff
-        standard_name: thickness_of_surface_runoff_amount
-        units: mm
-        levels: ~
-        cell_methods:
-          time: sum
-          area: mean
-      RUNOFF_SNOW:
-        long_name: surface runoff from snow and ice melt
-        standard_name: ~
-        units: mm
-        levels: ~
-        cell_methods:
-          time: sum
-          area: mean
-      SHORTWAVE:
-        long_name: incoming shortwave radiation
-        standard_name: surface_downwelling_shortwave_flux_in_air
-        units: W m-2
-        levels: ~
-        cell_methods:
-          time: mean
-          area: mean
-      SNOW_COVER:
-        long_name: snow cover fraction
-        standard_name: surface_snow_area_fraction
-        units: 1
-        levels: ~
-        cell_methods:
-          time: point
-          area: sum
-      SNOW_MELT:
-        long_name: snow melt
-        standard_name: thickness_of_snow_melt_amount
-        units: mm
-        levels: ~
-        cell_methods:
-          time: sum
-          area: mean
-      SOIL_MOIST_TOT:
-        long_name: total column soil moisture
-        standard_name: lwe_thickness_of_soil_moisture_content
-        units: mm
-        levels: ~
-        cell_methods:
-          time: point
-          area: mean
-      SOIL_TEMP:
-        long_name: soil temperature
-        standard_name: soil_temperature
-        units: C
-        levels: soil layers
-        cell_methods:
-          time: point
-          area: mean
-      SWE:
-        long_name: snow water equivalent
-        standard_name: lwe_thickness_of_snow_amount
-        units: mm
-        levels: ~
-        cell_methods:
-          time: point
-          area: mean
-      TRANSP_VEG:
-        long_name: transpiration
-        standard_name: thickness_of_transpiration_amount
-        units: mm
-        levels: ~
-        cell_methods:
-          time: sum
-          area: mean
-      VP:
-        long_name: near surface vapor pressure
-        standard_name: water_vapor_partial_pressure_in_air
-        units: kPa
-        levels: ~
-        cell_methods:
-          time: mean
-          area: mean
-      WIND:
-        long_name: near surface wind speed
-        standard_name: wind_speed
-        units: m s-1 
-        levels: ~
-        cell_methods:
-          time: mean
-          area: mean
-
-vicset4: # Expanded VICGL gridded output
-  description: Expanded VICGL gridded output with band data
+vicset3: # Expanded VICGL gridded output
+  description: Expanded VICGL gridded output for RBM compatability
   frequency: daily
   no.variables: 26
   convention: CF_v1.8
@@ -783,6 +573,216 @@ vicset4: # Expanded VICGL gridded output
         levels: elevation bands
         cell_methods:
           time: point
+          area: mean
+
+vicset4: # Expanded VICGL gridded output for RBM
+  description: Expanded VICGL gridded cell output for RBM compatability without band variables
+  frequency: daily
+  no_variables: 25
+  convention: CF_v1.8
+  variables:
+    no_cell_variables: 25
+    no_band_variables: 0
+    cell_variables:
+      AIR_TEMP:
+        long_name: surface air temperature
+        standard_name: air_temperature
+        units: C
+        levels: ~
+        cell_methods:
+          time: mean
+          area: mean
+      BASEFLOW:
+        long_name: baseflow
+        standard_name: thickness_of_subsurface_runoff_amount
+        units: mm
+        levels: ~
+        cell_methods:
+          time: sum
+          area: mean
+      DENSITY:
+        long_name: near surface atmospheric density
+        standard_name: air_density
+        units: kg m-3
+        levels: ~
+        cell_methods:
+          time: mean
+          area: mean
+      EVAP:
+        long_name: total evapotranspiration
+        standard_name: lwe_thickness_of_water_evapotranspiration_amount
+        units: mm
+        levels: ~
+        cell_methods:
+          time: sum
+          area: mean
+      GLAC_AREA:
+        long_name: glacier area
+        standard_name: land_ice_area_fraction
+        units: 1
+        levels: ~
+        cell_methods:
+          time: point
+          area: sum
+      GLAC_MBAL:
+        long_name: glacier mass balance
+        standard_name: thickness_of_land_ice_lwe_surface_mass_balance_amount
+        units: mm
+        levels: ~
+        cell_methods:
+          time: sum
+          area: mean
+      GLAC_MELT:
+        long_name: ice melt
+        standard_name: thickness_of_land_ice_surface_melt_amount
+        units: mm
+        levels: ~
+        cell_methods:
+          time: sum
+          area: mean
+      GLAC_OUTFLOW:
+        long_name: glacier outflow
+        standard_name: thickness_of_land_ice_runoff_amount
+        units: mm
+        levels: ~
+        cell_methods:
+          time: sum
+          area: mean
+      LONGWAVE:
+        long_name: incoming longwave radiation
+        standard_name: surface_downwelling_longwave_flux_in_air
+        units: W m-2
+        levels: ~
+        cell_methods:
+          time: mean
+          area: mean
+      PET_H2OSURF:
+        long_name: potential evap from open water
+        standard_name: ~
+        units: mm
+        levels: ~
+        cell_methods:
+          time: sum
+          area: mean
+      PET_NATVEG:
+        long_name: potential evapotranspiration of natural vegetation
+        standard_name: ~
+        units: mm
+        levels: ~
+        cell_methods:
+          time: sum
+          area: mean
+      PREC:
+        long_name: precipitation
+        standard_name: lwe_thickness_of_precipitation_amount
+        units: mm
+        levels: ~
+        cell_methods:
+          time: sum
+          area: mean
+      PRESSURE:
+        long_name: near surface atmospheric pressure
+        standard_name: surface_air_pressure
+        units: kPa
+        levels: ~
+        cell_methods:
+          time: mean
+          area: mean
+      RAINF:
+        long_name: rainfall
+        standard_name: thickness_of_rainfall_amount
+        units: mm
+        levels: ~
+        cell_methods:
+          time: sum
+          area: mean
+      RUNOFF:
+        long_name: surface runoff
+        standard_name: thickness_of_surface_runoff_amount
+        units: mm
+        levels: ~
+        cell_methods:
+          time: sum
+          area: mean
+      RUNOFF_SNOW:
+        long_name: surface runoff from snow and ice melt
+        standard_name: ~
+        units: mm
+        levels: ~
+        cell_methods:
+          time: sum
+          area: mean
+      SHORTWAVE:
+        long_name: incoming shortwave radiation
+        standard_name: surface_downwelling_shortwave_flux_in_air
+        units: W m-2
+        levels: ~
+        cell_methods:
+          time: mean
+          area: mean
+      SNOW_COVER:
+        long_name: snow cover fraction
+        standard_name: surface_snow_area_fraction
+        units: 1
+        levels: ~
+        cell_methods:
+          time: point
+          area: sum
+      SNOW_MELT:
+        long_name: snow melt
+        standard_name: thickness_of_snow_melt_amount
+        units: mm
+        levels: ~
+        cell_methods:
+          time: sum
+          area: mean
+      SOIL_MOIST_TOT:
+        long_name: total column soil moisture
+        standard_name: lwe_thickness_of_soil_moisture_content
+        units: mm
+        levels: ~
+        cell_methods:
+          time: point
+          area: mean
+      SOIL_TEMP:
+        long_name: soil temperature
+        standard_name: soil_temperature
+        units: C
+        levels: soil layers
+        cell_methods:
+          time: point
+          area: mean
+      SWE:
+        long_name: snow water equivalent
+        standard_name: lwe_thickness_of_snow_amount
+        units: mm
+        levels: ~
+        cell_methods:
+          time: point
+          area: mean
+      TRANSP_VEG:
+        long_name: transpiration
+        standard_name: thickness_of_transpiration_amount
+        units: mm
+        levels: ~
+        cell_methods:
+          time: sum
+          area: mean
+      VP:
+        long_name: near surface vapor pressure
+        standard_name: water_vapor_partial_pressure_in_air
+        units: kPa
+        levels: ~
+        cell_methods:
+          time: mean
+          area: mean
+      WIND:
+        long_name: near surface wind speed
+        standard_name: wind_speed
+        units: m s-1 
+        levels: ~
+        cell_methods:
+          time: mean
           area: mean
 
 hconset1: # HydroCon-RGM gridded output
