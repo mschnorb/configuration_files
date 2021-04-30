@@ -2,7 +2,6 @@
 retrospective1: # VIC-GL retrospective simulation
   description: Retrospective run with PNWNAmet gridded observations
   attributes:
-    frequency: daily
     contact: Markus Schnorbus, mschnorb@uvic.ca
     Conventions: CF-1.8
     configuration_id: https://github.com/mschnorb/configuration_files/blob/main/model_configurations/VICGL/vicgl_run_configuration_nwna_v1.0.0.yml
