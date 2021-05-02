@@ -217,6 +217,14 @@ vicset1: # Standard VICGL gridded output
           time: sum
           area: mean
     band_variables:
+      ELEV_BAND:
+        long_name: band median elevation
+        standard_name: ground_level_altitude
+        units: m
+        levels: elevation bands
+        cell_methods:
+          time: point
+          area: median
       GLAC_AREA_BAND:
         long_name: glacier area
         standard_name: land_ice_area_fraction
@@ -550,6 +558,14 @@ vicset3: # Expanded VICGL gridded output
           time: mean
           area: mean
     band_variables:
+      ELEV_BAND:
+        long_name: band median elevation
+        standard_name: ground_level_altitude
+        units: m
+        levels: elevation bands
+        cell_methods:
+          time: point
+          area: median
       GLAC_AREA_BAND:
         long_name: glacier area
         standard_name: land_ice_area_fraction
