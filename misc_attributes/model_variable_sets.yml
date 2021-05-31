@@ -371,7 +371,7 @@ vicset3: # Expanded VICGL gridded output
   convention: CF_v1.8
   variables:
     no_cell_variables: 23
-    no_band_variables: 3
+    no_band_variables: 4
     cell_variables:
       AIR_TEMP:
         long_name: surface air temperature
