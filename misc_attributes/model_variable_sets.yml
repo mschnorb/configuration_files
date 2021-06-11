@@ -146,7 +146,7 @@ vicset1: # Standard VICGL gridded output
           area: mean
       PET_NATVEG:
         long_name: potential evapotranspiration of natural vegetation
-        standard_name: ~
+        standard_name: lwe_thickness_of_potential_water_evaporation_amount_from_natural_vegetation
         units: mm
         levels: ~
         cell_methods:
@@ -301,7 +301,7 @@ vicset2: #Standard VICGL gridded output
           area: mean
       PET_NATVEG:
         long_name: potential evapotranspiration of natural vegetation
-        standard_name: ~
+        standard_name: lwe_thickness_of_potential_water_evaporation_amount_from_natural_vegetation
         units: mm
         levels: ~
         cell_methods:
@@ -431,7 +431,7 @@ vicset3: # Expanded VICGL gridded output
           area: mean
       PET_H2OSURF:
         long_name: potential evap from open water
-        standard_name: ~
+        standard_name: lwe_thickness_of_potential_water_evaporation_amount_from_open_water
         units: mm
         levels: ~
         cell_methods:
@@ -439,7 +439,7 @@ vicset3: # Expanded VICGL gridded output
           area: mean
       PET_NATVEG:
         long_name: potential evapotranspiration of natural vegetation
-        standard_name: ~
+        standard_name: lwe_thickness_of_potential_water_evaporation_amount_from_natural_vegetation
         units: mm
         levels: ~
         cell_methods:
@@ -479,7 +479,7 @@ vicset3: # Expanded VICGL gridded output
           area: mean
       RUNOFF_SNOW:
         long_name: surface runoff from snow and ice melt
-        standard_name: ~
+        standard_name: thickness_of_surface_runoff_amount_from_snow_and_ice_melt
         units: mm
         levels: ~
         cell_methods:
@@ -674,7 +674,7 @@ vicset4: # Expanded VICGL gridded output for RBM
           area: mean
       PET_H2OSURF:
         long_name: potential evap from open water
-        standard_name: ~
+        standard_name: lwe_thickness_of_potential_water_evaporation_amount_from_open_water
         units: mm
         levels: ~
         cell_methods:
@@ -682,7 +682,7 @@ vicset4: # Expanded VICGL gridded output for RBM
           area: mean
       PET_NATVEG:
         long_name: potential evapotranspiration of natural vegetation
-        standard_name: ~
+        standard_name: lwe_thickness_of_potential_water_evaporation_amount_from_natural_vegetation
         units: mm
         levels: ~
         cell_methods:
@@ -722,7 +722,7 @@ vicset4: # Expanded VICGL gridded output for RBM
           area: mean
       RUNOFF_SNOW:
         long_name: surface runoff from snow and ice melt
-        standard_name: ~
+        standard_name: thickness_of_surface_runoff_amount_from_snow_and_ice_melt
         units: mm
         levels: ~
         cell_methods:
