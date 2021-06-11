@@ -110,7 +110,7 @@ vicset1: # Standard VICGL gridded output
   convention: CF_v1.8
   variables:
     no_cell_variables: 13
-    no_band_variables: 3
+    no_band_variables: 4
     cell_variables:
       BASEFLOW:
         long_name: baseflow
