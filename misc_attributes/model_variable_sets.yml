@@ -801,6 +801,128 @@ vicset4: # Expanded VICGL gridded output for RBM
           time: mean
           area: mean
 
+vicset_LE_1: # VICGL gridded output for CanESM2-LE
+  description: VICGL gridded output for CanESM2-LE
+  frequency: daily
+  no_variables: 14
+  convention: CF_v1.8
+  variables:
+    no_cell_variables: 14
+    no_band_variables: 0
+    cell_variables:
+      BASEFLOW:
+        long_name: baseflow
+        standard_name: thickness_of_subsurface_runoff_amount
+        units: mm
+        levels: ~
+        cell_methods:
+          time: sum
+          area: mean
+      EVAP:
+        long_name: total evapotranspiration
+        standard_name: lwe_thickness_of_water_evapotranspiration_amount
+        units: mm
+        levels: ~
+        cell_methods:
+          time: sum
+          area: mean
+      GLAC_AREA:
+        long_name: glacier area
+        standard_name: land_ice_area_fraction
+        units: 1
+        levels: ~
+        cell_methods:
+          time: point
+          area: sum
+      GLAC_MBAL:
+        long_name: glacier mass balance
+        standard_name: thickness_of_land_ice_lwe_surface_mass_balance_amount
+        units: mm
+        levels: ~
+        cell_methods:
+          time: sum
+          area: mean
+      GLAC_MELT:
+        long_name: ice melt
+        standard_name: thickness_of_land_ice_surface_melt_amount
+        units: mm
+        levels: ~
+        cell_methods:
+          time: sum
+          area: mean
+      GLAC_OUTFLOW:
+        long_name: glacier outflow
+        standard_name: thickness_of_land_ice_runoff_amount
+        units: mm
+        levels: ~
+        cell_methods:
+          time: sum
+          area: mean
+      LONGWAVE:
+        long_name: incoming longwave radiation
+        standard_name: surface_downwelling_longwave_flux_in_air
+        units: W m-2
+        levels: ~
+        cell_methods:
+          time: mean
+          area: mean
+      RUNOFF:
+        long_name: surface runoff
+        standard_name: thickness_of_surface_runoff_amount
+        units: mm
+        levels: ~
+        cell_methods:
+          time: sum
+          area: mean
+      SHORTWAVE:
+        long_name: incoming shortwave radiation
+        standard_name: surface_downwelling_shortwave_flux_in_air
+        units: W m-2
+        levels: ~
+        cell_methods:
+          time: mean
+          area: mean
+      SNOW_COVER:
+        long_name: snow cover fraction
+        standard_name: surface_snow_area_fraction
+        units: 1
+        levels: ~
+        cell_methods:
+          time: point
+          area: sum
+      SNOW_DEPTH:
+        long_name: snow depth
+        standard_name: surface_snow_thickness
+        units: cm
+        levels: ~
+        cell_methods:
+          time: point
+          area: mean
+      SNOW_MELT:
+        long_name: snow melt
+        standard_name: thickness_of_snow_melt_amount
+        units: mm
+        levels: ~
+        cell_methods:
+          time: sum
+          area: mean
+      SOIL_MOIST_TOT:
+        long_name: total column soil moisture
+        standard_name: lwe_thickness_of_soil_moisture_content
+        units: mm
+        levels: ~
+        cell_methods:
+          time: point
+          area: mean
+      SWE:
+        long_name: snow water equivalent
+        standard_name: lwe_thickness_of_snow_amount
+        units: mm
+        levels: ~
+        cell_methods:
+          time: point
+          area: mean
+
 hconset1: # HydroCon-RGM gridded output
   description: RGM output collected by hydro-conductor
   frequency: annual
