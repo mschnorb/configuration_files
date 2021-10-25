@@ -6,7 +6,7 @@ parameters_fraser_20211018:
   RVIC_model_config: RVIC_1_1.0
   domain_file: /storage/data/projects/hydrology/vic_gen2/input/routing/fraser/parameters/rvic.domain_fraser_v2.nc
   input_file: /storage/data/projects/hydrology/vic_gen2/input/routing/fraser/parameters/rvic.parameters_fraser_v3_singleID.nc
-  unit_hydrograph_file: /storage/data/projects/hydrology/vic_gen2/projects/moti_floods/routing/uhbox.csv
+  unit_hydrograph_file: /storage/data/projects/hydrology/vic_gen2/input/routing/uh/uhbox.csv
   case_directory: /storage/data/projects/hydrology/vic_gen2/input/routing/fraser/parameters/cases/FRASER_all_points
   parameter_files:
     - FRASER_all_points.rvic.prm.FRASER.20211006.nc
