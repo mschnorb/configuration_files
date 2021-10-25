@@ -1,0 +1,12 @@
+--- # Description of parameter files for RVIC routing model
+parameters_peace_20211025:
+  domain: peace
+  description: Gridded all-points routing for the Peace
+  resolution: 0.0625
+  RVIC_model_config: RVIC_1_1.0
+  domain_file: /storage/data/projects/hydrology/vic_gen2/input/routing/peace/parameters/domain.rvic.peace.20161018.nc
+  input_file: /storage/data/projects/hydrology/vic_gen2/input/routing/peace/parameters/bc.rvic.peace.20171019.nc
+  unit_hydrograph_file: /storage/data/projects/hydrology/vic_gen2/input/routing/uh/uhbox.csv
+  case_directory: /storage/data/projects/hydrology/vic_gen2/input/routing/peace/parameters/cases/PEACE_all_points
+  parameter_files:
+    - PEACE_all_points.rvic.prm.PEACE.20211021.nc
