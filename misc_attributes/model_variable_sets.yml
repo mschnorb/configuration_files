@@ -5,7 +5,7 @@ forceset1: # VIC-GL meterological forcings
   no_variables: 4
   convention: CF_v1.8
   variables:
-    no_cell_varoables: 4
+    no_cell_variables: 4
     no_band_variables: 0
     cell_variables:
       PREC:
@@ -929,7 +929,7 @@ hconset1: # HydroCon-RGM gridded output
   no_variables: 3
   variables:
     no_cell_variables: 0
-    no_band_varianbles: 0
+    no_band_variables: 0
     no_raster_variables: 3
     raster_variables:
       GLAC_MASK:
