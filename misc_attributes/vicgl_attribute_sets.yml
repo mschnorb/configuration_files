@@ -17,7 +17,7 @@ retrospective1: # VIC-GL retrospective simulation
     project_id: VIC Generation 2 Hydrologic Modelling
     references: http://www.pacificclimate.org
     resolution: 0.0625dd
-    table_id: na
+    table_id: 'Table day (15 Aug 2013)'
     title: __ATT_TITLE__
     tracking_id: na
     type: gridded fluxes
@@ -42,53 +42,113 @@ retrospective1: # VIC-GL retrospective simulation
     model_cal__references: http://www.pacificclimate.org
     model_cal__version: __ATT_CALIB_VERS__
 
-projection1: # VIC-GL CMIP5 projection
+projection_fluxes: # VIC-GL CMIP5 projection
   description: Projection run with CMIP5 forcing
   attributes:
     title: __ATT_TITLE__
-    Conventions: CF-1.8
-    contact: Markus Schnorbus, mschnorb@uvic.ca
-    references: http://www.pacificclimate.org
-    project_id: CMIP5_Projections
+    Conventions: 'CF-1.8'
+    contact: 'Markus Schnorbus, mschnorb@uvic.ca'
+    references: 'http://www.pacificclimate.org'
+    project_id: 'CMIP5 Projections'
     creation_date: __ATT_CREATION_DATE__
-    institute_id: PCIC
-    institution: Pacific Climate Impacts Consortium (PCIC)
+    institute_id: 'PCIC'
+    institution: 'Pacific Climate Impacts Consortium'
     domain: __ATT_DOMAIN__
-    modeling_realm: land surface
-    product: hydrological model output
-    type: gridded fluxes
-    frequency: daily
-    resolution: 0.0625dd
+    modeling_realm: 'land surface'
+    product: 'hydrological model output'
+    type: 'gridded fluxes'
+    frequency: 'daily'
+    resolution: '0.0625dd'
     method: __ATT_HYDROMODEL_METHOD__
     method_id: __ATT_HYDROMODEL_METHOD_ID__
     version: __ATT_HYDROMODEL_VER__
     configuration_id: __ATT_HYDROMODEL_CONFIG__
-    table_id: na
-    forcing_type: downscaled gcm
-    forcing_domain: Northwestern North America
-    downscaling_method: Bias-corrected Constructed Analogues with Quantile Reordering
-    downscaling_method_id: BCCAQv2
-    downscaling_package_id: CLIMDOWN 1.0.2
-    downscaling__GCM__experiment: Representative Concentration Pathways
-    downscaling__GCM__experiment_id: __ATT_RCP__
-    downscaling__GCM__initialization_method:  __ATT_INIT__
-    downscaling__GCM__institute_id: __ATT_INST_ID__
-    downscaling__GCM__institution: __ATT_INST_NAME__
-    downscaling__GCM__model_id: __ATT_GCM_ID__
-    downscaling__GCM__physics_version: __ATT_PHYSICS__
-    downscaling__GCM__realization: __ATT_REALIZATION__
-    downscaling__target__contact: Markus Schnorbus, mschnorb@uvic.ca
-    downscaling__target__dataset: Thin plate spline w/ ClimateWNA for northwestern North America
-    downscaling__target__dataset_id: PNWNAmet
-    downscaling__target__institute_id: PCIC
-    downscaling__target__institution: Pacific Climate Impacts Consortium (PCIC)
-    downscaling__target__references: https://www.nature.com/articles/sdata2018299
+    table_id: 'Table day (15 Aug 2013)'
+    forcing_type: 'downscaled gcm'
+    forcing_domain: 'Northwestern North America'
+    downscaling_method: 'Bias-corrected Constructed Analogues with Quantile Reordering'
+    downscaling_method_id: 'BCCAQv2'
+    downscaling_package_id: 'CLIMDOWN 1.0.2'
+    downscaling__GCM__experiment: __ATT_GCM_EXP__
+    downscaling__GCM__experiment_id: __ATT_GCM_EXP_ID__
+    downscaling__GCM__model_id: __ATT_GCM_MODEL_ID_
+    downscaling__GCM__forcing: __ATT_GCM_FORCING__
+    downscaling__GCM__realization: __ATT_GCM_REALIZATION__
+    downscaling__GCM__initialization_method:  __ATT_GCM_INIT__
+    downscaling__GCM__physics_version: __ATT_GCM_PHYSICS__
+    downscaling__GCM__institution: __ATT_GCM_INST_NAME__
+    downscaling__GCM__institute_id: __ATT_GCM_INST_ID__
+    downscaling__target__contact: 'Arelia Schoeneberg, wernera@uvic.ca'
+    downscaling__target__dataset: 'Thin plate spline w/ ClimateWNA for northwestern North America'
+    downscaling__target__dataset_id: 'PNWNAmet'
+    downscaling__target__institute_id: 'PCIC'
+    downscaling__target__institution: 'Pacific Climate Impacts Consortium (PCIC)'
+    downscaling__target__references: 'https://www.nature.com/articles/sdata2018299'
     downscaling__target__version: 1.0
-    model_cal__contact: Markus Schnorbus, mschnorb@uvic.ca
-    model_cal__dataset: Thin plate spline w/ ClimateWNA for northwestern North America
-    model_cal__dataset_id: PNWNAmet
-    model_cal__start_date: 1985-01-01T00:00:00
-    model_cal__end_date: 2005-12-31T23:00:00
-    model_cal__institute_id: PCIC
-    model_cal__institution: Pacific Climate Impacts Consortium (PCIC)
+    model_cal__contact: 'Markus Schnorbus, mschnorb@uvic.ca'
+    model_cal__dataset: 'Thin plate spline w/ ClimateWNA for northwestern North America'
+    model_cal__dataset_id: 'PNWNAmet'
+    model_cal__start_date: '1985-01-01T00:00:00'
+    model_cal__end_date: '2005-12-31T23:00:00'
+    model_cal__institute_id: 'PCIC'
+    model_cal__institution: 'Pacific Climate Impacts Consortium'
     model_cal___version: __ATT_CALIB_VERS__
+
+projection_streamflow: # VIC-GL CMIP5 projection
+  description: STreamlfow projections run with downscaled GCM forcing
+  attributes:
+    title: __ATT_TITLE__
+    Conventions: 'CF-1.4'
+    contact: 'Markus Schnorbus, mschnorb@uvic.ca'
+    creation_date: __ATT_CREATION_DATE__
+    domain: __ATT_DOMAIN__
+    frequency: 'day'
+    institution: 'Pacific Climate Impacts Consortium (PCIC), Victoria, BC, www.pacificclimate.org'
+    institute_id: 'PCIC'
+    modeling_realm: 'land surface'
+    product: 'routed hydrological model output'
+    project_id: __ATT_PROJECT_ID__
+    table_id: 'Table day (15 Aug 2013)'
+    configuration_id: 'RVIC_1_1.0'
+    parameter_config: __ATT_PARAM_CONFIG__
+    method: 'RVIC streamflow routing model'
+    method_id: 'RVIC'
+    version: '1.1.1'
+    type: 'gridded streamflow'
+    hydromodel__configuration_id: __ATT_CONFIG_ID__
+    hydromodel__domain: __ATT_DOMAIN__
+    hydromodel__method: 'Variable Infiltration Capacity Model GL with glacier dynamics'
+    hydromodel__method_id: 'VICGL, RGM, and HydroConductor'
+    hydromodel__version: 'VICGL 1.0, RGM 3.0, HydroConductor 1.0'
+    hydromodel__resolution: '0.0625dd'
+    hydromodel__model_cal__contact: 'Markus Schnorbus, mschnorb@uvic.ca'
+    hydromodel__model_cal__version: __ATT_CALIB_VERS__
+    hydromodel__model_cal__dataset: 'Thin plate spline w/ ClimateWNA for northwestern North America'
+    hydromodel__model_cal__dataset_id: 'PNWNAmet'
+    hydromodel__model_cal__start_date: '1985-01-01T00:00:00'
+    hydromodel__model_cal__end_date: '2005-12-31T23:00:00'
+    hydromodel__model_cal__institute_id: 'PCIC'
+    hydromodel__model_cal__institution: 'Pacific Climate Impacts Consortium (PCIC), Victoria, BC, www.pacificclimate.org'
+    hydromodel__model_cal__references: 'https://pacificclimate.org'
+    hydromodel__forcing_type: 'downscaled gcm'
+    hydromodel__forcing_domain: __ATT_FORCE_DOMAIN__
+    hydromodel__downscaling__method: 'Bias Correction/Constructed Analogue Quantile Mapping version 2.0'
+    hydromodel__downscaling__method_id: 'BCCAQ2'
+    hydromodel__downscaling__package_id: 'CLIMDOWN 1.0.2 (https://github.com/pacificclimate/ClimDown)'
+    hydromodel__downscaling__GCM__experiment: __ATT_GCM_EXP__
+    hydromodel__downscaling__GCM__experiment_id: __ATT_GCM_EXP_ID__
+    hydromodel__downscaling__GCM__model_id: __ATT_GCM_MODEL_ID__
+    hydromodel__downscaling__GCM__forcing: __ATT_GCM_FORCING__
+    hydromodel__downscaling__GCM__realization: __ATT_GCM_REALIZATION__
+    hydromodel__downscaling__GCM__initialization_method: __ATT_GCM_INIT__
+    hydromodel__downscaling__GCM__physics_version: __ATT_GCM_PHYSICS__
+    hydromodel__downscaling__GCM__institution: __ATT_GCM_INST__
+    hydromodel__downscaling__GCM__institute_id: __ATT_GCM_INST_ID__
+    hydromodel__downscaling__target__contact: 'Arelia Schoeneberg, wernera@uvic.ca'
+    hydromodel__downscaling__target__dataset: 'Thin plate spline w/ ClimateWNA for northwestern North America'
+    hydromodel__downscaling__target__dataset_id: 'PNWNAmet'
+    hydromodel__downscaling__target__version: '1'
+    hydromodel__downscaling__target__institution: 'Pacific Climate Impacts Consortium (PCIC), Victoria, BC, www.pacificclimate.org'
+    hydromodel__downscaling__target__institute_id: 'PCIC'
+    hydromodel__downscaling__target__references: 'Werner et al. 2019 https://www.nature.com/articles/sdata2018299'
+  

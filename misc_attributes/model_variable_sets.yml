@@ -103,6 +103,65 @@ forceset2: # Disaggregated met forcings
           time: mean
           area: mean
 
+forceset3: # Disaggregated met forcings
+  description: Updated VICGL sub-daily met forcings
+  frequency: 3-hourly
+  no_variables: 7
+  convention: CF_v1.8
+  variables:
+    no_cell_variables: 7
+    no_band_variables: 0
+    cell_variables:
+      AIR_TEMP:
+        long_name: surface air temperature
+        standard_name: air_temperature
+        units: C
+        cell_methods:
+          time: mean
+          area: mean
+      LONGWAVE:
+        long_name: incoming longwave radiation
+        standard_name: surface_downwelling_longwave_flux_in_air
+        units: W m-2
+        cell_methods:
+          time: mean
+          area: mean
+      PREC:
+        long_name: precipitation
+        standard_name: lwe_thickness_of_precipitation_amount
+        units: mm
+        cell_methods:
+          time: sum
+          area: mean
+      PRESSURE:
+        long_name: near surface atmospheric pressure
+        standard_name: surface_air_pressure
+        units: kPa
+        cell_methods:
+          time: mean
+          area: mean
+      SHORTWAVE:
+        long_name: incoming shortwave radiation
+        standard_name: surface_downwelling_shortwave_flux_in_air
+        units: W m-2
+        cell_methods:
+          time: mean
+          area: mean
+      VP:
+        long_name: near surface vapor pressure
+        standard_name: water_vapor_partial_pressure_in_air
+        units: kPa
+        cell_methods:
+          time: mean
+          area: mean
+      WIND:
+        long_name: near surface wind speed
+        standard_name: wind_speed
+        units: m s-1
+        cell_methods:
+          time: mean
+          area: mean
+
 vicset1: # Standard VICGL gridded output
   description: Standard VICGL gridded output
   frequency: daily
