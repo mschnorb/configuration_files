@@ -42,7 +42,7 @@ retrospective1: # VIC-GL retrospective simulation
     model_cal__references: http://www.pacificclimate.org
     model_cal__version: __ATT_CALIB_VERS__
 
-projection_fluxes: # VIC-GL CMIP5 projection
+projection_fluxes_cmip5: # VIC-GL CMIP5 projection
   description: Projection run with CMIP5 forcing
   attributes:
     title: __ATT_TITLE__
@@ -95,7 +95,7 @@ projection_fluxes: # VIC-GL CMIP5 projection
     model_cal___version: __ATT_CALIB_VERS__
 
 projection_streamflow: # VIC-GL CMIP5 projection
-  description: STreamlfow projections run with downscaled GCM forcing
+  description: Streamlfow projections run with downscaled GCM forcing
   attributes:
     title: __ATT_TITLE__
     Conventions: 'CF-1.4'
