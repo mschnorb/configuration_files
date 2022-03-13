@@ -96,7 +96,7 @@ config1: # Standard VICGL run-time configuration
     output_files:
       result_dir : __OUTDIR__
       output_format: NETCDF
-      netcdf_output_filename: results.nc
+      netcdf_output_filename: __OUTFILE__
       compress: FALSE
       out_step: 24
       skipyear: 0
