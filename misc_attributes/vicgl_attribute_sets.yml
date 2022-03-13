@@ -72,7 +72,7 @@ projection_fluxes_cmip5: # VIC-GL CMIP5 projection
     downscaling__GCM__experiment: __ATT_GCM_EXP__
     downscaling__GCM__experiment_id: __ATT_GCM_EXP_ID__
     downscaling__GCM__model_id: __ATT_GCM_MODEL_ID_
-    downscaling__GCM__forcing: __ATT_GCM_FORCING__
+    downscaling__GCM__forcing: 'na'
     downscaling__GCM__realization: __ATT_GCM_REALIZATION__
     downscaling__GCM__initialization_method:  __ATT_GCM_INIT__
     downscaling__GCM__physics_version: __ATT_GCM_PHYSICS__
@@ -85,6 +85,9 @@ projection_fluxes_cmip5: # VIC-GL CMIP5 projection
     downscaling__target__institution: 'Pacific Climate Impacts Consortium (PCIC)'
     downscaling__target__references: 'https://www.nature.com/articles/sdata2018299'
     downscaling__target__version: 1.0
+    downscaling__postprocessing_method: __ATT_PROC_METH__
+    downscaling__postprocessing_method_id: __ATT_PROC_METH_ID__
+    downscaling__postprocessing_package_id: __ATT_PROC_PACKAGE__
     model_cal__contact: 'Markus Schnorbus, mschnorb@uvic.ca'
     model_cal__dataset: 'Thin plate spline w/ ClimateWNA for northwestern North America'
     model_cal__dataset_id: 'PNWNAmet'
@@ -92,7 +95,7 @@ projection_fluxes_cmip5: # VIC-GL CMIP5 projection
     model_cal__end_date: '2005-12-31T23:00:00'
     model_cal__institute_id: 'PCIC'
     model_cal__institution: 'Pacific Climate Impacts Consortium'
-    model_cal___version: __ATT_CALIB_VERS__
+    model_cal__version: __ATT_CALIB_VERS__
 
 projection_streamflow: # VIC-GL CMIP5 projection
   description: Streamlfow projections run with downscaled GCM forcing
