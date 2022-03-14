@@ -3,10 +3,10 @@ nwna:
   long_name: Northwestern North America
   description: Region spanning northwestern North America
   bounding_box:
-    xmin:
-    xmax:
-    ymin:
-    ymax:
+    xmin: -169.0
+    xmax: -101.0
+    ymin:   40.0
+    ymax:   72.0
   includes:
     - allwsbc
   included_by:
@@ -17,10 +17,10 @@ allwsbc:
     All drainage areas that originate and/or include parts of British Columbia,
     including pnw, fraser, peace, columbia, bccoast, Yukon, and Mackenzie
   bounding_box:
-    xmin:
-    xmax:
-    ymin:
-    ymax:
+    xmin: -140.0
+    xmax: -109.0
+    ymin:   41.0
+    ymax:   64.0
   includes:
     - bccoast
     - fraser
@@ -36,10 +36,10 @@ pnw:
     Columbia River upstream of tidewater plus additional coastal drainages,
     including the Skagit.
   bounding_box:
-    xmin:
-    xmax:
-    ymin:
-    ymax:
+    xmin: -125.0
+    xmax: -109.75
+    ymin:   41.0
+    ymax:   53.1875
   includes:
     - columbia
   included_by:
@@ -49,10 +49,10 @@ columbia:
   long_name: Columbia River
   description: Columbia River drainage upstream of tidewater
   bounding_box:
-    xmin:
-    xmax:
-    ymin:
-    ymax:
+    xmin: -125.0
+    xmax: -109.75
+    ymin:   41.0
+    ymax:   53.1875
   includes:
   included_by:
     - allwsbc
@@ -62,10 +62,10 @@ fraser:
   long_name: Fraser River
   description: Fraser River drainage upstream of tidewater
   bounding_box:
-    xmin:
-    xmax:
-    ymin:
-    ymax:
+    xmin: -128.5
+    xmax: -117.5
+    ymin:   48.5
+    ymax:   56.5
   includes:
     - upper_fraser
     - nechc
@@ -100,10 +100,10 @@ peace:
   long_name: Peace River
   description: Peace River drainage above Peace River, AB
   bounding_box:
-    xmin:
-    xmax:
-    ymin:
-    ymax:
+    xmin: -127.8125
+    xmax: -115.9375
+    ymin:   53.0
+    ymax:   58.1875
   includes:
   included_by:
     - allwsbc
@@ -114,10 +114,10 @@ bccoast:
     All watersheds draining to the Pacific Coast originating in BC, but excluding
     the Fraser River
   bounding_box:
-    xmin:
-    xmax:
-    ymin:
-    ymax:
+    xmin: -135.0
+    xmax: -122.0
+    ymin:   48.0
+    ymax:   60.0
   includes:
     - skeena
     - stikine
@@ -155,10 +155,10 @@ vanisle:
   long_name: Vancouver Island
   description: All basins draining Vancouver Island, not including the Gulf Islands
   bounding_box:
-    xmin:
-    xmax:
-    ymin:
-    ymax:
+    xmin: -128.6875
+    xmax: -123.0
+    ymin:   48.0
+    ymax:   51.0
   includes:
   included_by:
     - bccoast
