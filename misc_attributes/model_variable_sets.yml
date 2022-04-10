@@ -426,7 +426,7 @@ vicset2: #Standard VICGL gridded output
 vicset3: # Expanded VICGL gridded output
   description: Expanded VICGL gridded output for RBM compatability
   frequency: daily
-  no.variables: 26
+  no.variables: 27
   convention: CF_v1.8
   variables:
     no_cell_variables: 23
@@ -861,7 +861,7 @@ vicset4: # Expanded VICGL gridded output for RBM
           area: mean
 
 vicset5:  # Expanded VICGL gridded output for RBM with band variables
-  description: Expanded VICGL gridded cell output for RBM compatability without band variables
+  description: Expanded VICGL gridded cell output for RBM compatability without band variables; additional cell variables
   frequency: daily
   no_variables: 29
   convention: CF_v1.8
