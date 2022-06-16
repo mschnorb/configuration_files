@@ -71,7 +71,7 @@ projection_fluxes_cmip5: # VIC-GL CMIP5 projection
     downscaling_package_id: CLIMDOWN 1.0.2
     downscaling__GCM__experiment: __ATT_GCM_EXP__
     downscaling__GCM__experiment_id: __ATT_GCM_EXP_ID__
-    downscaling__GCM__model_id: __ATT_GCM_MODEL_ID_
+    downscaling__GCM__model_id: __ATT_GCM_MODEL_ID__
     downscaling__GCM__forcing: na
     downscaling__GCM__realization: __ATT_GCM_REALIZATION__
     downscaling__GCM__initialization_method:  __ATT_GCM_INIT__
