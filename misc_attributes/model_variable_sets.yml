@@ -165,7 +165,7 @@ forceset3: # Disaggregated met forcings from MetSim
 vicset1: # Standard VICGL gridded output
   description: Standard VICGL gridded output
   frequency: daily
-  no_variables: 16
+  no_variables: 17
   convention: CF_v1.8
   variables:
     no_cell_variables: 13
@@ -1102,7 +1102,7 @@ vicset5:  # Expanded VICGL gridded output for RBM with band variables
         cell_methods:
           time: point
 
-vicset_LE_1: # VICGL gridded output for CanESM2-LE
+vicset6: # VICGL gridded output for CanESM2-LE
   description: VICGL gridded output for CanESM2-LE
   frequency: daily
   no_variables: 14
