@@ -1,0 +1,62 @@
+--- # dynWat metadata
+projection_cmip:
+  description: Projection run with CMIP forcing
+  attributes:
+    title: __TITLE__
+    description: __DESCRIPTION__
+    contact: Markus Schnorbus (mschnorb@uvic.ca)
+    Conventions: CF-1.4
+    creation_date: __CREATE_DATE__
+    type: dynamical 1-D water energy routing model that uses a simplified kinematic wave and that solves both the energy and water balance and which accounts for water bodies
+    domain: __DOMAIN__
+    frequency: day
+    institue_id: PCIC
+    institution: Pacific Climate Impacts Consortium (PCIC), Victoria, BC, www.pacificclimate.org
+    modelling_realm: land surface
+    product: routing model output
+    project_id: BCSRIF.1
+    table_id: na
+    method: dynamical water energy routing model
+    method_id: dynWat
+    version: 0.2
+    configuration_id: __CONFIG_ID__
+    resolution: 0625dd
+    hydromodel__method: Variable Infiltration Capacity Model GL
+    hydromodel__method_id: VICGL
+    hydromodel__version: VICGL 1.0
+    hydromodel__configuration_id: https://github.com/mschnorb/configuration_files/blob/main/model_configurations/VICGL/v1.0.1
+    hydromodel__domain: __DOMAIN__
+    hydromodel__resolution: 0625dd
+    hydromodel__type: gridded fluxes
+    hydromodel__model_cal__contact: Markus Schnorbus, mschnorb@uvic.ca
+    hydromodel__model_cal__dataset: Thin plate spline w/ ClimateWNA for northwestern North America
+    hydromodel__model_cal__dataset_id: PNWNAmet
+    hydromodel__model_cal__start_date: 1985-01-01T00:00:00
+    hydromodel__model_cal__end_date: 2005-12-31T23:00:00
+    hydromodel__model_cal__institute_id: PCIC
+    hydromodel__model_cal__institution: Pacific Climate Impacts Consortium (PCIC), Victoria, BC, www.pacificclimate.org
+    hydromodel__model_cal__references: http://www.pacificclimate.org
+    hydromodel__model_cal__version: https://github.com/mschnorb/configuration_files/blob/main/calibration_settings/vicgl_calibration_configurations.yml
+    hydromodel__forcing_type: downscaled gcm
+    hydromodel__forcing_domain: __DOMAIN__
+    hydromodel__forcing_preprocessing__method: Meteorological simulator and forcing disaggregator
+    hydromodel__forcing_preprocessing__method_id: MetSim
+    hydromodel__forcing_preprocessing__package_id: metsim 0.0.0
+    hydromodel__downscaling__method: Bias Correction/Constructed Analogue Quantile Mapping version 2.0 (BCCAQ2)
+    hydromodel__downscaling__method_id: BCCAQv2
+    hydromodel__downscaling__package_id: CLIMDOWN 1.0.2
+    hydromodel__downscaling__GCM__model_id: __GCM_MDL_ID__
+    hydromodel__downscaling__GCM__realization: __GCM_REAL__
+    hydromodel__downscaling__GCM__initialization_method: 1
+    hydromodel__downscaling__GCM__physics_version: 1
+    hydromodel__downscaling__GCM__experiment: __EXP__
+    hydromodel__downscaling__GCM__experiment_id: __EXP_ID__
+    hydromodel__downscaling__GCM__institute_id: __GCM_INST_ID__ 
+    hydromodel__downscaling__GCM__institution: __GCM_INST__
+    hydromodel__downscaling__target__contact: Markus Schnorbus, mschnorb@uvic.ca
+    hydromodel__downscaling__target__dataset: Thin plate spline w/ ClimateWNA for northwestern North America
+    hydromodel__downscaling__target__dataset_id: PNWNAmet
+    hydromodel__downscaling__target__institute_id: PCIC
+    hydromodel__downscaling__target__institution: Pacific Climate Impacts Consortium (PCIC), Victoria, BC, www.pacificclimate.org
+    hydromodel__downscaling__target__references: Werner et al. 2019 https://www.nature.com/articles/sdata2018299
+    hydromodel__downscaling__target__version: 1
