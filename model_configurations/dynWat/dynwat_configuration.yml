@@ -1,0 +1,146 @@
+--- # dynWAT model configuration
+bccoast_run004_sub69:
+  description: 'Parameter set from bccoast calibration run 004, subset 69 (iter63_proc26_run3)'
+  globalOptions:
+    inputDir: leopard.compute.pcic.uvic.ca/storage/data/projects/hydrology/dynwat/bccoast
+    cloneMap: input/bccoast_0625.map
+    landmask: input/bccoast_0625_landmask_gauged.map
+  meteoOptions:
+    referenceETPotMethod: Input
+    soilTemperatureMethod: mohseni
+    mohseniMin: 0.5
+    mohseniMax: 45
+    mohseniShift: 13
+    mohseniSlope: 0.18
+    meltTempScale: 0.28
+    avgPeriodTemp: 18
+  routingOptions:
+    debugWaterBalance: True
+    routingOnly: True
+    lddMap: input/bccoast_0625_ldd.map
+    cellAreaMap: input/bccoast_0625_cell_area.map
+    gradient: input/bccoast_0625_gradient.map
+    manningsN: 0.021
+    eta: 0.25
+    nu : 0.40
+    tau: 5.88
+    phi: 0.40
+    beta: 0.60
+    constantChannelWidth: None
+    minimumChannelWidth : None
+    minFracWaterHeight: 0.001
+    dynamicFloodPlain: False
+    routingMethod: simplifiedKinematicWave
+    waterTemperature: True
+    surfaceIce: True
+    zm: 2.0
+    z0i: 0.01
+    z0w: 0.005
+    Ti: 0.07
+    Bi: 1.0
+    iceThresTemp: 273.15
+    albedoWater: 0.15
+    albedoIce: 0.50
+    deltaTPrec: 1.5
+    scaleFactorWind: 2.0
+    heatTransferIceConstant: 1622.0
+    fetchCoef: 5.0
+    fetchExp : 0.46
+    maximumLengthOfSubTimeStep: 720.
+    waterBodyInputNC: input/waterBodies_0625_fx10.nc
+    onlyNaturalWaterBodies: True
+    weirCoeff: 0.4
+    waterBodyShF: input/waterBodies_0625_Shf_fx10.map
+    cropCoefficientWaterNC: input/cropCoefficientForOpenWater_invlat.nc
+    minCropWaterKC: 1.0
+    timestepsToAvgDischargeIni: None
+    timestepsToAvgTemperatureShortIni: None
+    avgDischargeLongIni: states/avgDischargeLong_2010-12-31.map
+    avgBaseflowLongIni: states/avgBaseflowLong_2010-12-31.map
+    avgLakeReservoirInflowShortIni: states/avgLakeReservoirInflowShort_2010-12-31.map
+    avgLakeReservoirOutflowLongIni: states/avgLakeReservoirOutflowLong_2010-12-31.map
+    subDischargeIni: states/subDischarge_2010-12-31.map
+    channelStorageIni: states/channelStorage_2010-12-31.map
+    waterBodyStorageIni: states/waterBodyStorage_2010-12-31.map
+    readAvlChannelStorageIni: states/readAvlChannelStorage_2010-12-31.map
+    m2tDischargeLongIni: states/m2tDischargeLong_2010-12-31.map
+    riverbedExchangeIni: states/riverbedExchange_2010-12-31.map
+    avgDischargeShortIni: states/avgDischargeShort_2010-12-31.map
+    waterTemperatureIni: states/waterTemperature_2010-12-31.map
+    iceThicknessIni: states/iceThickness_2010-12-31.map
+    surfaceHeatTransfer: states/surfaceHeatTransfer_2010-12-31.map
+    soilTemperatureIni: states/soilTemperature_2010-12-31.map
+    avgTemperatureShortIni: None
+
+fraser_run013_sub204:
+  description: 'Parameter set from fraser calibration run 013, subset 204 (iter201_proc23_run1)'
+  globalOptions:
+    inputDir: leopard.compute.pcic.uvic.ca/storage/data/projects/hydrology/dynwat/fraser
+    cloneMap: input/fraser_0625.map
+    landmask: None
+  meteoOptions:
+    referenceETPotMethod: Input
+    soilTemperatureMethod: mohseni
+    mohseniMin: 0.5
+    mohseniMax: 37
+    mohseniShift: 13
+    mohseniSlope: 0.18
+    meltTempScale: 0.34
+    avgPeriodTemp: 7
+  routingOptions:
+    debugWaterBalance: True
+    routingOnly: True
+    lddMap: input/fraser_ldd_0625_sound.map
+    cellAreaMap: input/fraser_cell_area.map
+    gradient: input/fraser_0625_gradient_v10.map
+    manningsN: 0.028
+    eta: 0.25
+    nu : 0.40
+    tau: 5.30
+    phi: 0.52
+    beta: 0.66
+    constantChannelWidth: None
+    minimumChannelWidth : None
+    minFracWaterHeight: 0.001
+    dynamicFloodPlain: False
+    routingMethod: simplifiedKinematicWave
+    waterTemperature: True
+    surfaceIce: True
+    zm: 2.0
+    z0i: 0.01
+    z0w: 0.005
+    Ti: 0.07
+    Bi: 1.0
+    iceThresTemp: 273.15
+    albedoWater: 0.15
+    albedoIce: 0.50
+    deltaTPrec: 1.5
+    scaleFactorWind: 2.0
+    heatTransferIceConstant: 1622.0
+    fetchCoef: 5.0
+    fetchExp : 0.64
+    maximumLengthOfSubTimeStep: 720.
+    waterBodyInputNC: input/waterBodies_0625_invlat_fx10_500.nc
+    onlyNaturalWaterBodies: True
+    weirCoeff: 0.4
+    waterBodyShF: input/waterBodies_0625_Shf_fx10_500.map
+    cropCoefficientWaterNC: input/cropCoefficientForOpenWater_invlat.nc
+    minCropWaterKC: 1.0
+    timestepsToAvgDischargeIni: None
+    timestepsToAvgTemperatureShortIni: None
+    avgDischargeLongIni: states/avgDischargeLong_2010-12-31.map
+    avgBaseflowLongIni: states/avgBaseflowLong_2010-12-31.map
+    avgLakeReservoirInflowShortIni: states/avgLakeReservoirInflowShort_2010-12-31.map
+    avgLakeReservoirOutflowLongIni: states/avgLakeReservoirOutflowLong_2010-12-31.map
+    subDischargeIni: states/subDischarge_2010-12-31.map
+    channelStorageIni: states/channelStorage_2010-12-31.map
+    waterBodyStorageIni: states/waterBodyStorage_2010-12-31.map
+    readAvlChannelStorageIni: states/readAvlChannelStorage_2010-12-31.map
+    m2tDischargeLongIni: states/m2tDischargeLong_2010-12-31.map
+    riverbedExchangeIni: states/riverbedExchange_2010-12-31.map
+    avgDischargeShortIni: states/avgDischargeShort_2010-12-31.map
+    waterTemperatureIni: states/waterTemperature_2010-12-31.map
+    iceThicknessIni: states/iceThickness_2010-12-31.map
+    surfaceHeatTransfer: states/surfaceHeatTransfer_2010-12-31.map
+    soilTemperatureIni: states/soilTemperature_2010-12-31.map
+    avgTemperatureShortIni: None
