@@ -42,8 +42,8 @@ retrospective1: # VIC-GL retrospective simulation
     model_cal__references: http://www.pacificclimate.org
     model_cal__version: __ATT_CALIB_VERS__
 
-projection_fluxes_cmip5: # VIC-GL CMIP5 projection
-  description: Projection run with CMIP5 forcing
+projection_fluxes_vicgl_cmip: # VIC-GL CMIP projection
+  description: VICGL projection run with downscaled CMIP forcing
   attributes:
     title: __ATT_TITLE__
     Conventions: CF-1.8
@@ -69,6 +69,8 @@ projection_fluxes_cmip5: # VIC-GL CMIP5 projection
     downscaling_method: Bias-corrected Constructed Analogues with Quantile Reordering
     downscaling_method_id: BCCAQv2
     downscaling_package_id: CLIMDOWN 1.0.2
+    downscaling__GCM__project: __ATT_GCM_PROJ__
+    downscaling__GCM__project_id: __ATT_GCM_PROJ_ID__
     downscaling__GCM__experiment: __ATT_GCM_EXP__
     downscaling__GCM__experiment_id: __ATT_GCM_EXP_ID__
     downscaling__GCM__model_id: __ATT_GCM_MODEL_ID__
@@ -97,8 +99,8 @@ projection_fluxes_cmip5: # VIC-GL CMIP5 projection
     model_cal__institution: Pacific Climate Impacts Consortium
     model_cal__version: __ATT_CALIB_VERS__
 
-projection_streamflow: # VIC-GL CMIP5 projection
-  description: Streamlfow projections run with downscaled GCM forcing
+projection_streamflow_vicgl_cmip: # VIC-GL CMIP5 projection
+  description: Streamlfow projections run with downscaled CMIP forcing
   attributes:
     title: __ATT_TITLE__
     Conventions: CF-1.4
@@ -138,6 +140,8 @@ projection_streamflow: # VIC-GL CMIP5 projection
     hydromodel__downscaling__method: Bias Correction/Constructed Analogue Quantile Mapping version 2.0
     hydromodel__downscaling__method_id: BCCAQ2
     hydromodel__downscaling__package_id: CLIMDOWN 1.0.2 (https://github.com/pacificclimate/ClimDown)
+    hydromodel__downscaling__GCM__project: __ATT_GCM_PROJ__
+    hydromodel__downscaling__GCM__project_id: __ATT_GCM_PROJ_ID__
     hydromodel__downscaling__GCM__experiment: __ATT_GCM_EXP__
     hydromodel__downscaling__GCM__experiment_id: __ATT_GCM_EXP_ID__
     hydromodel__downscaling__GCM__model_id: __ATT_GCM_MODEL_ID__
