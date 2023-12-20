@@ -12,7 +12,6 @@ retrospective1: # VIC-GL retrospective simulation
     institution: Pacific Climate Impacts Consortium
     method: Variable Infiltration Capacity Model GL with glacier dynamics
     method_id : VICGL, RGM, and HydroConductor
-    version: __ATT_HYDROMODEL_VER__
     modeling_realm: land surface
     product: retrospective hydrological model output
     project_id: VIC Generation 2 Hydrologic Modelling
@@ -22,7 +21,7 @@ retrospective1: # VIC-GL retrospective simulation
     title: __ATT_TITLE__
     tracking_id: na
     type: gridded fluxes
-    version: VICGL 1.0, RGM 3.0, HydroConductor 1.0
+    version: __ATT_HYDROMODEL_VER__
     forcing_type: gridded observations
     forcing_domain: Northwestern North America
     observations__contact: Markus Schnorbus, mschnorb@uvic.ca
