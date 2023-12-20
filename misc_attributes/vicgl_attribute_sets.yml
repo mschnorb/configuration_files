@@ -4,7 +4,7 @@ retrospective1: # VIC-GL retrospective simulation
   attributes:
     contact: Markus Schnorbus, mschnorb@uvic.ca
     Conventions: CF-1.8
-    configuration_id: https://github.com/mschnorb/configuration_files/blob/main/model_configurations/VICGL/vicgl_run_configuration_nwna_v1.0.0.yml
+    configuration_id: __ATT_HYDROMODEL_CONFIG__
     creation_date: __ATT_CREATION_DATE__
     domain: __ATT_DOMAIN__
     frequency: daily
@@ -12,6 +12,7 @@ retrospective1: # VIC-GL retrospective simulation
     institution: Pacific Climate Impacts Consortium
     method: Variable Infiltration Capacity Model GL with glacier dynamics
     method_id : VICGL, RGM, and HydroConductor
+    version: __ATT_HYDROMODEL_VER__
     modeling_realm: land surface
     product: retrospective hydrological model output
     project_id: VIC Generation 2 Hydrologic Modelling
@@ -32,6 +33,9 @@ retrospective1: # VIC-GL retrospective simulation
     observations__institution: Pacific Climate Impacts Consortium
     observations__references: https://www.nature.com/articles/sdata2018299
     observations__version: 1.0
+    observations__postprocessing_method: __ATT_PROC_METH__
+    observations__postprocessing_method_id: __ATT_PROC_METH_ID__
+    observations__postprocessing_package_id: __ATT_PROC_PACKAGE__
     model_cal__contact: Markus Schnorbus, mschnorb@uvic.ca
     model_cal__dataset: Thin plate spline w/ ClimateWNA for northwestern North America
     model_cal__dataset_id: PNWNAmet
